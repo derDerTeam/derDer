@@ -153,18 +153,15 @@ textarea {
 
 /* 重置表格元素 */
 table {
-<<<<<<< HEAD
+
     border-collapse: collapse;
     border-spacing: 0;
-=======
-  border-collapse: collapse;
-  border-spacing: 0;
->>>>>>> 9a5ee7a42d9d0f826d20c8b83a2766b1afc173a9
+
 }
 
 /* 重置 hr */
 hr {
-<<<<<<< HEAD
+
     border: none;
     height: 1px;
 }
@@ -179,7 +176,6 @@ html { overflow-y: scroll; }
 a:hover{
     color : #B99C72 !important;
     /* text-decoration: underline; */
-=======
   border: none;
   height: 1px;
 }
@@ -196,12 +192,10 @@ html {
 a:hover {
   color: rgb(79, 76, 212) !important;
   text-decoration: underline;
->>>>>>> 9a5ee7a42d9d0f826d20c8b83a2766b1afc173a9
 }
 
 /* 清除浮动 */
 .clearfix::after {
-<<<<<<< HEAD
     display: block;
     height: 0;
     content: "";
@@ -212,11 +206,4 @@ a:hover {
 body{
   background-color: #F2F2F2;
 }
-=======
-  display: block;
-  height: 0;
-  content: "";
-  clear: both;
-  visibility: hidden;
-}
->>>>>>> 9a5ee7a42d9d0f826d20c8b83a2766b1afc173a9
+
