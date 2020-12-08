@@ -22,12 +22,6 @@ Vue.component("Header", Header);
 Vue.component("Top", Top);
 //轮播图组件
 Vue.component("SliderLoop", SliderLoop);
-<<<<<<< HEAD
-
-//注册全局组件
-
-=======
->>>>>>> ee7deb7f4ceab4aa1f8745c03b76ac138f3c8def
 Vue.component("FixedBar", FixedBar);
 
 Vue.use(ElementUI);
