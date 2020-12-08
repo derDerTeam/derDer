@@ -4,6 +4,28 @@
        <li>
          <a class="iconfont icon-kefu" href="#"></a>
          <p>联系客服</p>
+         <div class="fixedService">
+           <img src="./images/007.jpg" alt="">
+         </div>
+       </li>
+       <li>
+         <a class="iconfont icon-richscan_icon" href="#"></a>
+         <p>下载App</p>
+          <div class="fixedService">
+           <img src="./images/005.png" alt="">
+         </div>
+       </li>
+       <li>
+         <a class="iconfont icon-liwu" href="#"></a>
+         <p>新人有礼</p>
+       </li>
+       <li>
+         <a class="iconfont icon-weixin" href="#"></a>
+         <p>关注微信</p>
+       </li>
+       <li>
+         <a class="iconfont icon-huojian" href="#"></a>
+         <p>回到顶部</p>
        </li>
      </ul>
   </div>
@@ -18,16 +40,47 @@
 <style lang="less" scoped>
 .m-fixedBar{
   position: fixed;
-  top: 220px;
+  top: 200px;
   right: 10px;
-  width: 71px;
+  width: 56px;
   padding: 0 5px;
-  background: palevioletred;
-  ul li{
+  background: #fff;
+  z-index: 999;
+  ul{
+   li{
     padding: 10px;
     font-size: 12px;
     text-align: center;
+    border-bottom:1px solid #e7e7e7;
+    cursor: pointer;
+    position: relative;
+    a{
+      font-size: 20px;  
+    }
+    p{
+      font-size: 10px;
+      margin-top: 5px;
+    }
+    .fixedService{
+      width: 150px;
+      // height: 240px;
+      position: absolute;
+      left: -162px;
+      top: 0;
+      display: none;
+      img{
+        display: block;
+        width: 150px;
+        height: 180px;
+      }
+    }
     
+   }
+   li:hover .fixedService{
+     display:block;
+   }
   }
+   
+   
 }
 </style>

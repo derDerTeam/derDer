@@ -6,31 +6,35 @@
      <div class="searchContent">
       <div class="searchTit"> 为您找到54条数据</div>
       <!-- 品牌内容 -->
-       <div class="goodsList clearFix">
-          <div class="goodsItem">
+       <div class="goodsList clearFix" >
+        
+          <div class="goodsItem" >
              <img src="./images/001.jpg" alt="">
              <p>云米自动波轮洗衣机5.5kg</p>
              <span><i>￥</i>678</span>
           </div>
+      
+
+
           <div class="goodsItem">
-             <img src="./images/001.jpg" alt="">
+             <img src="./images/002.jpg" alt="">
              <p>云米自动波轮洗衣机5.5kg</p>
              <span><i>￥</i>678</span>
           </div>
           <div class="goodsItem">
-             <img src="./images/001.jpg" alt="">
+             <img src="./images/003.jpg" alt="">
              <p>云米自动波轮洗衣机5.5kg</p>
              <span><i>￥</i>678</span>
           </div>
           <div class="goodsItem">
-             <img src="./images/001.jpg" alt="">
+             <img src="./images/004.jpg" alt="">
              <p>云米自动波轮洗衣机5.5kg</p>
              <span><i>￥</i>678</span>
           </div>
        </div>
        <div class="goodsList clearFix">
           <div class="goodsItem">
-             <img src="./images/001.jpg" alt="">
+             <img src="./images/005.jpg" alt="">
              <p>云米自动波轮洗衣机5.5kg</p>
              <span><i>￥</i>678</span>
           </div>
@@ -91,12 +95,18 @@
 
 <script>
   export default {
-    name:'Search'
+    name:'Search',
+    data(){
+       show: true
+    }
+    
   }
 </script>
 
 <style lang="less" scoped>
-.searchContainer{
+div{
+  background-color: #F2F2F2;
+  .searchContainer{
   
    width: 1080px;
     margin: 0 auto;
@@ -116,7 +126,7 @@
         clear:both;
       }
       .goodsItem{
-         cursor: pointer;
+        cursor: pointer;
         float: left;
         width:262px ;
         height: 267px;
@@ -124,6 +134,14 @@
         text-align: center;
         margin-right: 5px;
         margin-bottom: 5px;
+        transition: all 0.5s;
+      
+      }
+      .goodsItem:hover{
+        height: 260px;
+        box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+				0px 0px 20px rgba(0,0,0,0.1) inset;
+
       }
      
       img{
@@ -140,8 +158,10 @@
         margin-top: 8px;
         color: #A92112;
       }
+      
     }
-    
+   
   }
+}
 }
 </style>
