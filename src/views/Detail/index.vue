@@ -1,79 +1,87 @@
 <template>
-  <!-- 主要区域 -->
-  <div class="mainContainer">
-    <!-- 左侧展示区域 -->
-    <div class="leftPreview">
-      <!-- 左侧大图 -->
-      <div class="zoom">
-        <img src="./images/3.jpg" alt="" />
-      </div>
-      <!-- 右侧缩略图 -->
-      <div class="imageList">
-        <img src="./images/3.jpg" alt="" />
-        <img src="./images/3.jpg" alt="" />
-        <img src="./images/3.jpg" alt="" />
-        <img src="./images/3.jpg" alt="" />
-      </div>
-    </div>
 
-    <!-- 右侧内容区域 -->
-    <div class="rightInfo">
-      <div class="title">
-        谷悦医用外科口罩 绑带式 50只/盒 <span class="kill">有品秒杀</span>
-      </div>
-      <div class="news">
-        <span class="reduction"
-          >健康12.12年终大促乐购节，底价预售至高100抵2400，整点1元秒底价预售</span
-        >
-        <span class="introduce">三层过滤，阻隔病菌，BFE≥95%，亲肤无刺激</span>
-        <p class="introduce">
-          促销:
-          <span class="seckill">有品秒杀</span>
-          <span class="sale">商品限购100件，超出限购数量不可购买</span>
-        </p>
-      </div>
-      <div class="card">
-        <p>
-          售价 <span class="icon">¥</span> <span class="priceOne">39</span>
-          <span class="priceTwo">¥149</span>
-        </p>
-        <p>
-          服务 <i class="iconfont icon-jinggao"></i>
-          <i class="iconfont icon-xuanzhong"></i> 包邮<i
-            class="iconfont icon-xuanzhong"
-          ></i>
-          三方店铺<i class="iconfont icon-xuanzhong"></i> 不支持7天无理由
-          <span class="service"
-            ><i class="iconfont icon-xuanzhong"></i
-            >由山东欣悦健康科技有限公司发货并提供售后
-            <span class="business">(查看商家资质)</span>
-          </span>
-        </p>
+  <div>
+      <Header></Header>
+    <!-- 主要区域 -->
+    <div class="mainContainer">
+      <!-- 左侧展示区域 -->
+      <div class="leftPreview">
+        <!-- 左侧大图 -->
+        <div class="zoom">
+          <img src="./images/3.jpg" alt="" />
+        </div>
+        <!-- 右侧缩略图 -->
+        <div class="imageList">
+          <img src="./images/3.jpg" alt="" />
+          <img src="./images/3.jpg" alt="" />
+          <img src="./images/3.jpg" alt="" />
+          <img src="./images/3.jpg" alt="" />
+        </div>
       </div>
 
-      <div class="detail">
-        <p>配送区域 <span class="address">北京 北京市 海淀区 有货修改</span></p>
-        <p class="specs">
-          规格 <span class="style">绑带式（50片/盒）</span>
-          <span class="style">耳挂式（50片/盒）</span>
-        </p>
-        <div class="cartWrap">
-          <div class="controls">
-            <input autocomplete="off" class="itxt" value="1" />
-            <a href="javascript:" class="plus">+</a>
-            <a href="javascript:" class="mins">-</a>
-          </div>
-          <div class="add">
-            <a href="javascript:">加入购物车</a>
-          </div>
-          <div class="customer">
+      <!-- 右侧内容区域 -->
+      <div class="rightInfo">
+        <div class="title">
+          谷悦医用外科口罩 绑带式 50只/盒 <span class="kill">有品秒杀</span>
+        </div>
+        <div class="news">
+          <span class="reduction"
+            >健康12.12年终大促乐购节，底价预售至高100抵2400，整点1元秒底价预售</span
+          >
+          <span class="introduce">三层过滤，阻隔病菌，BFE≥95%，亲肤无刺激</span>
+          <p class="introduce">
+            促销:
+            <span class="seckill">有品秒杀</span>
+            <span class="sale">商品限购100件，超出限购数量不可购买</span>
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            售价 <span class="icon">¥</span> <span class="priceOne">39</span>
+            <span class="priceTwo">¥149</span>
+          </p>
+          <p>
+            服务 <i class="iconfont icon-jinggao"></i>
+            <i class="iconfont icon-xuanzhong"></i> 包邮<i
+              class="iconfont icon-xuanzhong"
+            ></i>
+            三方店铺<i class="iconfont icon-xuanzhong"></i> 不支持7天无理由
+            <span class="service"
+              ><i class="iconfont icon-xuanzhong"></i
+              >由山东欣悦健康科技有限公司发货并提供售后
+              <span class="business">(查看商家资质)</span>
+            </span>
+          </p>
+        </div>
+
+        <div class="detail">
+          <p>
+            配送区域 <span class="address">北京 北京市 海淀区 有货修改</span>
+          </p>
+          <p class="specs">
+            规格 <span class="style">绑带式（50片/盒）</span>
+            <span class="style">耳挂式（50片/盒）</span>
+          </p>
+          <div class="cartWrap">
+            <div class="controls">
+              <input autocomplete="off" class="itxt" value="1" />
+              <a href="javascript:" class="plus">+</a>
+              <a href="javascript:" class="mins">-</a>
+            </div>
+            <div class="add">
+              <a href="javascript:">加入购物车</a>
+            </div>
+            <div class="customer">
               <i class="iconfont icon-kefu"></i>
               <span>客服</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <Footer></Footer>
   </div>
+  <!-- tabs切换 -->
 </template>
 
 <script>
@@ -263,21 +271,21 @@ export default {
             margin-left: 30px;
           }
         }
-        .customer{
-            float: left;
-            padding: 5px;
-            margin-left: 30px;
-            height: 40px;
-            width: 30px;
-            color:#999999;
-            border: 1px solid #999999;
-            text-align: center;
-            i{
-                font-size: 20px;
-            }
-            span{
-                font-size: 15px;
-            }
+        .customer {
+          float: left;
+          padding: 5px;
+          margin-left: 30px;
+          height: 40px;
+          width: 30px;
+          color: #999999;
+          border: 1px solid #999999;
+          text-align: center;
+          i {
+            font-size: 20px;
+          }
+          span {
+            font-size: 15px;
+          }
         }
       }
     }
