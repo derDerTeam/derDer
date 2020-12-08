@@ -30,6 +30,14 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  methods: {
+    goCart() {},
+  },
 };
 </script>
 
