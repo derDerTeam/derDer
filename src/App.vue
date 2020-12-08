@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Top></Top>
     <Header></Header>
     <Footer></Footer>
   </div>
