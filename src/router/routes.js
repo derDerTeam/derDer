@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Detail from '@/views/Detail'
 
 export default[
@@ -7,6 +8,8 @@ export default[
     }
 ]
 const Product = () => import("@/view/product");
+=======
+>>>>>>> 14e9b5d2b2905cf130c17a10ed59db3f1090006d
 import Order from "@/views/Order";
 import Search from "@/views/Search";
 import Detail from "@/views/Detail";

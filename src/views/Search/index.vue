@@ -109,12 +109,14 @@
       margin: 30px 0 10px 0;
     }
     .goodsList{
+     
      .clearFix::after{
         content:"";
         display: block;
         clear:both;
       }
       .goodsItem{
+         cursor: pointer;
         float: left;
         width:262px ;
         height: 267px;
@@ -131,6 +133,7 @@
       p{
         text-align: center;
         font-size: 16px;
+        // cursor: pointer;
       }
       span{
         display: block;
