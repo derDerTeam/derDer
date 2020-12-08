@@ -6,7 +6,7 @@
           <router-link to="/login">
             <span>登录</span>
           </router-link>
-          <router-link to="/login/register">
+          <router-link to="/register">
             <span>注册</span>
           </router-link>
         </div>

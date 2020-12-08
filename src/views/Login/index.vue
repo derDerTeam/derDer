@@ -34,14 +34,19 @@
 							<input v-if="login_regise_sms" class="item_account" autocomplete="off" type="text" name="user"
 								id="username" placeholder="邮箱/手机号码/小米ID">
 							<div v-if="!login_regise_sms" class="phone_login_name">
-								<span>+86</span>
+								<p class="phone_start_box">
+									<span class="phone_start">+86</span>
+								</p>
 								<input type="text" placeholder="手机号码">
 							</div>
 
 							<input v-if="login_regise_sms" type="password" class="item_account" placeholder="密码" autocomplete="off"
 								id="pwd" name="password">
 							<div v-if="!login_regise_sms" class="phone_login_msmCode">
-								<input type="text" class="phone_login_sms">
+								<input type="text" class="phone_login_sms" placeholder="短信验证码">
+								<div class="code_panel">
+									<a class="send_ticket" href="javascript:;">获取验证码</a>
+								</div>
 							</div>
 							<button>登陆</button>
 
@@ -50,16 +55,16 @@
 									<a href="javascript:;" class="meassg" @click="changes_login_status" id="ChangeLoginType">手机短信登录/注册</a>
 								</span>
 								<div class="reverse">
-									<div class="reg_forget_links">
+									<div class="reg_forget_links" v-if="login_regise_sms">
 										<a class="outer-link" href="">立即注册</a>
 										<span class="segmentation">|</span>
 										<a class="outer-link" href="">忘记密码？</a>
 									</div>
 									<!-- 收不到验证码 -->
-									<!-- <div class="sms-unavaliable-links">
+									<div class="sms-unavaliable" v-if="!login_regise_sms">
 										<a target="_blank"
 											href="https://account.xiaomi.com/helpcenter/faq/_/02.faqs/05.sms-and-email-verification-code/faq-1">收不到验证码？</a>
-									</div> -->
+									</div>
 								</div>
 
 								<!-- 其他登录方式 s -->
@@ -199,7 +204,7 @@
 
 							// 账号密码登陆
 							.item_account {
-								height: 50px;
+								height: 48px;
 								width: 330px;
 								font-size: 14px;
 								margin-bottom: 15px;
@@ -214,26 +219,51 @@
 								width: 358px;
 								margin-bottom: 15px;
 								box-sizing: border-box;
+								overflow: hidden;
+								position: relative;
 
-								span {
+								.phone_start_box {
 									display: inline-block;
-									width: 64px;
-									height: 50px;
-									line-height: 50px;
+									width: 50px;
+									height: 48px;
+									line-height: 48px;
 									text-align: center;
 									border: 1px solid #E0E0E0;
 									border-right: none;
+
+									.phone_start {
+										position: absolute;
+										left: 15px;
+										animation: phoneSlider;
+										animation-duration: .5s;
+										animation-timing-function: linear;
+										animation-fill-mode: forwards;
+									}
+
+									@keyframes phoneSlider {
+										from {
+											left: -25px;
+											z-index: -1;
+										}
+
+										to {
+											left: 15px;
+											z-index: 1;
+										}
+									}
 								}
 
 								input {
+									position: absolute;
 									display: inline-block;
 									width: 266px;
-									height: 50px;
-									line-height: 50px;
+									height: 48px;
+									line-height: 48px;
 									outline: none;
 									padding-left: 15px;
 									font: 14px;
 									border: 1px solid #E0E0E0;
+									margin-bottom: 15px;
 								}
 							}
 
@@ -241,13 +271,25 @@
 							.phone_login_msmCode {
 								height: 50px;
 								width: 358px;
-								background: pink;
+								margin-bottom: 15px;
+
 								.phone_login_sms {
 									width: 248px;
-									height: 50px;
-									outline: none;
-									line-height: 50px;
+									height: 48px;
+									line-height: 48px;
 									padding-left: 15px;
+									font: 14px;
+									outline: none;
+									border: 1px solid #E0E0E0;
+								}
+
+								.code_panel {
+									display: inline-block;
+									width: 80px;
+									height: 48px;
+									line-height: 48px;
+									border: 1px solid #E0E0E0;
+									text-align: center;
 								}
 							}
 
@@ -309,7 +351,7 @@
 											font-size: 14px;
 
 											&:hover {
-												color: #ff6700;
+												color: #ff6700 !important;
 											}
 										}
 
@@ -317,6 +359,27 @@
 											text-align: center;
 											color: #e0e0e0;
 											padding: 0 5px;
+										}
+									}
+
+									.sms-unavaliable {
+										text-align: center;
+										color: #e0e0e0;
+										padding-top: 30px;
+
+										a {
+											text-align: center;
+											text-decoration: none;
+											outline: 0 none;
+											border: 0 none;
+											appearance: none;
+											-webkit-tap-highlight-color: transparent;
+											color: #757575;
+											font-size: 14px;
+
+											&:hover {
+												color: #ff6700 !important;
+											}
 										}
 									}
 								}
