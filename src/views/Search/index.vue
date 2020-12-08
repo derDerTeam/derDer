@@ -13,9 +13,6 @@
              <p>云米自动波轮洗衣机5.5kg</p>
              <span><i>￥</i>678</span>
           </div>
-      
-
-
           <div class="goodsItem">
              <img src="./images/002.jpg" alt="">
              <p>云米自动波轮洗衣机5.5kg</p>

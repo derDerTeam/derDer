@@ -18,13 +18,19 @@
        <li>
          <a class="iconfont icon-liwu" href="#"></a>
          <p>新人有礼</p>
+          <div class="fixedService">
+           <img src="./images/008.jpg" alt="">
+         </div>
        </li>
        <li>
          <a class="iconfont icon-weixin" href="#"></a>
          <p>关注微信</p>
+         <div class="fixedService">
+           <img src="./images/005.png" alt="">
+         </div>
        </li>
-       <li>
-         <a class="iconfont icon-huojian" href="#"></a>
+       <li >
+         <a class="iconfont icon-huojian" href="javascript:scroll(0,0)" ></a>
          <p>回到顶部</p>
        </li>
      </ul>
@@ -55,7 +61,8 @@
     cursor: pointer;
     position: relative;
     a{
-      font-size: 20px;  
+      font-size: 20px; 
+      // display: block; 
     }
     p{
       font-size: 10px;

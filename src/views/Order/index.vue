@@ -1,84 +1,87 @@
 <template>
 <div>
-  <div class="orderContainer">
-  <Top></Top>
+   <Top></Top>
   <Header></Header>
-   <!-- 头部 -->
-  <div class="header">
-     <span>
-       <a href="###">首页 
-         <i class="iconfont icon-arrow-right"></i>
-       </a>
-     </span>
-     <span>
-       <a href="###">个人中心
+  
+  <div class="orderContainer">
+    
+    <!-- 头部 -->
+    <div class="header">
+      <span>
+        <a href="###">首页 
           <i class="iconfont icon-arrow-right"></i>
-       </a>
-     </span>
-     <span>
-       <a href="###">我的订单</a>
-     </span>
-  </div>
-  <!-- 内容 -->
-  <div class="content">
-   <!-- 左边区域 -->
-   <div class="leftContent" >
-     <!-- 上 -->
-      <div class="personal-profile">
-          <img src="./images/002.jpg" alt="">
-          <p>兮兮哈</p>
-      </div>
-     <!-- 下 -->
-     <div class="personal-functional-list">
-        <ul>
-         <li>
-          <span class="active-circle"></span>
-           <a href="###">我的订单</a>
-         </li>
-         <li>
-           <a href="###">我的资产</a>
-         </li>
-         <li>
-            <a href="###">我的收藏</a>
-         </li>
-         <li>
-           <a href="###">地址管理</a>
-         </li>
-        </ul>
-     </div>
-   </div>
-   
-   <!-- 右边区域 -->
-   <div class="rightContent">
-     <div class="personal-main">
-       <!-- 导航切换 -->
-        <div class="personal-selector">
-           <ul>
-              <li><a href="###">待收货(0)</a></li>
-              <li><a href="###">待付款(0)</a></li>
-              <li><a href="###">已收货</a></li>
-              <li><a href="###">退款订单</a></li>
-              <li><a href="###">全部订单</a></li>
-              <li class="delete-tab-item">
-                <a href="###" >
-                  <i class="iconfont icon-dustbin_icon"></i>
-                  回收站</a>
-            </li>
-           </ul>
-        </div>
-     </div>
-       
+        </a>
+      </span>
+      <span>
+        <a href="###">个人中心
+            <i class="iconfont icon-arrow-right"></i>
+        </a>
+      </span>
+      <span>
+        <a href="###">我的订单</a>
+      </span>
+    </div>
       <!-- 内容 -->
-      <div class="m-img">
-          <img src="./images/img.jpg" alt="">
-          <p>没有相应的订单数据</p>
+    <div class="content">
+      <!-- 左边区域 -->
+      <div class="leftContent" >
+        <!-- 上 -->
+          <div class="personal-profile">
+              <img src="./images/002.jpg" alt="">
+              <p>兮兮哈</p>
+          </div>
+        <!-- 下 -->
+        <div class="personal-functional-list">
+            <ul>
+            <li>
+              <span class="active-circle"></span>
+              <a href="###">我的订单</a>
+            </li>
+            <li>
+              <a href="###">我的资产</a>
+            </li>
+            <li>
+                <a href="###">我的收藏</a>
+            </li>
+            <li>
+              <a href="###">地址管理</a>
+            </li>
+            </ul>
+        </div>
+      </div>
+      
+      <!-- 右边区域 -->
+      <div class="rightContent">
+        <div class="personal-main">
+          <!-- 导航切换 -->
+            <div class="personal-selector">
+              <ul>
+                  <li><a href="###">待收货(0)</a></li>
+                  <li><a href="###">待付款(0)</a></li>
+                  <li><a href="###">已收货</a></li>
+                  <li><a href="###">退款订单</a></li>
+                  <li><a href="###">全部订单</a></li>
+                  <li class="delete-tab-item">
+                    <a href="###" >
+                      <i class="iconfont icon-dustbin_icon"></i>
+                      回收站</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+          
+          <!-- 内容 -->
+          <div class="m-img">
+              <img src="./images/img.jpg" alt="">
+              <p>没有相应的订单数据</p>
+          </div>
+
+
       </div>
 
-
-   </div>
-
-  </div>  
-</div>
+      </div>  
+  </div>
+<FixedBar></FixedBar>
 <Footer></Footer>
 </div>
 </template>
@@ -91,7 +94,10 @@ export default {
 
 
 <style lang="less" >
-.orderContainer{
+div{
+  
+  .orderContainer{
+    // background-color: #999;
     width: 1080px;
     // background-color: aquamarine;
     margin: 0 auto;
@@ -117,7 +123,7 @@ export default {
       float: left;
       width: 173px;
       height: 700px;
-      background-color:#fff;
+      background-color:#fafafa;
       position: relative;
       //  margin-bottom: 100px;
       .personal-profile{
@@ -125,7 +131,7 @@ export default {
         text-align: center;
         height: 157px;
         // line-height: 20px;
-        background-color: #fff;
+        background-color: #fafafa;
         border-bottom: 1px solid #999;
         img{
           width:54px ;
@@ -170,7 +176,7 @@ export default {
       float: right;
       width: 900px;
       height: 700px; 
-      background-color: #fff;
+      background-color: #fafafa;
     //  margin-bottom: 100px;
      .personal-main{
       padding:11px 0 11px 60px;
@@ -209,5 +215,6 @@ export default {
      }
     }
   }
+}
 }
 </style>
