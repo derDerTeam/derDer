@@ -1,5 +1,5 @@
 <template>
-  <router-view></router-view>
+  <!-- <router-view></router-view> -->
    <!--使用组件-->
     <Trade />
 </template>
