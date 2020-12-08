@@ -6,75 +6,89 @@
 			<div class="content">
 				<!-- 二维码 -->
 				<div id="custom_display_2">
-					<a class="ercode" id="qrcode-trigger" href="javascript:void(0)">二维码</a>
-				</div>
-				<!-- Logo -->
-				<div class="lgnheader">
-					<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-						<rect class="imgItem" width="48" height="48" rx="3" ry="3" style="fill:#ff6700"></rect>
-						<rect x="10" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect>
-						<rect x="33.75" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect>
-						<rect x="11.25" y="15" width="15" height="4.1" style="fill:#FFFFFF"></rect>
-						<rect x="26.2" y="20.55" width="4.2" height="12.5" style="fill:#FFFFFF"></rect>
-						<rect x="20.6" y="15" width="9.8" height="9.8" rx="4.4" ry="4.4" style="fill:#FFFFFF"></rect>
-						<rect x="20.2" y="19" width="6" height="6" rx="2" ry="2" style="fill:#ff6700"></rect>
-						<rect x="18" y="19.1" width="4" height="2.2" style="fill:#ff6700"></rect>
-						<rect x="24.2" y="23" width="1.94" height="10" style="fill:#ff6700"></rect>
-						<rect x="18.1" y="22.8" width="4.2" height="10.2" style="fill:#FFFFFF"></rect>
-					</svg>
-					<h4 class="header_tit_txt" id="login-title">小米帐号登录</h4>
-					<div class="site_info"></div>
+					<a class="iconfont" id="qrcode-trigger" href="javascript:void(0)"></a>
 				</div>
 
-				<!-- 输入框 -->
-				<div class="tabs_con">
-					<div id="loginbox">
-						<input class="item_account" autocomplete="off" type="text" name="user" id="username"
-							placeholder="邮箱/手机号码/小米ID">
-						<input class="item_account" type="password" placeholder="密码" autocomplete="off" id="pwd" name="password">
-						<button>登陆</button>
+				<div class="tablesArea">
+					<!-- Logo -->
+					<div class="lgnheader">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<rect class="imgItem" width="48" height="48" rx="3" ry="3" style="fill:#ff6700"></rect>
+							<rect x="10" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect>
+							<rect x="33.75" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect>
+							<rect x="11.25" y="15" width="15" height="4.1" style="fill:#FFFFFF"></rect>
+							<rect x="26.2" y="20.55" width="4.2" height="12.5" style="fill:#FFFFFF"></rect>
+							<rect x="20.6" y="15" width="9.8" height="9.8" rx="4.4" ry="4.4" style="fill:#FFFFFF"></rect>
+							<rect x="20.2" y="19" width="6" height="6" rx="2" ry="2" style="fill:#ff6700"></rect>
+							<rect x="18" y="19.1" width="4" height="2.2" style="fill:#ff6700"></rect>
+							<rect x="24.2" y="23" width="1.94" height="10" style="fill:#ff6700"></rect>
+							<rect x="18.1" y="22.8" width="4.2" height="10.2" style="fill:#FFFFFF"></rect>
+						</svg>
+						<h4 class="header_tit_txt" id="login-title">小米帐号登录</h4>
+						<div class="site_info"></div>
+					</div>
 
-						<div class="other_panel clearfix">
-							<span class="sms_link">
-								<a href="javascript:;" class="meassg" id="ChangeLoginType">手机短信登录/注册</a>
-							</span>
-							<div class="reverse">
-								<div class="reg_forget_links">
-									<a class="outer-link" href="">立即注册</a>
-									<span>|</span>
-									<a class="outer-link" href="">忘记密码？</a>
+					<!-- 输入框 -->
+					<div class="tabs_con">
+						<div id="loginbox">
+							<input class="item_account" autocomplete="off" type="text" name="user" id="username"
+								placeholder="邮箱/手机号码/小米ID">
+							<input class="item_account" type="password" placeholder="密码" autocomplete="off" id="pwd" name="password">
+							<button>登陆</button>
+
+							<div class="other_panel clearfix">
+								<span class="sms_link">
+									<a href="javascript:;" class="meassg" id="ChangeLoginType">手机短信登录/注册</a>
+								</span>
+								<div class="reverse">
+									<div class="reg_forget_links">
+										<a class="outer-link" href="">立即注册</a>
+										<span class="segmentation">|</span>
+										<a class="outer-link" href="">忘记密码？</a>
+									</div>
+
+									<!-- <div class="sms-unavaliable-links">
+										<a target="_blank" href="">收不到验证码？</a>
+									</div> -->
 								</div>
 
-								<!-- <div class="sms-unavaliable-links">
-									<a target="_blank" href="">收不到验证码？</a>
-								</div> -->
-							</div>
+								<!-- 其他登录方式 s -->
+								<div style="display: block;" class="other_login_type">
+									<fieldset class="oth_type_tit">
+										<legend align="center" class="oth_type_txt">其他方式登录</legend>
+									</fieldset>
 
-							<!-- 其他登录方式 s -->
-							<div style="display: block;" class="other_login_type">
-								<fieldset class="oth_type_tit">
-									<legend align="center" class="oth_type_txt">其他方式登录</legend>
-								</fieldset>
-								<div id="sns-login-links" class="oth_type_links">
-									<a class="sns-qq" data-type="qq" href="" title="QQ登录" target="_blank">
-										<i class="btn_sns_icontype"></i>
-									</a>
-									<a class="btn_weibo" data-type="weibo" href="" title="微博登录" target="_blank">
-										<i class="weibo"></i>
-									</a>
-									<a class="alipay" data-type="alipay" href="" title="支付宝登录" target="_blank">
-										<i class="default_alipay"></i>
-									</a>
-									<a class="icon_type btn_weixin sns-login-link" data-type="weixin" href="" title="微信登录"
-										target="_blank">
-										<i class="btn_sns_icontype icon_default_weixin"></i>
-									</a>
+									<div id="sns-login-links" class="oth_type_links">
+										<a class="sns-qq icon_type " data-type="qq" href="" title="QQ登录" target="_blank">
+											<i class="iconfont iconqq"></i>
+										</a>
+										<a class="btn_weibo icon_type " data-type="weibo" href="" title="微博登录" target="_blank">
+											<i class="iconfont iconweibo"></i>
+										</a>
+										<a class="alipay icon_type " data-type="alipay" href="" title="支付宝登录" target="_blank">
+											<i class="iconfont iconzhifubao"></i>
+										</a>
+										<a class="btn_weixin icon_type " data-type="weixin" href="" title="微信登录" target="_blank">
+											<i class="iconfont iconweixin"></i>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="footr">
+			<ul>
+				<li><a href="javascript:;">简体</a>|</li>
+				<li><a href="javascript:;">繁体</a>|</li>
+				<li><a href="javascript:;">English</a>|</li>
+				<li><a href="javascript:;">常见问题</a>|</li>
+				<li><a href="javascript:;">隐私政策</a></li>
+			</ul>
+			<span>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</span>
 		</div>
 	</div>
 </template>
@@ -92,120 +106,249 @@
 		.main-content {
 			background-color: #fff;
 			max-width: 854px;
+			height: 550px;
 			margin: 0 auto 20px;
-			position: relative;
-			min-height: 620px;
 
 			// 父元素
 			.content {
+				position: relative;
 
-				// position: relative;
 				// 二维码
 				#custom_display_2 {
-					width: 80px;
+					width: 100%;
 					height: 80px;
 					position: absolute;
 					right: 0;
-				}
+					position: relative;
 
-				// logo 
-				.lgnheader {
-					width: 100%;
-					height: 130px;
+					a {
+						width: 80px;
+						height: 80px;
+						line-height: 80px;
+						font-size: 70px;
+						text-align: center;
+						background: url(https://account.xiaomi.com/static/res/fa9e760/account-static/respassport/acc-2014/img/icon_ercode.png) no-repeat;
+						position: absolute;
+						right: 0;
+						top: 0px;
 
-					svg {
-						width: 48px;
-						height: 48px;
-						margin: 20px calc(50% - 48px) 0;
-					}
-
-					.header_tit_txt {
-						font-size: 22px;
-						font-weight: normal;
-						margin-left: 340px;
-						margin-top: 10px;
-						margin-right: 5px;
+						&:hover {
+							background-position: -80px 0;
+						}
 					}
 				}
 
-				.tabs_con {
-					height: 450px;
+				.tablesArea {
+					position: absolute;
+					top: 0px;
+					left: calc(50% - 175px);
 
-					#loginbox {
-						width: 358px;
-						height: 385px;
-						// background-color: green;
-						margin: 0 auto 5px;
+					// logo 
+					.lgnheader {
+						width: 100%;
+						height: 130px;
 
-						input {
-							height: 50px;
-							width: 330px;
-							outline: none;
-							margin-bottom: 10px;
-							padding-left: 20px;
+
+						// logo 大小
+						svg {
+							width: 48px;
+							height: 48px;
+							margin: 20px calc(50% - 48px) 0;
 						}
 
-						button {
-							margin: 20px 0;
-							height: 50px;
-							width: 358px;
-							background-color: #FF6700;
-							outline: none;
-							border: 1px solid #D9D9D9;
-							line-height: 50px;
-							color: #fff;
+						.header_tit_txt {
+							font-size: 22px;
+							font-weight: normal;
+							margin-left: 82px;
+							margin-top: 10px;
+							margin-right: 5px;
 						}
-						// 手机短信登录/注册
-						.other_panel {
-							margin-top: -5px;
+					}
+
+					.tabs_con {
+						height: 450px;
+
+						#loginbox {
 							width: 358px;
-							height: 188px;
-							// 忘记密码
-							.sms_link {
-								a {
-								text-decoration: none;
-								outline: 0 none;
-								appearance: none;
-								-webkit-tap-highlight-color: transparent;
-								width: 100%;
-								display: block;
-								text-align: center;
+							height: 385px;
+							// background-color: green;
+							margin: 0 auto 5px;
+
+							input {
+								height: 50px;
+								width: 330px;
+								outline: none;
 								font-size: 14px;
-								cursor: pointer;
-								background: #fff;
-								color: #ff6700;
-								border: 0 none;
-								height: auto;
-								line-height: normal;
-								&a:hover {
-									color:  #ff6700;
-								}
-							}
+								margin-bottom: 10px;
+								padding-left: 20px;
+								border: 1px solid #E0E0E0;
 							}
 
-							.reverse {
-								color: #757575;
+							button {
+								margin: 20px 0;
+								height: 50px;
+								width: 358px;
+								background-color: #FF6700;
+								outline: none;
+								border: 1px solid #D9D9D9;
+								line-height: 50px;
+								color: #fff;
+							}
 
-								.reg_forget_links {
-									text-align: center;
-									color: #e0e0e0;
-									padding-top: 30px;
+							// 短信登陆注册 父元素
+							.other_panel {
+								margin-top: -5px;
+								width: 358px;
+								height: 188px;
+
+								// 手机短信登录/注册 
+								.sms_link {
 									a {
+										text-decoration: none;
+										outline: 0 none;
+										appearance: none;
+										-webkit-tap-highlight-color: transparent;
+										width: 100%;
+										display: block;
 										text-align: center;
-									text-decoration: none;
-									outline: 0 none;
-									border: 0 none;
-									appearance: none;
-									-webkit-tap-highlight-color: transparent;
-									color: #757575;
-									font-size: 14px;
+										font-size: 14px;
+										cursor: pointer;
+										background: #fff;
+										color: #ff6700;
+										border: 0 none;
+										height: auto;
+										line-height: normal;
 									}
-									
+								}
+
+								// 注册 && 忘记密码
+								.reverse {
+									color: #757575;
+
+									.reg_forget_links {
+										text-align: center;
+										color: #e0e0e0;
+										padding-top: 30px;
+
+										a {
+											text-align: center;
+											text-decoration: none;
+											outline: 0 none;
+											border: 0 none;
+											appearance: none;
+											-webkit-tap-highlight-color: transparent;
+											color: #757575;
+											font-size: 14px;
+
+											&:hover {
+												color: #ff6700;
+											}
+										}
+
+										span {
+											text-align: center;
+											color: #e0e0e0;
+											padding: 0 5px;
+										}
+									}
+								}
+
+								// 其他登陆方式
+								.other_login_type {
+									color: #757575;
+									padding-top: 50px;
+									text-align: center;
+
+									// oth_type_tit 分割线
+									.oth_type_tit {
+										color: #757575;
+										text-align: center;
+										border-top: 1px solid #e0e0e0;
+										padding-top: 10px;
+
+										// 分割 样式
+										.oth_type_txt {
+											color: #b0b0b0;
+											margin: 0 auto;
+											text-align: center;
+										}
+									}
+
+									// 其他方法QQ 微信....
+									.oth_type_links {
+										text-align: center;
+										padding-top: 5px;
+										width: 358px;
+										height: 30px;
+
+										// 字体图标
+										.icon_type {
+											width: 30px;
+											height: 30px;
+											margin: 0 12px;
+											display: inline-block;
+											border-radius: 50%;
+
+											&:nth-child(1) {
+												background: #0288D1;
+											}
+
+											&:nth-child(2) {
+												background: #D32F2F;
+											}
+
+											&:nth-child(3) {
+												background: #00AAEE;
+											}
+
+											&:nth-child(4) {
+												background: #00D20D;
+											}
+
+											i {
+												color: #fff;
+												width: 30px;
+												height: 30px;
+												line-height: 30px;
+												font-size: 24px;
+												display: inline-block;
+											}
+										}
+									}
 								}
 							}
 						}
 					}
 				}
+			}
+		}
+
+		// 底部
+		.footr {
+			width: 100%;
+
+			ul {
+				height: 20px;
+				width: 380px;
+				margin: 0 auto;
+				font-size: 14px;
+
+				li {
+					display: inline-block;
+
+					a {
+						padding: 0 10px;
+					}
+				}
+			}
+
+			span {
+				display: block;
+				width: 600px;
+				height: 45px;
+				line-height: 50px;
+				font-size: 14px;
+				margin: 0 auto;
 			}
 		}
 	}
