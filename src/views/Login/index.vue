@@ -31,14 +31,23 @@
 					<!-- 输入框 -->
 					<div class="tabs_con">
 						<div id="loginbox">
-							<input class="item_account" autocomplete="off" type="text" name="user" id="username"
-								placeholder="邮箱/手机号码/小米ID">
-							<input class="item_account" type="password" placeholder="密码" autocomplete="off" id="pwd" name="password">
+							<input v-if="login_regise_sms" class="item_account" autocomplete="off" type="text" name="user"
+								id="username" placeholder="邮箱/手机号码/小米ID">
+							<div v-if="!login_regise_sms" class="phone_login_name">
+								<span>+86</span>
+								<input type="text" placeholder="手机号码">
+							</div>
+
+							<input v-if="login_regise_sms" type="password" class="item_account" placeholder="密码" autocomplete="off"
+								id="pwd" name="password">
+							<div v-if="!login_regise_sms" class="phone_login_msmCode">
+								<input type="text" class="phone_login_sms">
+							</div>
 							<button>登陆</button>
 
 							<div class="other_panel clearfix">
 								<span class="sms_link">
-									<a href="javascript:;" class="meassg" id="ChangeLoginType">手机短信登录/注册</a>
+									<a href="javascript:;" class="meassg" @click="changes_login_status" id="ChangeLoginType">手机短信登录/注册</a>
 								</span>
 								<div class="reverse">
 									<div class="reg_forget_links">
@@ -46,9 +55,10 @@
 										<span class="segmentation">|</span>
 										<a class="outer-link" href="">忘记密码？</a>
 									</div>
-
+									<!-- 收不到验证码 -->
 									<!-- <div class="sms-unavaliable-links">
-										<a target="_blank" href="">收不到验证码？</a>
+										<a target="_blank"
+											href="https://account.xiaomi.com/helpcenter/faq/_/02.faqs/05.sms-and-email-verification-code/faq-1">收不到验证码？</a>
 									</div> -->
 								</div>
 
@@ -88,14 +98,27 @@
 				<li><a href="javascript:;">常见问题</a>|</li>
 				<li><a href="javascript:;">隐私政策</a></li>
 			</ul>
-			<span>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</span>
+			<div class="end_jing">小米公司版权所有-京ICP备10046444-
+				<img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png" alt="">
+				京公网安备11010802020134号-京ICP证110507号
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-
+		name: "Login",
+		data() {
+			return {
+				login_regise_sms: false,
+			}
+		},
+		methods: {
+			changes_login_status() {
+				this.login_regise_sms = !this.login_regise_sms;
+			}
+		},
 	}
 </script>
 
@@ -174,25 +197,70 @@
 							// background-color: green;
 							margin: 0 auto 5px;
 
-							input {
+							// 账号密码登陆
+							.item_account {
 								height: 50px;
 								width: 330px;
-								outline: none;
 								font-size: 14px;
-								margin-bottom: 10px;
-								padding-left: 20px;
+								margin-bottom: 15px;
+								padding-left: 15px;
+								outline: none;
 								border: 1px solid #E0E0E0;
 							}
 
+							// 手机号验证码登陆
+							.phone_login_name {
+								height: 50px;
+								width: 358px;
+								margin-bottom: 15px;
+								box-sizing: border-box;
+
+								span {
+									display: inline-block;
+									width: 64px;
+									height: 50px;
+									line-height: 50px;
+									text-align: center;
+									border: 1px solid #E0E0E0;
+									border-right: none;
+								}
+
+								input {
+									display: inline-block;
+									width: 266px;
+									height: 50px;
+									line-height: 50px;
+									outline: none;
+									padding-left: 15px;
+									font: 14px;
+									border: 1px solid #E0E0E0;
+								}
+							}
+
+							// 短信验证码样式
+							.phone_login_msmCode {
+								height: 50px;
+								width: 358px;
+								background: pink;
+								.phone_login_sms {
+									width: 248px;
+									height: 50px;
+									outline: none;
+									line-height: 50px;
+									padding-left: 15px;
+								}
+							}
+
+							// 登陆按钮
 							button {
 								margin: 20px 0;
 								height: 50px;
 								width: 358px;
-								background-color: #FF6700;
-								outline: none;
-								border: 1px solid #D9D9D9;
 								line-height: 50px;
 								color: #fff;
+								outline: none;
+								border: 1px solid #D9D9D9;
+								background-color: #FF6700;
 							}
 
 							// 短信登陆注册 父元素
@@ -283,10 +351,10 @@
 
 										// 字体图标
 										.icon_type {
+											display: inline-block;
 											width: 30px;
 											height: 30px;
 											margin: 0 12px;
-											display: inline-block;
 											border-radius: 50%;
 
 											&:nth-child(1) {
@@ -342,7 +410,7 @@
 				}
 			}
 
-			span {
+			.end_jing {
 				display: block;
 				width: 600px;
 				height: 45px;
