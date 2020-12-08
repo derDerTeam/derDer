@@ -1,5 +1,5 @@
 {
-  "name": "derderproject",
+  "name": "zrc10010",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "less": "^3.12.2",
+    "less-loader": "^7.1.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
@@ -23,5 +25,17 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "description": "```\r npm install\r ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derDerTeam/derDer.git"
+  },
+  "author": "zrc10086",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derDerTeam/derDer/issues"
+  },
+  "homepage": "https://github.com/derDerTeam/derDer#readme"
 }
