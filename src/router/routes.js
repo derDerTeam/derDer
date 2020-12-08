@@ -1,20 +1,22 @@
+<<<<<<< HEAD
 
+=======
+import Order from "@/views/Order";
+import Search from "@/views/Search";
+import Detail from "@/views/Detail";
+const Product = () => import("@/views/Product");
+>>>>>>> ee7deb7f4ceab4aa1f8745c03b76ac138f3c8def
 
-
-import Order from '@/views/Order'
-import Search from '@/views/Search'
-
-export default  [
- {
-    path:'/order',
-    component:Order,
-              
+export default [
+  {
+    path: "/order",
+    component: Order,
   },
- {
-    path:'/search',
-    component:Search,
-              
+  {
+    path: "/search",
+    component: Search,
   },
+<<<<<<< HEAD
 
  
 ]
@@ -29,6 +31,8 @@ export default[
 ]
 const Product = () => import("@/view/product");
 export default [
+=======
+>>>>>>> ee7deb7f4ceab4aa1f8745c03b76ac138f3c8def
   {
     path: "/product",
     component: Product,
@@ -37,5 +41,12 @@ export default [
     path: "/",
     redirect: "/product",
   },
+  {
+    path: "/detail",
+    component: Detail,
+  },
 ];
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee7deb7f4ceab4aa1f8745c03b76ac138f3c8def
