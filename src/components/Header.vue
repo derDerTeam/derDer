@@ -1,13 +1,12 @@
 <template>
   <div>
-    <Header></Header>
-    <Footer></Footer>
+    头部组件
   </div>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "Header",
 };
 </script>
 
