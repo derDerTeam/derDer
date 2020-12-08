@@ -30,8 +30,6 @@
 <script>
 export default {
   name: "Header",
-<<<<<<< HEAD
-=======
   data() {
     return {
       count: 0,
@@ -40,7 +38,6 @@ export default {
   methods: {
     goCart() {},
   },
->>>>>>> 9a5ee7a42d9d0f826d20c8b83a2766b1afc173a9
 };
 </script>
 

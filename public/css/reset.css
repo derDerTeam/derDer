@@ -38,7 +38,7 @@ th,
 td {
   margin: 0;
   padding: 0;
->>>>>>> 9a5ee7a42d9d0f826d20c8b83a2766b1afc173a9
+>>>>>>> 9022ab7e30636eb35185292b9a76235320e83310
 }
 
 /* 设置默认字体 */
@@ -65,7 +65,7 @@ small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正�
 ul, ol { list-style: none; }
 
 /* 重置文本格式元素 */
-a { text-decoration: none; color: #333;}
+a { text-decoration: none; color: #666;}
 
 
 /* 重置表单元素 */
@@ -148,7 +148,7 @@ input,
 select,
 textarea {
   font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
->>>>>>> 9a5ee7a42d9d0f826d20c8b83a2766b1afc173a9
+>>>>>>> 9022ab7e30636eb35185292b9a76235320e83310
 }
 
 /* 重置表格元素 */
@@ -159,7 +159,7 @@ table {
 =======
   border-collapse: collapse;
   border-spacing: 0;
->>>>>>> 9a5ee7a42d9d0f826d20c8b83a2766b1afc173a9
+>>>>>>> 9022ab7e30636eb35185292b9a76235320e83310
 }
 
 /* 重置 hr */
@@ -177,7 +177,7 @@ hr {
 html { overflow-y: scroll; }
 
 a:hover{
-    color : #B99C72 !important;
+    color :#926626 !important;
     /* text-decoration: underline; */
 =======
   border: none;
@@ -196,7 +196,7 @@ html {
 a:hover {
   color: rgb(79, 76, 212) !important;
   text-decoration: underline;
->>>>>>> 9a5ee7a42d9d0f826d20c8b83a2766b1afc173a9
+>>>>>>> 9022ab7e30636eb35185292b9a76235320e83310
 }
 
 /* 清除浮动 */
@@ -208,9 +208,8 @@ a:hover {
     clear: both;
     visibility: hidden;
 }
-
 body{
-  background-color: #F2F2F2;
+    background-color: #fafafa;
 }
 =======
   display: block;
@@ -219,4 +218,4 @@ body{
   clear: both;
   visibility: hidden;
 }
->>>>>>> 9a5ee7a42d9d0f826d20c8b83a2766b1afc173a9
+>>>>>>> 9022ab7e30636eb35185292b9a76235320e83310

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="top">
+    <div class="h-sec-top">
       <h2 class="h-subTit">小米有品众筹<span>永远好奇 永远年轻</span></h2>
       <span class="h-more" data-src="" data-target="_blank" href="javascript:;"
         ><span>更多</span
@@ -155,5 +155,128 @@ export default {
 .container {
   width: 1080px;
   margin: 35px auto 0;
+  .h-sec-top {
+    position: relative;
+    z-index: 99;
+    margin-bottom: 20px;
+    .h-subTit {
+      color: #333;
+      font-size: 28px;
+      font-weight: 400;
+      span {
+        margin-left: 12px;
+        font-size: 14px;
+        color: #999;
+      }
+    }
+    .h-more {
+      position: absolute;
+      right: 0;
+      top: 6px;
+      height: 30px;
+      color: #999;
+      cursor: pointer;
+      .more-icon {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+  .home-good-item-big {
+    width: 537px;
+    .item-inner {
+      position: relative;
+      width: 537px;
+      height: 210px;
+      background: #f3f0e9;
+      .pro-img,
+      .home-good-item-big .pro-img1 {
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        width: 215px;
+        height: 215px;
+        z-index: 4;
+      }
+    }
+    .pro-text {
+      position: relative;
+      z-index: 6;
+      padding-top: 25px;
+      padding-left: 23px;
+      .pro-info {
+        color: #333;
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 24px;
+        height: 24px;
+      }
+      .pro-desc {
+        color: #999;
+        font-size: 16px;
+        line-height: 20px;
+        height: 20px;
+        margin-top: 8px;
+      }
+      .pro-price {
+        font-size: 24px;
+        line-height: 28px;
+        height: 28px;
+        overflow: hidden;
+        color: #a92112;
+        margin-top: 16px;
+      }
+    }
+  }
+  .m-progress-wrap-con {
+    .m-bar-con {
+      width: 100%;
+      height: 3px;
+      overflow: hidden;
+      background: #e3e1e2;
+      .m-bar {
+        width: 0;
+        height: 100%;
+        background: url(../../assets/images/bar.jpg) 0 0 no-repeat;
+      }
+    }
+    .m-progress-info {
+      margin-top: 10px;
+      .m-suppory {
+        color: #999;
+        font-size: 15px;
+        margin-left: 20px;
+        float: left;
+        .sup-num {
+          margin-right: 6px;
+          color: #a92112;
+          font-size: 18px;
+        }
+      }
+      .m-persent {
+        margin-right: 15px;
+        color: #a92112;
+        font-size: 18px;
+        float: right;
+      }
+    }
+  }
+}
+.home-good-item {
+  float: left;
+  width: 266px;
+  margin-left: 5px;
+}
+.m-icons-more {
+  width: 30px;
+  height: 30px;
+  background-position: 0 -1125px;
+}
+.m-tag-a {
+  cursor: pointer;
+}
+.m-icons {
+  display: inline-block;
+  background-image: url(../../assets/images/yp-icons.png);
 }
 </style>
