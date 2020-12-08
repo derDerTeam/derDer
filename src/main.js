@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Top from "@/components/Top";
-import FixedBar from '@/components/FixedBar'
-Vue.config.productionTip = false
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-
-
-import SliderLoop from "@/components/SliderLoop";
-=======
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
@@ -28,7 +12,6 @@ import SliderLoop from "@/components/SliderLoop";
 import Header from "@/components/Header";
 import Top from "@/components/Top";
 import Footer from "@/components/Footer";
->>>>>>> ee7deb7f4ceab4aa1f8745c03b76ac138f3c8def
 
 //注册全局组件
 //低部组件
