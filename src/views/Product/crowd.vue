@@ -18,26 +18,28 @@
         data-target="_blank"
       >
         <div class="item-inner" style="background-color: rgb(249, 243, 233);">
-          <img
-            class="pro-img"
-            src="https://img.youpin.mi-img.com/shopmain/427b8614ed4b3250bd43729b24a70b50.png?w=800&amp;h=800"
-            data-src="https://img.youpin.mi-img.com/shopmain/427b8614ed4b3250bd43729b24a70b50.png?w=800&amp;h=800"
-            alt=""
-            style="margin-top: 0px;"
-          />
-          <div class="pro-text">
-            <p class="pro-info" title="AI智能练字笔">AI智能练字笔</p>
-            <p
-              class="pro-desc"
-              title="视频教学/AI即时打分/同步教学大纲/笔迹回看"
-            >
-              视频教学/AI即时打分/同步教学大...
-            </p>
-            <p class="pro-price">
-              <span class="tag">¥</span><span>199</span
-              ><span class="pro-flag">起</span>
-            </p>
-          </div>
+          <router-link to="/detail">
+            <img
+              class="pro-img"
+              src="https://img.youpin.mi-img.com/shopmain/427b8614ed4b3250bd43729b24a70b50.png?w=800&amp;h=800"
+              data-src="https://img.youpin.mi-img.com/shopmain/427b8614ed4b3250bd43729b24a70b50.png?w=800&amp;h=800"
+              alt=""
+              style="margin-top: 0px;"
+            />
+            <div class="pro-text">
+              <p class="pro-info" title="AI智能练字笔">AI智能练字笔</p>
+              <p
+                class="pro-desc"
+                title="视频教学/AI即时打分/同步教学大纲/笔迹回看"
+              >
+                视频教学/AI即时打分/同步教学大...
+              </p>
+              <p class="pro-price">
+                <span class="tag">¥</span><span>199</span
+                ><span class="pro-flag">起</span>
+              </p>
+            </div>
+          </router-link>
         </div>
         <div class="m-progress-wrap-con">
           <div class="m-bar-con">

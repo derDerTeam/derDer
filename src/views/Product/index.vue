@@ -15,20 +15,28 @@
     </div>
     <Tabbed></Tabbed>
     <Crowd></Crowd>
-    <Seckill :bannerList="[1, 1, 2, 3, 4, 5]"></Seckill>
+    <Seckill
+      :bannerList="[1, 1, 2, 3, 4, 5]"
+      :nH="nH"
+      :nM="nM"
+      :nS="nS"
+    ></Seckill>
     <News :bannerList="[1, 1, 2, 3, 4, 5]"></News>
     <Recommend></Recommend>
+    <FixedBar></FixedBar>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
+import FixedBar from "../../components/FixedBar";
 import Category from "./category.vue";
 import Tabbed from "./tabbed";
 import Crowd from "./crowd";
 import Seckill from "./seckill";
 import News from "@/views/Product/news";
 import Recommend from "@/views/Product/recommend";
+import { daojishi } from "@/utils/dateUtils";
 export default {
   name: "Product",
   data() {
@@ -70,9 +78,16 @@ export default {
             "https://img.youpin.mi-img.com/test/577750a5a3ad543ded7ea6da51c5ebdd.jpeg?w=1080&h=450",
         },
       ],
+      nH: "",
+      nM: "",
+      nS: "",
     };
   },
-  components: { Category, Tabbed, Crowd, Seckill, News, Recommend },
+  components: { Category, Tabbed, Crowd, Seckill, News, Recommend, FixedBar },
+  mounted() {
+    daojishi(this, "2020/12/10 09:00:00");
+    console.log(this.nH, this.nM, this.nS);
+  },
 };
 </script>
 

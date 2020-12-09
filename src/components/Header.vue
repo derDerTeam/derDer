@@ -6,8 +6,18 @@
 
         <div class="nav">
           <ul class="clearfix">
-            <li>限时抢购</li>
-            <li>企业采购</li>
+            <li>
+              <a
+                href="https://m.xiaomiyoupin.com/w/secbuy?_rt=weex&activity_id=5"
+                target="_block"
+                >限时抢购</a
+              >
+            </li>
+            <li>
+              <a href="https://m.xiaomiyoupin.com/w/mifans?_rt=weex&pageid=3154"
+                >企业采购</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -66,7 +76,7 @@ export default {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 101;
   .container {
     width: 1080px;
     margin: 0 auto;
