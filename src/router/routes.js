@@ -4,6 +4,7 @@ import Detail from "@/views/Detail";
 const Product = () => import("@/views/Product");
 const Login = () => import('@/views/Login');
 const Register = () => import('@/views/Register');
+import CartList from '@/views/CartList'
 
 export default [
   {
@@ -11,7 +12,7 @@ export default [
     component: Order,
   },
   {
-    path: "/search",
+    path: "/search/:keyword?",
     component: Search,
   },
   {
@@ -33,4 +34,8 @@ export default [
     path: "/detail",
     component: Detail,
   },
+  {
+    path: '/cartList',
+    component:CartList
+}
 ];

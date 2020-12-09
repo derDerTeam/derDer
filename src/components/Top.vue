@@ -13,7 +13,7 @@
         <!-- 登录状态 -->
         <div class="S-title login-info" v-else>
           <i class="S-login"></i>
-          <span class="S-username">{{ $store.state.account }}</span>
+          <span class="S-username">{{ $store.state }}</span>
           <i class="S-down-icon"></i>
           <ul class="S-login-info-ul">
             <li>
