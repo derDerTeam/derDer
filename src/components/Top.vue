@@ -216,6 +216,7 @@ export default {
       .clauses-con {
         padding-right: 40px;
         padding-left: 11px;
+        z-index: 9999;
 
         .S-down-icon {
           display: inline-block;

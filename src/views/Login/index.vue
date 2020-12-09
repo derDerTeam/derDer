@@ -21,7 +21,7 @@
 			}
 		},
 		methods: {
-
+			
 		},
 		components: {
 			userLogin,
@@ -38,7 +38,7 @@
 		.main-content {
 			background-color: #fff;
 			max-width: 854px;
-			height: 550px;
+			height: 100%;
 			margin: 0 auto 20px;
 		}
 	}

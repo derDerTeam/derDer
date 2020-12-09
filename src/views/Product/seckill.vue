@@ -12,11 +12,11 @@
         >
         <div class="countdown fl">
           <div class="h-countdown-wrap">
-            <span class="time-item-home hour">12</span
+            <span class="time-item-home hour">{{ nH }}</span
             ><span class="m-countdown-dot-home">:</span
-            ><span class="time-item-home minute">34</span
+            ><span class="time-item-home minute">{{ nM }}</span
             ><span class="m-countdown-dot-home">:</span
-            ><span class="time-item-home second">16</span>
+            ><span class="time-item-home second">{{ nS }}</span>
           </div>
         </div>
       </div>
@@ -49,12 +49,14 @@
                     class="img-container"
                     style="width: 266px; height: 266px;"
                   >
-                    <img
-                      src="https://img.youpin.mi-img.com/shopmain/2dcf036cc890a229a8dd309699885233.jpg"
-                      data-src="https://img.youpin.mi-img.com/shopmain/2dcf036cc890a229a8dd309699885233.jpg"
-                      alt="2020西湖龙井"
-                      style="width: 266px; height: 266px;"
-                    />
+                    <router-link to="/detail">
+                      <img
+                        src="https://img.youpin.mi-img.com/shopmain/2dcf036cc890a229a8dd309699885233.jpg"
+                        data-src="https://img.youpin.mi-img.com/shopmain/2dcf036cc890a229a8dd309699885233.jpg"
+                        alt="2020西湖龙井"
+                        style="width: 266px; height: 266px;"
+                      />
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -88,7 +90,7 @@ import Swiper from "swiper";
 import "swiper/css/swiper.min.css";
 export default {
   name: "Seckill",
-  props: ["bannerList"],
+  props: ["bannerList", "nH", "nM", "nS"],
   watch: {
     bannerList: {
       immediate: true,
