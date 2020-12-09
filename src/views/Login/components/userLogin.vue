@@ -28,19 +28,19 @@
 			<!-- 输入框 -->
 			<div class="tabs_con">
 				<div id="loginbox">
-					<input v-if="login_regise_sms" class="item_account" autocomplete="off" type="text" name="user" id="username"
+					<input v-if="login_regise_sms" v-model="account.user_acc" class="item_account" autocomplete="off" type="text" name="user" id="username"
 						placeholder="邮箱/手机号码/小米ID">
 					<div v-if="!login_regise_sms" class="phone_login_name">
 						<p class="phone_start_box">
 							<span class="phone_start">+86</span>
 						</p>
-						<input type="text" placeholder="手机号码">
+						<input type="text" v-model="account.user_acc" placeholder="手机号码">
 					</div>
 
-					<input v-if="login_regise_sms" type="password" class="item_account" placeholder="密码" autocomplete="off"
+					<input v-if="login_regise_sms" v-model="account.passwd" type="password" class="item_account" placeholder="密码" autocomplete="off"
 						id="pwd" name="password">
 					<div v-if="!login_regise_sms" class="phone_login_msmCode">
-						<input type="text" class="phone_login_sms" placeholder="短信验证码">
+						<input type="text" v-model="account.passwd" class="phone_login_sms" placeholder="短信验证码">
 						<div class="code_panel">
 							<a class="send_ticket" href="javascript:;">获取验证码</a>
 						</div>
@@ -53,7 +53,8 @@
 						</span>
 						<div class="reverse">
 							<div class="reg_forget_links" v-if="login_regise_sms">
-								<a class="outer-link" href="">立即注册</a>
+								<!-- <a class="outer-link" href="">立即注册</a> -->
+								<router-link to="/register">立即注册</router-link>
 								<span class="segmentation">|</span>
 								<a class="outer-link" href="">忘记密码？</a>
 							</div>
@@ -98,14 +99,20 @@
 		name: "userLogin",
 		data() {
 			return {
-				login_regise_sms: false,
+				login_regise_sms: true,
 				qrCode: false,
+				account: {
+					user_acc: "",
+					passwd: ""
+				}
 			}
 		},
 		methods: {
 			// 账号登陆与手机号登陆 切换
 			changes_user_status() {
 				this.login_regise_sms = !this.login_regise_sms;
+				this.account.user_acc = "";
+				this.account.passwd = "";
 			},
 			// 切换 二维码登陆 = 正常登陆
 			changes_login_qrcode() {
