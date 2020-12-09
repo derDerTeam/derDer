@@ -14,14 +14,14 @@
          </div>
 
          <!-- 推荐商品列表数据 -->
-         <div class="recommend">
-            <p>为您推荐</p>
+       <div class="recommend">
+         <p>为您推荐</p>
          <div class="recommendGoods">
             <!-- 品牌内容 -->
             <div class="goodsList clearFix" >
                <router-link to="/detail">
                      <div class="goodsItem">
-                        <img src="./images/001.jpg" alt="">
+                        <img src="../../assets/images/search01.jpg" alt="">
                         <p>云米自动波轮洗衣机5.5kg</p>
                         <span><i>￥</i>678</span>
                      </div>
@@ -53,7 +53,7 @@
          <div class="goodsList clearFix" >
          <router-link to="/detail">
                <div class="goodsItem">
-                  <img src="./images/001.jpg" alt="">
+                  <img src="../../assets/images/search01.jpg" alt="">
                   <p>云米自动波轮洗衣机5.5kg</p>
                   <span><i>￥</i>678</span>
                </div>
@@ -81,39 +81,39 @@
                <span><i>￥</i>678</span>
             </div>
             <div class="goodsItem">
-               <img src="./images/001.jpg" alt="">
+               <img src="../../assets/images/search01.jpg" alt="">
                <p>云米自动波轮洗衣机5.5kg</p>
                <span><i>￥</i>678</span>
             </div>
             <div class="goodsItem">
-               <img src="./images/001.jpg" alt="">
+               <img src="../../assets/images/search01.jpg" alt="">
                <p>云米自动波轮洗衣机5.5kg</p>
                <span><i>￥</i>678</span>
             </div>
             <div class="goodsItem">
-               <img src="./images/001.jpg" alt="">
+               <img src="../../assets/images/search01.jpg" alt="">
                <p>云米自动波轮洗衣机5.5kg</p>
                <span><i>￥</i>678</span>
             </div>
          </div>
          <div class="goodsList clearFix">
             <div class="goodsItem">
-               <img src="./images/001.jpg" alt="">
+               <img src="../../assets/images/search01.jpg" alt="">
                <p>云米自动波轮洗衣机5.5kg</p>
                <span><i>￥</i>678</span>
             </div>
             <div class="goodsItem">
-               <img src="./images/001.jpg" alt="">
+               <img src="../../assets/images/search01.jpg" alt="">
                <p>云米自动波轮洗衣机5.5kg</p>
                <span><i>￥</i>678</span>
             </div>
             <div class="goodsItem">
-               <img src="./images/001.jpg" alt="">
+               <img src="../../assets/images/search01.jpg" alt="">
                <p>云米自动波轮洗衣机5.5kg</p>
                <span><i>￥</i>678</span>
             </div>
             <div class="goodsItem">
-               <img src="./images/001.jpg" alt="">
+               <img src="../../assets/images/search01.jpg" alt="">
                <p>云米自动波轮洗衣机5.5kg</p>
                <span><i>￥</i>678</span>
             </div>
@@ -139,7 +139,7 @@
   export default {
     name:'Search',
     data(){
-      //  show: true
+      
     },
    methods:{
       
@@ -151,143 +151,143 @@
 <style lang="less" scoped>
    div{
     background-color: #F2F2F2;
-   //外层容器
-   .searchContainer{
-   
-      width: 1080px;
-      margin: 0 auto;
+      //外层容器
+      .searchContainer{
       
-      //没有商品数据
-      .noGoods{
-         // height: 600px;
-         .noData{
-            text-align: center;
-            margin-top: 80px;
-            margin-bottom: 100px;
-            p{
-               margin: 20px 0;
-            }
-            a{
-               font-size: 14px;
-               padding: 3px 25px;
-               border: 1px solid #333;
-               margin-bottom: 50px;
-            }
-         }
-         .recommend{
-            text-align: center;
-            p{
-               font-size: 14px;
-               // margin-bottom: 40px;
-            }
-            .recommendGoods{
-               margin-top: 40px;
-            .goodsList{
-            
-               .clearFix::after{
-                  content:"";
-                  display: block;
-                  clear:both;
-                  }
-                  .goodsItem{
-                  cursor: pointer;
-                  float: left;
-                  width:262px ;
-                  height: 267px;
-                  background-color: #fff;
-                  text-align: center;
-                  margin-right: 5px;
-                  margin-bottom: 5px;
-                  transition: all 0.5s;
-                  
-                  }
-                  .goodsItem:hover{
-                  height: 260px;
-                  box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
-                        0px 0px 20px rgba(0,0,0,0.1) inset;
-
-                  }
-               
-                  img{
-                  width: 195px;
-                  height: auto; 
-                  }
-                  p{
-                  text-align: center;
-                  font-size: 16px;
-                  // cursor: pointer;
-                  }
-                  span{
-                  display: block;
-                  margin-top: 8px;
-                  color: #A92112;
-                  }
-               
-            }
-            }
-         
-         }
-      }
-
-
-      //有商品数据
-      .searchContent{
          width: 1080px;
          margin: 0 auto;
-         .searchTit{
-            font-size: 14px;
-            margin: 30px 0 10px 0;
-         }
-         .goodsList{
          
-         .clearFix::after{
-            content:"";
-            display: block;
-            clear:both;
+         //没有商品数据
+         .noGoods{
+            // height: 600px;
+            .noData{
+               text-align: center;
+               margin-top: 80px;
+               margin-bottom: 100px;
+               p{
+                  margin: 20px 0;
+               }
+               a{
+                  font-size: 14px;
+                  padding: 3px 25px;
+                  border: 1px solid #333;
+                  margin-bottom: 50px;
+               }
             }
-            .goodsItem{
-            cursor: pointer;
-            float: left;
-            width:262px ;
-            height: 267px;
-            background-color: #fff;
-            text-align: center;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            transition: all 0.5s;
-            
-            }
-            .goodsItem:hover{
-            height: 260px;
-            box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
-                  0px 0px 20px rgba(0,0,0,0.1) inset;
+            .recommend{
+               text-align: center;
+               p{
+                  font-size: 14px;
+                  // margin-bottom: 40px;
+               }
+               .recommendGoods{
+                  margin-top: 40px;
+               .goodsList{
+               
+                  .clearFix::after{
+                     content:"";
+                     display: block;
+                     clear:both;
+                     }
+                     .goodsItem{
+                     cursor: pointer;
+                     float: left;
+                     width:262px ;
+                     height: 267px;
+                     background-color: #fff;
+                     text-align: center;
+                     margin-right: 5px;
+                     margin-bottom: 5px;
+                     transition: all 0.5s;
+                     
+                     }
+                     .goodsItem:hover{
+                     height: 260px;
+                     box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+                           0px 0px 20px rgba(0,0,0,0.1) inset;
 
+                     }
+                  
+                     img{
+                     width: 195px;
+                     height: auto; 
+                     }
+                     p{
+                     text-align: center;
+                     font-size: 16px;
+                     // cursor: pointer;
+                     }
+                     span{
+                     display: block;
+                     margin-top: 8px;
+                     color: #A92112;
+                     }
+                  
+               }
+               }
+            
             }
-         
-            img{
-            width: 195px;
-            height: auto; 
+         }
+
+
+         //有商品数据
+         .searchContent{
+            width: 1080px;
+            margin: 0 auto;
+            .searchTit{
+               font-size: 14px;
+               margin: 30px 0 10px 0;
             }
-            p{
-            text-align: center;
-            font-size: 16px;
-            // cursor: pointer;
-            }
-            span{
-            display: block;
-            margin-top: 8px;
-            color: #A92112;
+            .goodsList{
+            
+            .clearFix::after{
+               content:"";
+               display: block;
+               clear:both;
+               }
+               .goodsItem{
+               cursor: pointer;
+               float: left;
+               width:262px ;
+               height: 267px;
+               background-color: #fff;
+               text-align: center;
+               margin-right: 5px;
+               margin-bottom: 5px;
+               transition: all 0.5s;
+               
+               }
+               .goodsItem:hover{
+               height: 260px;
+               box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+                     0px 0px 20px rgba(0,0,0,0.1) inset;
+
+               }
+            
+               img{
+               width: 195px;
+               height: auto; 
+               }
+               p{
+               text-align: center;
+               font-size: 16px;
+               // cursor: pointer;
+               }
+               span{
+               display: block;
+               margin-top: 8px;
+               color: #A92112;
+               }
+               
             }
             
          }
-         
+         //分页器
+         .search-pagination{
+            margin-bottom: 90px;
+            text-align: center;
+            margin-top: 30px;
+         }
       }
-      //分页器
-      .search-pagination{
-         margin-bottom: 90px;
-         text-align: center;
-         margin-top: 30px;
-      }
-   }
    }
 </style>
