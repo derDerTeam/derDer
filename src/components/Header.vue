@@ -19,7 +19,12 @@
         <div class="seach">
           <i class="seach-icon"></i>
           <div class="input">
-            <input type="text" placeholder="搜一搜" />
+            <input
+              type="text"
+              v-model="keyword"
+              placeholder="搜一搜"
+              @change.enter="toSearch"
+            />
           </div>
         </div>
       </div>
@@ -33,10 +38,19 @@ export default {
   data() {
     return {
       count: 0,
+      keyword: "",
     };
   },
   methods: {
     goCart() {},
+    toSearch() {
+      if (this.keyword === "") {
+        return;
+      }
+      this.$router.push({
+        path: "/search/" + this.keyword,
+      });
+    },
   },
 };
 </script>
@@ -49,6 +63,10 @@ export default {
   margin-bottom: 5px;
   // border-bottom: 1px solid #eee;
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   .container {
     width: 1080px;
     margin: 0 auto;
@@ -122,6 +140,7 @@ export default {
             border: none;
             color: #333;
             font-size: 14px;
+            outline: none;
           }
         }
       }

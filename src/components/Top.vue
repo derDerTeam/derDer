@@ -6,14 +6,14 @@
           <router-link to="/login">
             <span>登录</span>
           </router-link>
-          <router-link to="/login/register">
+          <router-link to="/register">
             <span>注册</span>
           </router-link>
         </div>
         <!-- 登录状态 -->
         <div class="S-title login-info" v-else>
           <i class="S-login"></i>
-          <span class="S-username">{{ $store.state.account }}</span>
+          <span class="S-username">{{ $store.state }}</span>
           <i class="S-down-icon"></i>
           <ul class="S-login-info-ul">
             <li>

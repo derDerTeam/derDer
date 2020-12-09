@@ -11,7 +11,7 @@
         ></a
       ></span>
     </div>
-    <div class="m-sec-main mt1">
+    <div class="m-sec-main mt1 clearfix">
       <div
         class="home-good-item  m-tag-a item-pos0 home-good-item-big   no-ml"
         data-src="https://www.xiaomiyoupin.com/detail?gid=138647"
@@ -182,6 +182,46 @@ export default {
       }
     }
   }
+  .home-good-item {
+    float: left;
+    width: 266px;
+    .item-inner {
+      position: relative;
+      width: 266px;
+      height: 210px;
+      background: #f3f0e9;
+    }
+    .pro-img,
+    .home-good-item .pro-img1 {
+      position: absolute;
+      right: 15px;
+      bottom: 10px;
+      width: 130px;
+      height: 130px;
+      z-index: 4;
+    }
+    .pro-text {
+      position: relative;
+      z-index: 6;
+      padding-top: 25px;
+      padding-left: 15px;
+    }
+    .pro-info {
+      color: #333;
+      margin-top: 0;
+      font-size: 20px;
+      line-height: 24px;
+      height: 24px;
+    }
+    .pro-price {
+      font-size: 20px;
+      line-height: 24px;
+      height: 24px;
+      overflow: hidden;
+      color: #a92112;
+      margin-top: 11px;
+    }
+  }
   .home-good-item-big {
     width: 537px;
     .item-inner {
@@ -228,6 +268,7 @@ export default {
       }
     }
   }
+
   .m-progress-wrap-con {
     .m-bar-con {
       width: 100%;
@@ -253,6 +294,27 @@ export default {
           font-size: 18px;
         }
       }
+      .progress-tag-con {
+        text-align: center;
+        height: 18px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        overflow: hidden;
+        display: inline-block;
+
+        .common-tag-img,
+        .progress-tag-con .common-tag-text {
+          height: 18px;
+          border-radius: 2px;
+          vertical-align: bottom;
+        }
+        .common-tag-text {
+          padding: 0 6px;
+          color: #fff;
+          font-size: 13px;
+          line-height: 18px;
+        }
+      }
       .m-persent {
         margin-right: 15px;
         color: #a92112;
@@ -262,11 +324,10 @@ export default {
     }
   }
 }
-.home-good-item {
-  float: left;
-  width: 266px;
-  margin-left: 5px;
-}
+// .home-good-item {
+//   float: left;
+//   width: 266px;
+// }
 .m-icons-more {
   width: 30px;
   height: 30px;
@@ -278,5 +339,12 @@ export default {
 .m-icons {
   display: inline-block;
   background-image: url(../../assets/images/yp-icons.png);
+}
+.clearfix::after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+  visibility: hidden;
 }
 </style>

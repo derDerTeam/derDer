@@ -222,9 +222,6 @@ export default {
       font-size: 13px;
 
       span{
-        i{
-          
-        }
         a {
           margin: 0 6px;
           cursor: pointer;
@@ -534,7 +531,7 @@ export default {
       margin-top: 10px;
       color: #c00000;
     }
-    // 
+    // 付款金额
     .checkout-summary{
       margin-top: 37px;
       text-align: right;
@@ -576,6 +573,7 @@ export default {
         }
       }
     }
+    // 去下单
     .bottom-pay{
       margin-top: 45px;
       text-align: right;
