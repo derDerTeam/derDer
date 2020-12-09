@@ -1,5 +1,5 @@
 {
-  "name": "derderproject",
+  "name": "zrc10010",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -31,5 +31,17 @@
     "less-loader": "^7.1.0",
     "mockjs": "^1.1.0",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "description": "```\r npm install\r ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derDerTeam/derDer.git"
+  },
+  "author": "zrc10086",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derDerTeam/derDer/issues"
+  },
+  "homepage": "https://github.com/derDerTeam/derDer#readme"
 }
