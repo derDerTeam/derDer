@@ -8,7 +8,7 @@
     <!-- 头部 -->
     <div class="header">
       <span>
-        <a href="###">首页 
+        <a href="javascript:;" @click="$router.push('/')">首页 
           <i class="iconfont icon-arrow-right"></i>
         </a>
       </span>

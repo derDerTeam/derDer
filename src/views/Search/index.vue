@@ -7,12 +7,13 @@
       <div class="searchTit"> 为您找到54条数据</div>
       <!-- 品牌内容 -->
        <div class="goodsList clearFix" >
-        
-          <div class="goodsItem" >
-             <img src="./images/001.jpg" alt="">
-             <p>云米自动波轮洗衣机5.5kg</p>
-             <span><i>￥</i>678</span>
-          </div>
+        <router-link to="/detail">
+            <div class="goodsItem">
+               <img src="./images/001.jpg" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+          </router-link>
           <div class="goodsItem">
              <img src="./images/002.jpg" alt="">
              <p>云米自动波轮洗衣机5.5kg</p>
@@ -74,8 +75,9 @@
           </div>
        </div>
      </div>
+
        <!-- 分页器 -->
-       <div class="pagination">
+       <div class="search-pagination">
         <el-pagination
           background
           layout="prev, pager, next"
@@ -94,8 +96,11 @@
   export default {
     name:'Search',
     data(){
-       show: true
-    }
+      //  show: true
+    },
+   methods:{
+      
+   }
     
   }
 </script>
@@ -159,6 +164,11 @@ div{
     }
    
   }
+  .search-pagination{
+   margin-bottom: 90px;
+   text-align: center;
+   margin-top: 30px;
+ }
 }
 }
 </style>
