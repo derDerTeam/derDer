@@ -122,6 +122,7 @@ export default {
             border: none;
             color: #333;
             font-size: 14px;
+            outline: none;
           }
         }
       }
