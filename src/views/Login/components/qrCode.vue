@@ -6,33 +6,32 @@
 			<a class="qrCode" href="#" @click="changes_login_user"></a>
 		</div>
 
+		<div class="middle_Qrcode">
+				
+		</div>
+
 		<div class="tablesArea">
+			<!-- 其他登录方式 s -->
+			<div style="display: block;" class="other_login_type">
+				<fieldset class="oth_type_tit">
+					<legend align="center" class="oth_type_txt">其他方式登录</legend>
+				</fieldset>
 
-			<div class="other_panel clearfix">
-				<!-- 其他登录方式 s -->
-				<div style="display: block;" class="other_login_type">
-					<fieldset class="oth_type_tit">
-						<legend align="center" class="oth_type_txt">其他方式登录</legend>
-					</fieldset>
-
-					<div id="sns-login-links" class="oth_type_links">
-						<a class="sns-qq icon_type " data-type="qq" href="" title="QQ登录" target="_blank">
-							<i class="iconfont iconqq"></i>
-						</a>
-						<a class="btn_weibo icon_type " data-type="weibo" href="" title="微博登录" target="_blank">
-							<i class="iconfont iconweibo"></i>
-						</a>
-						<a class="alipay icon_type " data-type="alipay" href="" title="支付宝登录" target="_blank">
-							<i class="iconfont iconzhifubao"></i>
-						</a>
-						<a class="btn_weixin icon_type " data-type="weixin" href="" title="微信登录" target="_blank">
-							<i class="iconfont iconweixin"></i>
-						</a>
-					</div>
+				<div id="sns-login-links" class="oth_type_links">
+					<a class="sns-qq icon_type " data-type="qq" href="" title="QQ登录" target="_blank">
+						<i class="iconfont iconqq"></i>
+					</a>
+					<a class="btn_weibo icon_type " data-type="weibo" href="" title="微博登录" target="_blank">
+						<i class="iconfont iconweibo"></i>
+					</a>
+					<a class="alipay icon_type " data-type="alipay" href="" title="支付宝登录" target="_blank">
+						<i class="iconfont iconzhifubao"></i>
+					</a>
+					<a class="btn_weixin icon_type " data-type="weixin" href="" title="微信登录" target="_blank">
+						<i class="iconfont iconweixin"></i>
+					</a>
 				</div>
 			</div>
-			<!-- </div>
-			</div> -->
 		</div>
 	</div>
 </template>
@@ -46,6 +45,7 @@
 			}
 		},
 		methods: {
+			// 切换到账号登陆
 			changes_login_user() {
 				this.qrCode = !this.qrCode;
 				this.$emit('update:qrState', this.qrCode);
@@ -61,8 +61,6 @@
 
 		// 二维码
 		#custom_display_2 {
-			height: 80px;
-
 			a {
 				width: 80px;
 				height: 80px;
