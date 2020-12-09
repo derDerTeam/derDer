@@ -27,38 +27,6 @@
             <div class="title">收货地址</div>
             <div class="clearfix list">
               <div class="address-list">
-                <!-- 添加新地址 -->
-                <!--              
-<el-button type="text" @click="dialogTableVisible = true">打开嵌套表格的 Dialog</el-button>
-
-<el-dialog title="收货地址" >
-  <el-table >
-    <el-table-column property="date" label="日期" width="150"></el-table-column>
-    <el-table-column property="name" label="姓名" width="200"></el-table-column>
-    <el-table-column property="address" label="地址"></el-table-column>
-  </el-table>
-</el-dialog>
-
-
-<el-button type="text" @click="dialogFormVisible = true">打开嵌套表单的 Dialog</el-button>
-
-<el-dialog title="收货地址" >
-  <el-form :model="form">
-    <el-form-item label="活动名称" >
-      <el-input v-model="form.name" autocomplete="off"></el-input>
-    </el-form-item>
-    <el-form-item label="活动区域" >
-      <el-select v-model="form.region" placeholder="请选择活动区域">
-        <el-option label="区域一" value="shanghai"></el-option>
-        <el-option label="区域二" value="beijing"></el-option>
-      </el-select>
-    </el-form-item>
-  </el-form>
-  <div slot="footer" class="dialog-footer">
-    <el-button @click="dialogFormVisible = false">取 消</el-button>
-    <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
-  </div>
-</el-dialog> -->
                 <div class="address-item">
                   <div class="addIcon">
                     <a
@@ -67,7 +35,60 @@
                       href="javascript:;"
                     ></a>
                   </div>
-                  <div class="addAds">添加新地址</div>
+                  <div class="addAds" @click="dialogFormVisible = true">
+                    添加新地址
+                  </div>
+                  <!-- 弹出的添加新地址框 -->
+                  <el-dialog title="添加收获地址">
+                    <el-form :model="form">
+                      <!-- 姓名 -->
+                      <el-input
+                        v-model="form.name"
+                        autocomplete="off"
+                        placeholder="姓名"
+                      ></el-input>
+                      <!-- 手机号 -->
+                      <el-input
+                        v-model="form.phoneNumber"
+                        autocomplete="off"
+                        placeholder="手机号"
+                      ></el-input>
+                      <!-- 省/市/区/街道 -->
+                      <el-select
+                        v-model="form.region"
+                        placeholder="请选择省/市/区/街道"
+                      >
+                        <el-option label="省" value="shanghai"></el-option>
+                        <el-option label="市" value="beijing"></el-option>
+                        <el-option label="区" value="beijing"></el-option>
+                        <el-option label="街道" value="beijing"></el-option>
+                      </el-select>
+                      <!-- 详细地址 -->
+                      <textarea
+                        placeholder="详细地址"
+                        class="remarks-cont"
+                        v-model="message"
+                      ></textarea>
+                      <!-- 邮政编号 -->
+                        <el-input
+                        v-model="form.postalCode"
+                        autocomplete="off"
+                        placeholder="邮政编号"
+                      ></el-input>
+                      <!-- 默认的复选框 -->
+                      <el-checkbox v-model="checked">默认</el-checkbox>
+                    </el-form>
+                    <div slot="footer" class="dialog-footer">
+                      <el-button @click="dialogFormVisible = false"
+                        >取 消</el-button
+                      >
+                      <el-button
+                        type="primary"
+                        @click="dialogFormVisible = false"
+                        >确 定</el-button
+                      >
+                    </div>
+                  </el-dialog>
                 </div>
               </div>
             </div>
@@ -121,6 +142,7 @@
             </div>
             <!-- 发票有关内容 -->
             <div class="form-invioce-item">
+              <!-- 发票类型 -->
               <div class="form-item no-border">
                 <span class="left-label">发票类型</span>
                 <div class="select">
@@ -130,6 +152,8 @@
                   </div>
                 </div>
               </div>
+              <!-- 发票抬头 -->
+
               <!-- 发票遇到的一些问题 -->
               <div class="form-invoice-pro">
                 <a
@@ -140,18 +164,18 @@
               </div>
             </div>
             <!-- 买家留言 -->
-          <div class="form-item">
-            <span class="left-label">买家留言</span>
-            <!-- 填写留言 -->
-            <span class="select">
-              <textarea
-                type="text"
-                class="userMessage marginBottom"
-                placeholder="填写内容需与商家协商并确认，45字以内"
-                maxlength="45"
-              ></textarea>
-            </span>
-          </div>
+            <div class="form-item">
+              <span class="left-label">买家留言</span>
+              <!-- 填写留言 -->
+              <span class="select">
+                <textarea
+                  type="text"
+                  class="userMessage marginBottom"
+                  placeholder="填写内容需与商家协商并确认，45字以内"
+                  maxlength="45"
+                ></textarea>
+              </span>
+            </div>
           </div>
         </div>
         <!-- 优惠券 -->
@@ -191,7 +215,48 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+
+      // 默认复选框
+       checked: true
+
+      // 地址的数据
+      gridData: [
+        {
+          date: "2016-05-02",
+          name: "王小虎",
+          address: "上海市普陀区金沙江路 1518 弄",
+        },
+        {
+          date: "2016-05-04",
+          name: "王小虎",
+          address: "上海市普陀区金沙江路 1518 弄",
+        },
+        {
+          date: "2016-05-01",
+          name: "王小虎",
+          address: "上海市普陀区金沙江路 1518 弄",
+        },
+        {
+          date: "2016-05-03",
+          name: "王小虎",
+          address: "上海市普陀区金沙江路 1518 弄",
+        },
+      ],
+      dialogTableVisible: false,
+      dialogFormVisible: false,
+      form: {
+        name: "",
+        region: "",
+        date1: "",
+        date2: "",
+        delivery: false,
+        type: [],
+        resource: "",
+        desc: "",
+      },
+      formLabelWidth: "120px",
+    };
   },
   created() {},
   computed: {},
@@ -212,7 +277,7 @@ export default {
     margin: 0 auto 100px;
     width: 1073px;
     min-height: 400px;
-//  面包屑 
+    //  面包屑
     .m-secondary-navigator {
       padding: 30px 0;
       width: 100%;
@@ -221,7 +286,7 @@ export default {
       background: transparent repeat 0 0 none;
       font-size: 13px;
 
-      span{
+      span {
         a {
           margin: 0 6px;
           cursor: pointer;
@@ -266,8 +331,8 @@ export default {
               .addIcon {
                 margin-top: 68px;
                 text-align: center;
-                a{
-                   text-decoration: none;
+                a {
+                  text-decoration: none;
                 }
                 .iconfont {
                   display: inline-block;
@@ -323,7 +388,6 @@ export default {
     // 有品精选
     .merchant {
       width: 100%;
-      
 
       .merchant-info {
         margin-top: 55px;
@@ -516,7 +580,7 @@ export default {
               font-size: 14px;
               padding-top: 12px;
             }
-            .marginBottom{
+            .marginBottom {
               margin-bottom: 23px;
             }
           }
@@ -524,49 +588,49 @@ export default {
       }
     }
     // 优惠券
-    .checkout-coupons-con{
+    .checkout-coupons-con {
       position: relative;
       float: left;
-      height:40px;
+      height: 40px;
       margin-top: 10px;
       color: #c00000;
     }
     // 付款金额
-    .checkout-summary{
+    .checkout-summary {
       margin-top: 37px;
       text-align: right;
       border-bottom: 1px solid #e7e7e7;
       width: 100%;
       height: 157px;
-      .check-freeInfo{
-        text-align:right;
+      .check-freeInfo {
+        text-align: right;
         float: right;
         .freeInfo-item {
           height: 25px;
           font-size: 14px;
           display: block;
           position: relative;
-          .freeInfo-key{
-            position:absolute;
+          .freeInfo-key {
+            position: absolute;
             width: 126px;
             display: block;
           }
-          .freeInfo-value{
+          .freeInfo-value {
             margin-left: 25px;
             margin-right: 20px;
             padding-left: 126px;
             display: block;
             color: #c00000;
-            white-space:nowrap;
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
           }
         }
-        .total{
+        .total {
           font-size: 18px;
           margin-top: 37px;
           margin-bottom: 20px;
-          .freeInfo-value{
+          .freeInfo-value {
             margin-right: 20px;
             color: #c00000;
           }
@@ -574,27 +638,27 @@ export default {
       }
     }
     // 去下单
-    .bottom-pay{
+    .bottom-pay {
       margin-top: 45px;
       text-align: right;
-      a{
+      a {
         text-decoration: none;
       }
-      .m-btns{
+      .m-btns {
         color: #fff;
-        background-color:#845f3f;
-        border-color:#845f3f;
+        background-color: #845f3f;
+        border-color: #845f3f;
         min-width: 167px;
         height: 52px;
-        line-height:50px;
+        line-height: 50px;
         font-size: 20px;
         display: inline-block;
-        border-radius:2px;
+        border-radius: 2px;
         text-align: center;
         border: 1px solid #666;
         box-sizing: border-box;
-        padding:0 6px;
-        transition: all .5s cubic-bezier(0,1,.5,1);
+        padding: 0 6px;
+        transition: all 0.5s cubic-bezier(0, 1, 0.5, 1);
       }
     }
   }
