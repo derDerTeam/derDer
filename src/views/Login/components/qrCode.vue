@@ -6,12 +6,21 @@
 			<a class="qrCode" href="#" @click="changes_login_user"></a>
 		</div>
 
+		<div class="middle_Ifon">
+				<h3 class="code_tit">小米帐号扫码登录</h3>
+				<p >
+					请使用小米手机/米家等小米旗下APP扫码登录
+					<i id="qrcode-help" class="icon_help"></i>
+				</p>
+		</div>
+		
 		<div class="middle_Qrcode">
-				
+
 		</div>
 
+		<!-- 其他登录方式(父元素)  -->
 		<div class="tablesArea">
-			<!-- 其他登录方式 s -->
+			<!-- 其他登录方式  -->
 			<div style="display: block;" class="other_login_type">
 				<fieldset class="oth_type_tit">
 					<legend align="center" class="oth_type_txt">其他方式登录</legend>
@@ -82,6 +91,8 @@
 			}
 		}
 
+
+		// 其他登陆方式(父元素)
 		.tablesArea {
 			position: absolute;
 			top: 0px;
