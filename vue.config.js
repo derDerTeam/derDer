@@ -3,11 +3,11 @@ module.exports = {
   // 关闭ESLint的规则
   publicPath: "./",
   lintOnSave: false,
-  // devServer: {
-  //   proxy: {
-  //     "/api": {
-  //       target: "http://182.92.128.115",
-  //     },
-  //   },
-  // },
+  devServer: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:3001",
+      },
+    },
+  },
 };
