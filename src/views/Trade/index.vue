@@ -9,10 +9,12 @@
           <!-- 跳转到首页 -->
           <span>
             <a href="https://www.xiaomiyoupin.com/">首页</a>
+            <i>></i>
           </span>
           <!-- 跳转到购物车 -->
           <span>
             <a href="https://trade.xiaomiyoupin.com/tr/cart">购物车</a>
+            <i>></i>
           </span>
           <!-- 本页确认页 -->
           <span>
@@ -88,27 +90,36 @@
             </div>
             <span class="name">有品精选</span>
           </div>
-          <div class="merchant-spred">
+          <!-- 购买商品的详细信息 -->
+          <div class="merchant-spread">
             <div class="good-container clearfix">
+              <!-- 是否支持7天无理由退货 -->
               <p class="pro-support">
                 <a class="iconfont icon-gou" data-src href="javascript:;"></a>
                 "支持7天无理由退货"
               </p>
+              <!-- 购买商品的图片 -->
               <span class="img">
                 <img src="" alt="" style="width:50px;height:50px" />
               </span>
+              <!-- 商品的名字 -->
               <span class="name">
                 <span class="m-sale-tag">有品秒杀</span>
-                <span class="product-name">净水器</span>
+                <span class="product-name"
+                  >云米互联网净水器小蓝调系列 400G 净水器</span
+                >
               </span>
+              <!-- 商品的总价 -->
               <span class="total">
                 <span>￥</span>
                 <span class="txt">总价</span>
               </span>
+              <!-- 单价 x 数量 -->
               <span class="price">
                 "单价" "元x" "数量"
               </span>
             </div>
+            <!-- 发票有关内容 -->
             <div class="form-invioce-item">
               <div class="form-item no-border">
                 <span class="left-label">发票类型</span>
@@ -119,17 +130,19 @@
                   </div>
                 </div>
               </div>
+              <!-- 发票遇到的一些问题 -->
+              <div class="form-invoice-pro">
+                <a
+                  href="https://www.xiaomiyoupin.com/app/shop/content?id=o6448d039aa15c092"
+                  target="_blank"
+                  >常见发票问题>></a
+                >
+              </div>
             </div>
-            <div class="from-invoice-pro">
-              <a
-                href="https://www.xiaomiyoupin.com/app/shop/content?id=o6448d039aa15c092"
-                target="_blank"
-                >常见发票问题>></a
-              >
-            </div>
-          </div>
+            <!-- 买家留言 -->
           <div class="form-item">
             <span class="left-label">买家留言</span>
+            <!-- 填写留言 -->
             <span class="select">
               <textarea
                 type="text"
@@ -139,6 +152,36 @@
               ></textarea>
             </span>
           </div>
+          </div>
+        </div>
+        <!-- 优惠券 -->
+        <div class="checkout-coupons-con">
+          <span>无可用优惠券</span>
+        </div>
+        <!-- 付款金额 -->
+        <div class="checkout-summary clearfix">
+          <div class="check-freeInfo fr">
+            <div class="freeInfo-item">
+              <span class="freeInfo-key">商品总价:</span>
+              <span class="freeInfo-value">"总价"元</span>
+            </div>
+            <div class="freeInfo-item fee-map-item">
+              <span class="freeInfo-key">运费:</span>
+              <span class="freeInfo-value">"0.00"元</span>
+            </div>
+            <div class="freeInfo-item">
+              <span class="freeInfo-key">优惠:</span>
+              <span class="freeInfo-value">"优惠了多少"元</span>
+            </div>
+            <div class="total">
+              <span class="freeInfo-key">合计:</span>
+              <span class="freeInfo-value">￥"最后的价格"</span>
+            </div>
+          </div>
+        </div>
+        <!-- 去下单 -->
+        <div class="bottom-pay">
+          <a class="m-btns" href="javascript:;">去下单</a>
         </div>
       </div>
     </div>
@@ -169,7 +212,7 @@ export default {
     margin: 0 auto 100px;
     width: 1073px;
     min-height: 400px;
-
+//  面包屑 
     .m-secondary-navigator {
       padding: 30px 0;
       width: 100%;
@@ -178,8 +221,10 @@ export default {
       background: transparent repeat 0 0 none;
       font-size: 13px;
 
-      span:after {
-        content: ">";
+      span{
+        i{
+          
+        }
         a {
           margin: 0 6px;
           cursor: pointer;
@@ -187,11 +232,12 @@ export default {
         }
       }
     }
+    // 收货地址
     .addressMain {
       .address {
         .title {
           display: block;
-          margin: bottom 15px;
+          margin-bottom: 15px;
           font-size: 19px;
           color: #333;
         }
@@ -223,6 +269,9 @@ export default {
               .addIcon {
                 margin-top: 68px;
                 text-align: center;
+                a{
+                   text-decoration: none;
+                }
                 .iconfont {
                   display: inline-block;
                 }
@@ -274,9 +323,10 @@ export default {
         }
       }
     }
+    // 有品精选
     .merchant {
       width: 100%;
-      height: 494px;
+      
 
       .merchant-info {
         margin-top: 55px;
@@ -286,6 +336,11 @@ export default {
           display: inline-block;
           height: 30px;
           line-height: 30px;
+          .name {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+          }
           img {
             width: 30px;
             height: 30px;
@@ -293,6 +348,7 @@ export default {
             border: none;
           }
         }
+
         .name {
           margin-left: 10px;
           font-size: 14px;
@@ -302,7 +358,7 @@ export default {
           line-height: 30px;
         }
       }
-      .merchant-spred {
+      .merchant-spread {
         border: 1px solid #e7e7e7;
         padding-left: 20px;
         padding-right: 20px;
@@ -310,24 +366,28 @@ export default {
           position: relative;
           height: 90px;
           line-height: 90px;
+          -webkit-box-sizing: border-box;
           box-sizing: border-box;
           overflow: hidden;
           border-bottom: 1px solid #e7e7e7;
           .pro-support {
             position: absolute;
             left: 65px;
-            bottom: 3px;
+            bottom: -7px;
             height: 25px;
             line-height: 25px;
             font-size: 12px;
             color: #999;
           }
           .img {
-            margin-top: 20px;
             width: 50px;
             float: left;
             height: 90px;
             line-height: 90px;
+            img {
+              vertical-align: middle;
+              border: none;
+            }
           }
           .name {
             margin-left: 20px;
@@ -336,19 +396,207 @@ export default {
             float: left;
             height: 90px;
             line-height: 90px;
-            .m-sale-tag{
+            .m-sale-tag {
               height: 20px;
               line-height: 20px;
               padding: 0 6px;
               margin-left: 8px;
-              background-color:#c00000;
+              background-color: #c00000;
               color: #fff;
               font-size: 12px;
               vertical-align: 2px;
               border-radius: 2px;
             }
+            .product-name {
+              display: inline-block;
+              vertical-align: middle;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 400px;
+            }
+          }
+          .total {
+            text-align: right;
+            width: 180px;
+            color: #c00000;
+            float: right;
+            height: 90px;
+            line-height: 90px;
+            .txt {
+              margin-right: 3px;
+            }
+          }
+          .price {
+            float: right;
+            height: 90px;
+            line-height: 90px;
           }
         }
+        .form-invioce-item {
+          .form-item {
+            margin-left: 0;
+            margin-right: 0;
+            border-bottom: none;
+            overflow: hidden;
+            margin: 36px 20px 0;
+            .left-label {
+              float: left;
+              height: 50px;
+              line-height: 50px;
+              font-size: 19px;
+              color: #333;
+            }
+            .select {
+              margin-left: 51px;
+              float: left;
+              .option-list {
+                height: 50px;
+                line-height: 50px;
+
+                .option {
+                  border: 1px solid #e7e7e7;
+                  width: 247px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  display: inline-block;
+                  height: 44px;
+                  line-height: 42px;
+                  background-color: #fff;
+                  color: #333;
+                  font-size: 14px;
+                  cursor: pointer;
+                  -webkit-transition: all 0.5s cubic-bezier(0, 1, 0.5, 1);
+                  -o-transition: all 0.5s cubic-bezier(0, 1, 0.5, 1);
+                  transition: all 0.5s cubic-bezier(0, 1, 0.5, 1);
+                  + .option {
+                    margin-left: 10px;
+                  }
+                }
+                .active {
+                  color: #845f4f;
+                  border: 1px solid #845f3f;
+                }
+              }
+            }
+          }
+          .form-invoice-pro {
+            margin: 10px 0 0 126px;
+            a {
+              font-size: 14px;
+              color: #67a3d9;
+              text-decoration: undexline;
+              cursor: pointer;
+            }
+          }
+        }
+        .form-item {
+          margin-left: 0;
+          margin-right: 0;
+          border-bottom: none;
+          overflow: hidden;
+          margin: 36px 20px 0;
+          .left-label {
+            float: left;
+            height: 50px;
+            line-height: 50px;
+            font-size: 19px;
+            color: #333;
+          }
+          .select {
+            margin-left: 51px;
+            float: left;
+            .userMessage {
+              margin-top: 23px;
+              resize: none;
+              width: 762.5px;
+              height: 100px;
+              border: 1px solid #e7e7e7;
+              outline: none;
+              padding-left: 15px;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              font-size: 14px;
+              padding-top: 12px;
+            }
+            .marginBottom{
+              margin-bottom: 23px;
+            }
+          }
+        }
+      }
+    }
+    // 优惠券
+    .checkout-coupons-con{
+      position: relative;
+      float: left;
+      height:40px;
+      margin-top: 10px;
+      color: #c00000;
+    }
+    // 
+    .checkout-summary{
+      margin-top: 37px;
+      text-align: right;
+      border-bottom: 1px solid #e7e7e7;
+      width: 100%;
+      height: 157px;
+      .check-freeInfo{
+        text-align:right;
+        float: right;
+        .freeInfo-item {
+          height: 25px;
+          font-size: 14px;
+          display: block;
+          position: relative;
+          .freeInfo-key{
+            position:absolute;
+            width: 126px;
+            display: block;
+          }
+          .freeInfo-value{
+            margin-left: 25px;
+            margin-right: 20px;
+            padding-left: 126px;
+            display: block;
+            color: #c00000;
+            white-space:nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        .total{
+          font-size: 18px;
+          margin-top: 37px;
+          margin-bottom: 20px;
+          .freeInfo-value{
+            margin-right: 20px;
+            color: #c00000;
+          }
+        }
+      }
+    }
+    .bottom-pay{
+      margin-top: 45px;
+      text-align: right;
+      a{
+        text-decoration: none;
+      }
+      .m-btns{
+        color: #fff;
+        background-color:#845f3f;
+        border-color:#845f3f;
+        min-width: 167px;
+        height: 52px;
+        line-height:50px;
+        font-size: 20px;
+        display: inline-block;
+        border-radius:2px;
+        text-align: center;
+        border: 1px solid #666;
+        box-sizing: border-box;
+        padding:0 6px;
+        transition: all .5s cubic-bezier(0,1,.5,1);
       }
     }
   }

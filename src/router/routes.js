@@ -1,6 +1,8 @@
 import Order from "@/views/Order";
 import Search from "@/views/Search";
 import Detail from "@/views/Detail";
+import Trade from "@/views/Trade";
+import Pay from "@/views/Pay";
 const Product = () => import("@/views/Product");
 
 export default [
@@ -24,4 +26,13 @@ export default [
     path: "/detail",
     component: Detail,
   },
+  {
+    path: "/trade",
+    component: Trade,
+  },
+  {
+    path: "/pay",
+    component: Pay,
+  },
+
 ];
