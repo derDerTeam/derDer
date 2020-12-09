@@ -163,19 +163,19 @@
           <div class="check-freeInfo fr">
             <div class="freeInfo-item">
               <span class="freeInfo-key">商品总价:</span>
-              <span class="freeInfo-value">"总价"元</span>
+              <span class="freeInfo-value">总价元</span>
             </div>
             <div class="freeInfo-item fee-map-item">
               <span class="freeInfo-key">运费:</span>
-              <span class="freeInfo-value">"0.00"元</span>
+              <span class="freeInfo-value">0.00元</span>
             </div>
             <div class="freeInfo-item">
               <span class="freeInfo-key">优惠:</span>
-              <span class="freeInfo-value">"优惠了多少"元</span>
+              <span class="freeInfo-value">优惠了多少元</span>
             </div>
             <div class="total">
               <span class="freeInfo-key">合计:</span>
-              <span class="freeInfo-value">￥"最后的价格"</span>
+              <span class="freeInfo-value">￥最后的价格</span>
             </div>
           </div>
         </div>
@@ -370,7 +370,7 @@ export default {
           .pro-support {
             position: absolute;
             left: 65px;
-            bottom: -7px;
+            bottom: 5px;
             height: 25px;
             line-height: 25px;
             font-size: 12px;
