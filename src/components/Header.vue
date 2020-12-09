@@ -49,6 +49,10 @@ export default {
   margin-bottom: 5px;
   // border-bottom: 1px solid #eee;
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   .container {
     width: 1080px;
     margin: 0 auto;
