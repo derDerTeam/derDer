@@ -19,7 +19,12 @@
         <div class="seach">
           <i class="seach-icon"></i>
           <div class="input">
-            <input type="text" placeholder="搜一搜" />
+            <input
+              type="text"
+              v-model="keyword"
+              placeholder="搜一搜"
+              @change.enter="toSearch"
+            />
           </div>
         </div>
       </div>
@@ -33,10 +38,19 @@ export default {
   data() {
     return {
       count: 0,
+      keyword: "",
     };
   },
   methods: {
     goCart() {},
+    toSearch() {
+      if (this.keyword === "") {
+        return;
+      }
+      this.$router.push({
+        path: "/search/" + this.keyword,
+      });
+    },
   },
 };
 </script>
