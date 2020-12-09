@@ -64,7 +64,7 @@
 
 <style lang="less" scoped>
 	#content {
-		height: 550px;
+		height: 540px;
 		font-size: 14px;
 		padding: 0 34px 34px;
 
@@ -227,8 +227,9 @@
 						background-color: #ff6700;
 						margin-top: 15px;
 						border: 1px solid rgba(186, 186, 186, .3);
-						*border: 0 none;
+						border: none;
 						color: #fff;
+						outline: none;
 					}
 				}
 			}
