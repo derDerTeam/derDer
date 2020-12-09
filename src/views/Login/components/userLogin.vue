@@ -206,7 +206,7 @@
 
 						.phone_start_box {
 							display: inline-block;
-							width: 65px;
+							width: 63px;
 							height: 48px;
 							line-height: 48px;
 							text-align: center;
@@ -263,6 +263,7 @@
 							font: 14px;
 							outline: none;
 							border: 1px solid #E0E0E0;
+							border-right: none;
 						}
 
 						.code_panel {

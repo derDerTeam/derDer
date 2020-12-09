@@ -2,7 +2,7 @@
 	<div id="wrapper">
 		<!-- 主体 -->
 		<div class="main-content">
-
+			<Trunk></Trunk>
 		</div>
 		<Lfooter></Lfooter>
 	</div>
@@ -10,6 +10,7 @@
 
 <script>
 	import Lfooter from "./components/Lfooter";
+	import Trunk from "./components/trunk";
 	export default {
 		name: "Login",
 		data() {
@@ -21,9 +22,7 @@
 			
 		},
 		components: {
-			userLogin,
-			Lfooter,
-			qrCode
+			Lfooter, Trunk
 		}
 	}
 </script>
