@@ -3,11 +3,86 @@
     <Top></Top>
     <Header></Header>
     <div class="searchContainer">
+      
+       <!-- 有商品数据 -->
+      <div class="searchContent">
+         <div class="searchTit"> 为您找到54条数据</div>
+         <!-- 品牌内容 -->
+       <div class="goodsList clearFix" >
+         <router-link to="/detail">
+               <div class="goodsItem">
+                  <img src="https://img.youpin.mi-img.com/shopmain/55442f5624d8a9fa6cf18606f907be23.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+                  <p>云米自动波轮洗衣机5.5kg</p>
+                  <span><i>￥</i>678</span>
+               </div>
+            </router-link>
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/46d71f901b78fe0847dc3ab6bf62290f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/55c83daa2293fc3bb5e929a90aadd97a.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/2949b8ef8a23d5adbad86b304b192f2c.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+         </div>
+         <div class="goodsList clearFix">
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/c0e8a45d5175b81dfd6e2ecb38ae522c.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/f8c437f56aafed294d2abf128243e968.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/c0e8a45d5175b81dfd6e2ecb38ae522c.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+         </div>
+         <div class="goodsList clearFix">
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/f8c437f56aafed294d2abf128243e968.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/46d71f901b78fe0847dc3ab6bf62290f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/f8c437f56aafed294d2abf128243e968.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+            <div class="goodsItem">
+               <img src="https://img.youpin.mi-img.com/shopmain/46d71f901b78fe0847dc3ab6bf62290f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+               <p>云米自动波轮洗衣机5.5kg</p>
+               <span><i>￥</i>678</span>
+            </div>
+         </div>
+     </div>
+
       <!-- 没有商品数据 -->
       <div class="noGoods">
          <!-- 头部信 -->
          <div class="noData">
-            <img src="./images/006.jpg" alt="">
+             <img src="./images/006.jpg" alt="">
             <p>抱歉，暂无商品数据</p>
             <!-- <a href="#">继续逛</a> -->
             <router-link to="/">继续逛</router-link>
@@ -21,23 +96,23 @@
             <div class="goodsList clearFix" >
                <router-link to="/detail">
                      <div class="goodsItem">
-                        <img src="../../assets/images/search01.jpg" alt="">
+                        <img src="https://img.youpin.mi-img.com/shopmain/46d71f901b78fe0847dc3ab6bf62290f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
                         <p>云米自动波轮洗衣机5.5kg</p>
                         <span><i>￥</i>678</span>
                      </div>
                   </router-link>
                   <div class="goodsItem">
-                     <img src="./images/002.jpg" alt="">
+               <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
                      <p>云米自动波轮洗衣机5.5kg</p>
                      <span><i>￥</i>678</span>
                   </div>
                   <div class="goodsItem">
-                     <img src="./images/003.jpg" alt="">
+                     <img src="https://img.youpin.mi-img.com/shopmain/f8c437f56aafed294d2abf128243e968.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
                      <p>云米自动波轮洗衣机5.5kg</p>
                      <span><i>￥</i>678</span>
                   </div>
                   <div class="goodsItem">
-                     <img src="./images/004.jpg" alt="">
+               <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
                      <p>云米自动波轮洗衣机5.5kg</p>
                      <span><i>￥</i>678</span>
                   </div>
@@ -46,81 +121,9 @@
          </div>
       </div>
        
-      <!-- 有商品数据 -->
-      <div class="searchContent">
-         <div class="searchTit"> 为您找到54条数据</div>
-         <!-- 品牌内容 -->
-         <div class="goodsList clearFix" >
-         <router-link to="/detail">
-               <div class="goodsItem">
-                  <img src="../../assets/images/search01.jpg" alt="">
-                  <p>云米自动波轮洗衣机5.5kg</p>
-                  <span><i>￥</i>678</span>
-               </div>
-            </router-link>
-            <div class="goodsItem">
-               <img src="./images/002.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="./images/003.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="./images/004.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-         </div>
-         <div class="goodsList clearFix">
-            <div class="goodsItem">
-               <img src="./images/005.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="../../assets/images/search01.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="../../assets/images/search01.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="../../assets/images/search01.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-         </div>
-         <div class="goodsList clearFix">
-            <div class="goodsItem">
-               <img src="../../assets/images/search01.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="../../assets/images/search01.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="../../assets/images/search01.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="../../assets/images/search01.jpg" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-         </div>
-      </div>
+     
 
-       <!-- 分页器 -->
+       <!-- 分页 -->
        <div class="search-pagination">
         <el-pagination
           background
