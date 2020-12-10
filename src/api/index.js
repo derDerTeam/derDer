@@ -9,3 +9,15 @@ export const reqCategoryList = () => {
     method: "get",
   });
 };
+
+
+// 请求获取订单交易信息
+// /api/order/auth/trade
+// get
+
+// export const reqTradeInfo=()=>{
+//   return Ajax({
+//       url:'/order/auth/trade',
+//       method:'get'
+//   })
+// }

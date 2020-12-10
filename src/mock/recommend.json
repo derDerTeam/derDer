@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "tital": "飞米 FIMI X8SE 2020 ...",
+    "desc": "4K HDR视频，8公里图传，35分钟...",
+    "imgUrl": "https://img.youpin.mi-img.com/shopmain/dfce9da45c02dacf6b4e2d1beca53631.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+    "price": "99",
+    "isNew": "true",
+    "isMe": "false",
+    "isKill": "false",
+    "isSpecial": "false",
+    "isOption": "false",
+    "optionNum": "0"
+  },
+  {
+    "id": "2",
+    "tital": "Redmi K30S 至尊纪念版...",
+    "desc": "骁龙865处理器；7档变速高刷，...",
+    "imgUrl": "https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+    "price": "2599",
+    "isNew": "false",
+    "isMe": "true",
+    "isKill": "true",
+    "isSpecial": "false",
+    "isOption": "true",
+    "optionNum": "2"
+  },
+  {
+    "id": "3",
+    "tital": "[老罗推荐]米物工具箱",
+    "desc": "红点产品设计大奖，6+2实用工具...",
+    "imgUrl": "https://img.youpin.mi-img.com/800_pic/d81c0d4e5c8646f44c954965c321e01c.png@base@tag=imgScale&F=webp",
+    "price": "199",
+    "isNew": "false",
+    "isMe": "false",
+    "isKill": "true",
+    "isSpecial": "true",
+    "isOption": "false",
+    "optionNum": "0"
+  },
+  {
+    "id": "4",
+    "tital": "花加圣诞真树系列 香松...",
+    "desc": "荷兰进口诺贝松，叶片绵密沉甸...",
+    "imgUrl": "https://img.youpin.mi-img.com/shopmain/4317bb7b5ebe2e6855d723b2647ffcf3.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+    "price": "39.9",
+    "isNew": "false",
+    "isMe": "true",
+    "isKill": "false",
+    "isSpecial": "false",
+    "isOption": "false",
+    "optionNum": "0"
+  },
+  {
+    "id": "5",
+    "tital": "adidas阿迪达斯男服棉...",
+    "desc": "连帽时尚有型舒适穿着",
+    "imgUrl": "https://img.youpin.mi-img.com/shopmain/c1ea4a8f4ba8f517f837a6aa39bd710b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+    "price": "379",
+    "isNew": "false",
+    "isMe": "false",
+    "isKill": "true",
+    "isSpecial": "false",
+    "isOption": "false",
+    "optionNum": "0"
+  },
+  {
+    "id": "6",
+    "tital": "佐敦朱迪硅胶暖手蛋",
+    "desc": "小巧便携、温暖持久、免充电、自发热暖手宝",
+    "imgUrl": "https://img.youpin.mi-img.com/shopmain/3bfa86d4ac672e3baafc60e3ac29c38d.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+    "price": "15.9",
+    "isNew": "false",
+    "isMe": "false",
+    "isKill": "false",
+    "isSpecial": "false",
+    "isOption": "false",
+    "optionNum": "0"
+  }
+]

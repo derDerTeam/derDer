@@ -70,7 +70,7 @@
                         v-model="message"
                       ></textarea>
                       <!-- 邮政编号 -->
-                        <el-input
+                      <el-input
                         v-model="form.postalCode"
                         autocomplete="off"
                         placeholder="邮政编号"
@@ -137,7 +137,7 @@
               </span>
               <!-- 单价 x 数量 -->
               <span class="price">
-                "单价" "元x" "数量"
+                "marketPrice" "元x" "数量"
               </span>
             </div>
             <!-- 发票有关内容 -->
@@ -187,7 +187,7 @@
           <div class="check-freeInfo fr">
             <div class="freeInfo-item">
               <span class="freeInfo-key">商品总价:</span>
-              <span class="freeInfo-value">总价元</span>
+              <span class="freeInfo-value">{{ marketPrice }}元</span>
             </div>
             <div class="freeInfo-item fee-map-item">
               <span class="freeInfo-key">运费:</span>
@@ -195,7 +195,7 @@
             </div>
             <div class="freeInfo-item">
               <span class="freeInfo-key">优惠:</span>
-              <span class="freeInfo-value">优惠了多少元</span>
+              <span class="freeInfo-value">{{ priceMin }}元</span>
             </div>
             <div class="total">
               <span class="freeInfo-key">合计:</span>
@@ -213,54 +213,51 @@
   </div>
 </template>
 <script>
+import { mapGetters } from "vuex";
 export default {
   data() {
     return {
-
       // 默认复选框
-       checked: true
+      checked: true,
 
-      // 地址的数据
-      gridData: [
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-        },
-      ],
-      dialogTableVisible: false,
-      dialogFormVisible: false,
-      form: {
-        name: "",
-        region: "",
-        date1: "",
-        date2: "",
-        delivery: false,
-        type: [],
-        resource: "",
-        desc: "",
-      },
-      formLabelWidth: "120px",
+      // 订单编号
+      orderId,
     };
   },
-  created() {},
-  computed: {},
-  methods: {},
+  mounted() {
+    this.getTradeInfo();
+  },
+  methods: {
+    getTradeInfo() {
+      this.$store.dispatch("getTradeInfo");
+    },
+
+    async submitOrder() {
+      // 点击提交订单，不能立即跳转
+      // 先发请求创建订单，会返回我们创建好的订单编号（这个请求需要携带交易编号以及最终确定好的交易信息）
+      let tradeNo = this.tradeInfo.tradeNo;
+      let tradeInfo = {
+        // 姓名
+        consignee: this.defaultAddress.consignee,
+        // 电话
+        consigneeTel: this.defaultAddress.phoneNum,
+        // 地址
+        deliveryAddress: this.defaultAddress.userAddress,
+        paymentWay: "ONLINE",
+        orderComment: this.message,
+        orderDetailList: this.detailArrayList,
+      };
+      // 发请求 返回的promise和之前dispatch返回的promise不是一回事
+      // 之前dispatch返回的promise是actions当中的async函数返回的promise，所以要处理就可以成功失败都处理
+      // 现在我们这样的写法拿的就是axios返回的promise，axios返回的promise失败我们是统一处理的，所以只需要处理成功就好
+      const result = await this.$API.reqSubmitOrder(tradeNo, tradeInfo);
+      if (result.code === 200) {
+        // this.orderId=result.data
+        // 拿到订单编号起始可以不用存
+        this.$router.push("/pay?orderId=" + result.data);
+      }
+    },
+  },
 };
 </script>
 <style lang="less" scoped>
