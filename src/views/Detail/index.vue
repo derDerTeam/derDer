@@ -68,12 +68,22 @@
             </p>
             <div class="cartWrap">
               <div class="controls">
-                <input autocomplete="off" class="itxt" value="1" />
-                <a href="javascript:" class="plus">+</a>
-                <a href="javascript:" class="mins">-</a>
+                <input
+                  autocomplete="off"
+                  class="itxt"
+                  v-model="skuNum"
+                  @change="skuNum = skuNum > 1 ? skuNum : 1"
+                />
+                <a href="javascript:" class="plus" @click="skuNum++">+</a>
+                <a
+                  href="javascript:"
+                  class="mins"
+                  @click="skuNum > 1 ? skuNum-- : (skuNum = 1)"
+                  >-</a
+                >
               </div>
               <div class="add">
-                <a href="javascript:">加入购物车</a>
+                <a href="javascript:" @click="toCartList">加入购物车</a>
               </div>
               <div class="customer">
                 <i class="iconfont icon-kefu"></i>
@@ -87,30 +97,68 @@
       <!-- tabs切换 -->
       <div class="showContainer">
         <!-- 左侧 -->
-        <!-- <div class="tab clearfix">
-          <el-tabs :tab-position="tabPosition" style="height: 200px;">
+        <div class="tab clearfix">
+          <el-tabs
+            style="margin:0 auto;width:800px;height: 1200px;border:none;font-size:30px"
+          >
             <el-tab-pane label="产品介绍">
-              <img src="./images/tab1.jpg" alt="" /> -->
-        <!-- <img src="./images/tab1.jpg" alt="" />
-            <img src="./images/tab1.jpg" alt="" /> -->
-        <!-- </el-tab-pane>
+              <img
+                style="width:700px;height:800px"
+                src="./images/tab1.jpg"
+                alt=""
+              />
+            </el-tab-pane>
             <el-tab-pane label="评论">
-              <el-button type="warning">警告按钮</el-button>
-              <el-button>默认按钮</el-button>
+              <el-tabs
+                type="card"
+              >
+                <el-tab-pane label="全部" name="first">
+                  <div class="commentItem">
+                <div>
+                  <div class="myImg"><img src="./images/3.jpg" alt="" /></div>
+                  <div class="info">
+                    <div class="name">马克图布</div>
+                    <div class="attch">
+                      <span>2020-12-04 01:04</span>
+                      <span class="margin">|</span>
+                      <span>黑色、3XL</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="evaluate">物美价廉！！！！！！</div>
+              </div>
+                  </el-tab-pane
+                >
+                <el-tab-pane label="好评" name="second"
+                  >
+                  <div class="commentItem">
+                <div>
+                  <div class="myImg"><img src="./images/3.jpg" alt="" /></div>
+                  <div class="info">
+                    <div class="name">hah</div>
+                    <div class="attch">
+                      <span>2020-12-09 10:04</span>
+                      <span class="margin">|</span>
+                      <span>白色、3XL</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="evaluate">真好！！！！！！</div>
+              </div>
+                  </el-tab-pane>
+              </el-tabs>
+              
             </el-tab-pane>
             <el-tab-pane label="常见问题">
-              <img src="./images/problem.jpg" alt="" />
+              <img
+                style="width:700px;height:600px"
+                src="./images/problem.jpg"
+                alt=""
+              />
             </el-tab-pane>
           </el-tabs>
-        </div> -->
-
-        <div class="tab clearfix">
-          <ul>
-            <li><a href="javascript:;">产品介绍</a></li>
-            <li><a href="javascript:;">评论</a></li>
-            <li><a href="javascript:;">常见问题</a></li>
-          </ul>
         </div>
+
         <!-- 右侧 -->
         <div class="recommend">
           <div class="title">
@@ -118,12 +166,13 @@
             <span class="style">相关推荐</span>
             <span>——</span>
           </div>
-          <div class="content">
-            <img src="./images/3.jpg" alt="" />
-            <p class="nameOne">哈哈哈</p>
+          <div class="content" v-for="(item,index) in recommendList" :key="item.gid">
+            <!-- <img src="./images/3.jpg" alt="" /> -->
+            <img :src="item.imgSquare" alt="" />
+            <p class="nameOne">{{item.summary}}</p>
             <div class="coll">
-              <p class="nameTwo">hhhhhhhh</p>
-              <p class="nameThree">￥249</p>
+              <p class="nameTwo">{{item.name}}</p>
+              <p class="nameThree">{{item.price}}</p>
             </div>
           </div>
         </div>
@@ -137,6 +186,24 @@
 <script>
 export default {
   name: "",
+  data() {
+    return {
+      skuNum: 1,
+      recommendList:[]
+    };
+  },
+  mounted(){
+    this.getRecommendList()
+  },
+  methods: {
+    toCartList() {
+      this.$router.push("/cartList");
+    },
+    async getRecommendList(){
+        const result = await this.$API.reqRecommendList()
+        console.log(result)
+    }
+  },
 };
 </script>
 
@@ -368,14 +435,19 @@ export default {
     // 左侧区域
     .tab {
       width: 775px;
-      // height: 5000px;
       float: left;
+      // button{
+      //   width: 50px;
+      //   height: 50px;
+      //   border: 1px solid #f9f9f9;
+      //   border-radius:5px;
+      //   padding: 5px;
+      //   font-size:12px;
+      //   background-color: #9f8052;
+      // }
       ul {
         display: flex;
         position: relative;
-        // text-align: center;
-        // margin-top: 20px;
-        // line-height: 50px;
         padding: 16px 0;
         li {
           display: block;
@@ -385,18 +457,44 @@ export default {
           font-size: 20px;
         }
       }
-      // img {
-      //   width: 100%;
-      //   height: 400px;
-      //   // display: block;
-      // }
+      .commentItem {
+        margin-top: 50px;
+        width: 774px;
+        position: relative;
+        .myImg {
+          display: block;
+          height: 44px;
+          width: 44px;
+          border-radius: 22px;
+          background: #eee;
+          overflow: hidden;
+          float: left;
+        }
+        .info {
+          margin-left: 66px;
+          font-size: 14px;
+          color: #333;
+          .attach {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+            .margin {
+              margin: 0 10px;
+            }
+          }
+        }
+        .evaluate {
+          margin: 10px 0 10px 66px;
+          font-size: 14px;
+          line-height: 24px;
+          color: #333;
+        }
+      }
     }
     // 右侧推荐
     .recommend {
       float: right;
       width: 260px;
-
-      // margin-top: 100px;
       .title {
         text-align: center;
         margin-top: 50px;
