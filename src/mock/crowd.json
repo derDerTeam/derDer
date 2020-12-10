@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "AI智能练字笔",
+    "desc": "视频教学/AI即时打分/同步教学大...",
+    "price": "199",
+    "number": "1167",
+    "baifenbi": "33",
+    "isBoom": "false",
+    "isHot": "false"
+  },
+  {
+    "id": "2",
+    "title": "AI智享按摩椅",
+    "desc": "视频教学/AI即时打分/同步教学大...",
+    "price": "5999",
+    "number": "861",
+    "baifenbi": "515",
+    "isBoom": "true",
+    "isHot": "false"
+  },
+  {
+    "id": "3",
+    "title": "自动抽真空罐",
+    "desc": "视频教学/AI即时打分/同步教学大...",
+    "price": "59",
+    "number": "1167",
+    "baifenbi": "21917",
+    "isBoom": "false",
+    "isHot": "true"
+  }
+]
