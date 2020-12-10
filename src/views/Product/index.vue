@@ -72,8 +72,10 @@ export default {
   },
   watch: {
     seckillList: {
-      handler() {
-        daojishi(this);
+      handler(newValue, oldValue) {
+        if (newValue.date) {
+          daojishi(this);
+        }
       },
     },
   },
