@@ -55,7 +55,7 @@
               <!-- 商品名称 -->
               <li>
                 <span class="item-label">商品名称:</span>
-                <span>云米互联网净水器小蓝调系列 400G 净水器</span>
+                <span>{{summary}}</span>
               </li>
             </ul>
           </div>

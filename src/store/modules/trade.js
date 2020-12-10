@@ -1,5 +1,5 @@
 // 引入
-// import {reqTradeInfo}from '@/api'
+import {reqTradeInfo}from '@/api'
 // 包含多个状态数据的对象
 const state={
     tradeInfo:{}

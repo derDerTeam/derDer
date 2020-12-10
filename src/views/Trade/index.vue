@@ -35,47 +35,75 @@
                       href="javascript:;"
                     ></a>
                   </div>
-                  <div class="addAds" @click="dialogFormVisible = true">
+                  <div class="address" >
                     添加新地址
                   </div>
+                   <!-- <div v-show="isShowList" class="address">
+                  <el-button
+                    type="primary"
+                    icon="el-icon-plus"
+                    @click="showAddDialog"
+                    >添加新地址</el-button
+                  >
+                  </div> -->
                   <!-- 弹出的添加新地址框 -->
-                  <el-dialog title="添加收获地址">
+                    <!-- <div v-show="!isShowList"> -->
+                     <!-- dialog对话框，用于增加和修改 -->
+                  <!-- <el-dialog
+                    title="添加收获地址"
+                    :visible.sync="dialogFormVisible"
+                  >
                     <el-form :model="form">
-                      <!-- 姓名 -->
                       <el-input
                         v-model="form.name"
                         autocomplete="off"
                         placeholder="姓名"
+                        :label-width="formLabelWidth"
                       ></el-input>
-                      <!-- 手机号 -->
                       <el-input
                         v-model="form.phoneNumber"
                         autocomplete="off"
                         placeholder="手机号"
+                        :label-width="formLabelWidth"
                       ></el-input>
-                      <!-- 省/市/区/街道 -->
                       <el-select
                         v-model="form.region"
                         placeholder="请选择省/市/区/街道"
+                        :label-width="formLabelWidth"
                       >
-                        <el-option label="省" value="shanghai"></el-option>
-                        <el-option label="市" value="beijing"></el-option>
-                        <el-option label="区" value="beijing"></el-option>
-                        <el-option label="街道" value="beijing"></el-option>
+                        <el-option
+                          label="省"
+                          value="shanghai"
+                          :label-width="formLabelWidth"
+                        ></el-option>
+                        <el-option
+                          label="市"
+                          value="beijing"
+                          :label-width="formLabelWidth"
+                        ></el-option>
+                        <el-option
+                          label="区"
+                          value="beijing"
+                          :label-width="formLabelWidth"
+                        ></el-option>
+                        <el-option
+                          label="街道"
+                          value="beijing"
+                          :label-width="formLabelWidth"
+                        ></el-option>
                       </el-select>
-                      <!-- 详细地址 -->
                       <textarea
                         placeholder="详细地址"
                         class="remarks-cont"
                         v-model="message"
+                        :label-width="formLabelWidth"
                       ></textarea>
-                      <!-- 邮政编号 -->
                       <el-input
                         v-model="form.postalCode"
                         autocomplete="off"
                         placeholder="邮政编号"
+                        :label-width="formLabelWidth"
                       ></el-input>
-                      <!-- 默认的复选框 -->
                       <el-checkbox v-model="checked">默认</el-checkbox>
                     </el-form>
                     <div slot="footer" class="dialog-footer">
@@ -89,15 +117,17 @@
                       >
                     </div>
                   </el-dialog>
+                  </div> -->
                 </div>
               </div>
             </div>
           </div>
           <!-- 显示和收起更多收获地址 -->
-          <div class="moreAddress">
+          <!-- <div class="moreAddress">
             <span class="txt">显示更多收货地址</span>
             <a class="iconfont icon-xia" data-src href="javascript:;"></a>
-          </div>
+          </div> -->
+
         </div>
         <!-- 有品精选 -->
         <div class="merchant clearfix">
@@ -214,50 +244,51 @@
 </template>
 <script>
 import { mapGetters } from "vuex";
+
 export default {
-  data() {
-    return {
-      // 默认复选框
-      checked: true,
+  // data() {
+  //   return {
+  //     // 默认复选框
+  //     checked: true,
 
-      // 订单编号
-      orderId,
-    };
-  },
-  mounted() {
-    this.getTradeInfo();
-  },
-  methods: {
-    getTradeInfo() {
-      this.$store.dispatch("getTradeInfo");
-    },
+  //     // 订单编号
+  //     orderId,
+  //   };
+  // },
+  // mounted() {
+  //   this.getTradeInfo();
+  // },
+  // methods: {
+  //   getTradeInfo() {
+  //     this.$store.dispatch("getTradeInfo");
+  //   },
 
-    async submitOrder() {
-      // 点击提交订单，不能立即跳转
-      // 先发请求创建订单，会返回我们创建好的订单编号（这个请求需要携带交易编号以及最终确定好的交易信息）
-      let tradeNo = this.tradeInfo.tradeNo;
-      let tradeInfo = {
-        // 姓名
-        consignee: this.defaultAddress.consignee,
-        // 电话
-        consigneeTel: this.defaultAddress.phoneNum,
-        // 地址
-        deliveryAddress: this.defaultAddress.userAddress,
-        paymentWay: "ONLINE",
-        orderComment: this.message,
-        orderDetailList: this.detailArrayList,
-      };
-      // 发请求 返回的promise和之前dispatch返回的promise不是一回事
-      // 之前dispatch返回的promise是actions当中的async函数返回的promise，所以要处理就可以成功失败都处理
-      // 现在我们这样的写法拿的就是axios返回的promise，axios返回的promise失败我们是统一处理的，所以只需要处理成功就好
-      const result = await this.$API.reqSubmitOrder(tradeNo, tradeInfo);
-      if (result.code === 200) {
-        // this.orderId=result.data
-        // 拿到订单编号起始可以不用存
-        this.$router.push("/pay?orderId=" + result.data);
-      }
-    },
-  },
+  //   async submitOrder() {
+  //     // 点击提交订单，不能立即跳转
+  //     // 先发请求创建订单，会返回我们创建好的订单编号（这个请求需要携带交易编号以及最终确定好的交易信息）
+  //     let tradeNo = this.tradeInfo.tradeNo;
+  //     let tradeInfo = {
+  //       // 姓名
+  //       consignee: this.defaultAddress.consignee,
+  //       // 电话
+  //       consigneeTel: this.defaultAddress.phoneNum,
+  //       // 地址
+  //       deliveryAddress: this.defaultAddress.userAddress,
+  //       paymentWay: "ONLINE",
+  //       orderComment: this.message,
+  //       orderDetailList: this.detailArrayList,
+  //     };
+  //     // 发请求 返回的promise和之前dispatch返回的promise不是一回事
+  //     // 之前dispatch返回的promise是actions当中的async函数返回的promise，所以要处理就可以成功失败都处理
+  //     // 现在我们这样的写法拿的就是axios返回的promise，axios返回的promise失败我们是统一处理的，所以只需要处理成功就好
+  //     const result = await this.$API.reqSubmitOrder(tradeNo, tradeInfo);
+  //     if (result.code === 200) {
+  //       this.orderId=result.data
+  //       // 拿到订单编号起始可以不用存
+  //       // this.$router.push("/pay?orderId=" + result.data);
+  //     }
+  //   },
+  // },
 };
 </script>
 <style lang="less" scoped>
@@ -340,7 +371,7 @@ export default {
                   background-position: 0 -664px;
                 }
               }
-              .addAds {
+              .address {
                 margin: 0 auto;
                 margin-top: "10px";
                 text-align: center;
