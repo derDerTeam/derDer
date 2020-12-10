@@ -18,26 +18,27 @@
         data-target="_blank"
       >
         <div class="item-inner" style="background-color: rgb(249, 243, 233);">
-          <img
-            class="pro-img"
-            src="https://img.youpin.mi-img.com/shopmain/427b8614ed4b3250bd43729b24a70b50.png?w=800&amp;h=800"
-            data-src="https://img.youpin.mi-img.com/shopmain/427b8614ed4b3250bd43729b24a70b50.png?w=800&amp;h=800"
-            alt=""
-            style="margin-top: 0px;"
-          />
-          <div class="pro-text">
-            <p class="pro-info" title="AI智能练字笔">AI智能练字笔</p>
-            <p
-              class="pro-desc"
-              title="视频教学/AI即时打分/同步教学大纲/笔迹回看"
-            >
-              视频教学/AI即时打分/同步教学大...
-            </p>
-            <p class="pro-price">
-              <span class="tag">¥</span><span>199</span
-              ><span class="pro-flag">起</span>
-            </p>
-          </div>
+          <router-link to="/detail">
+            <img
+              class="pro-img"
+              src="https://img.youpin.mi-img.com/shopmain/427b8614ed4b3250bd43729b24a70b50.png?w=800&amp;h=800"
+              data-src="https://img.youpin.mi-img.com/shopmain/427b8614ed4b3250bd43729b24a70b50.png?w=800&amp;h=800"
+              alt=""
+              style="margin-top: 0px;"
+            />
+            <div class="pro-text">
+              <p class="pro-info" :title="crowd1.title">
+                {{ crowd1.title }}
+              </p>
+              <p class="pro-desc" :title="crowd1.desc">
+                {{ crowd1.desc }}
+              </p>
+              <p class="pro-price">
+                <span class="tag">¥</span><span>{{ crowd1.price }}</span
+                ><span class="pro-flag">起</span>
+              </p>
+            </div>
+          </router-link>
         </div>
         <div class="m-progress-wrap-con">
           <div class="m-bar-con">
@@ -45,12 +46,14 @@
           </div>
           <div class="m-progress-info clearfix">
             <div class="fl m-suppory">
-              <span class="sup-num">1167</span>人支持
+              <span class="sup-num">{{ crowd1.number }}</span
+              >人支持
             </div>
             <div class="progress-tag-con"></div>
             <div class="fr m-persent">
               <div>
-                <span class="m-num">33</span><span class="m-num-flag">%</span>
+                <span class="m-num">{{ crowd1.baifenbi }}</span
+                ><span class="m-num-flag">%</span>
               </div>
             </div>
           </div>
@@ -70,8 +73,12 @@
             style="margin-top: 0px;"
           />
           <div class="pro-text">
-            <p class="pro-info" title="AI智享按摩椅">AI智享按摩椅</p>
-            <p class="pro-price"><span class="tag">¥</span><span>5999</span></p>
+            <p class="pro-info" :title="crowd2.title">
+              {{ crowd2.title }}
+            </p>
+            <p class="pro-price">
+              <span class="tag">¥</span><span>{{ crowd2.price }}</span>
+            </p>
           </div>
         </div>
         <div class="m-progress-wrap-con">
@@ -80,18 +87,21 @@
           </div>
           <div class="m-progress-info m-progress-info-small clearfix">
             <div class="fl m-suppory">
-              <span class="sup-num">861</span>人支持
+              <span class="sup-num">{{ crowd2.number }}</span
+              >人支持
             </div>
             <span class="progress-tag-con fl"
               ><span
                 class="common-tag common-tag-text"
                 style="background-color: rgb(246, 39, 0);"
+                v-if="crowd2.isBoom"
                 >爆</span
               ></span
             >
             <div class="fr m-persent">
               <div>
-                <span class="m-num">515</span><span class="m-num-flag">%</span>
+                <span class="m-num">{{ crowd2.baifenbi }}</span
+                ><span class="m-num-flag">%</span>
               </div>
             </div>
           </div>
@@ -111,9 +121,11 @@
             style="margin-top: 0px;"
           />
           <div class="pro-text">
-            <p class="pro-info" title="自动抽真空罐">自动抽真空罐</p>
+            <p class="pro-info" :title="crowd3.title">
+              {{ crowd3.title }}
+            </p>
             <p class="pro-price">
-              <span class="tag">¥</span><span>59</span
+              <span class="tag">¥</span><span>{{ crowd3.price }}</span
               ><span class="pro-flag">起</span>
             </p>
           </div>
@@ -124,18 +136,21 @@
           </div>
           <div class="m-progress-info m-progress-info-small clearfix">
             <div class="fl m-suppory">
-              <span class="sup-num">21917</span>人支持
+              <span class="sup-num">{{ crowd3.number }}</span
+              >人支持
             </div>
             <span class="progress-tag-con fl"
               ><span
                 class="common-tag common-tag-text"
                 style="background-color: rgb(254, 207, 0);"
+                v-if="crowd3.isHot"
                 >热</span
               ></span
             >
             <div class="fr m-persent">
               <div>
-                <span class="m-num">254</span><span class="m-num-flag">%</span>
+                <span class="m-num">{{ crowd3.baifenbi }}</span
+                ><span class="m-num-flag">%</span>
               </div>
             </div>
           </div>
@@ -146,8 +161,23 @@
 </template>
 
 <script>
+import { mapGetters, mapState } from "vuex";
 export default {
   name: "crowd",
+  mounted() {
+    this.getCrowdList();
+  },
+  methods: {
+    getCrowdList() {
+      this.$store.dispatch("getCrowdList");
+    },
+  },
+  computed: {
+    ...mapState({
+      crowdList: (state) => state.product.crowdList || [],
+    }),
+    ...mapGetters(["crowd1", "crowd2", "crowd3"]),
+  },
 };
 </script>
 

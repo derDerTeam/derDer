@@ -17,7 +17,7 @@
           <div
             class="swiper-slide swiper-slide-active"
             style="width: 266.25px; margin-right: 5px;"
-            v-for="(item, index) in bannerList"
+            v-for="(item, index) in newsList"
             :key="item.id"
           >
             <div
@@ -36,24 +36,23 @@
                     style="width: 266px; height: 266px;"
                   >
                     <img
-                      src="https://img.youpin.mi-img.com/shopmain/a1dd3b2f4aa4164cedd370ac0d171809.jpg"
+                      :src="item.imgUrl"
                       data-src="https://img.youpin.mi-img.com/shopmain/a1dd3b2f4aa4164cedd370ac0d171809.jpg"
                       alt="无线宠物饮水机"
                       style="width: 266px; height: 266px;"
+                      @click="toDetail(item)"
                     />
                   </div>
                 </div>
               </div>
               <div class="m-goods-common-box">
-                <p class="pro-info" title="无线宠物饮水机">无线宠物饮水机</p>
-                <p
-                  class="pro-desc"
-                  title="首款无线供电饮水机，安全无忧；一冲即净；降噪静音。"
-                >
-                  首款无线供电饮水机，安全无忧...
+                <p class="pro-info" :title="item.tital">{{ item.tital }}</p>
+                <p class="pro-desc" :title="item.desc">
+                  {{ item.desc }}
                 </p>
                 <p class="pro-price">
-                  <span class="pro-unit">¥</span><span class="m-num">299</span>
+                  <span class="pro-unit">¥</span
+                  ><span class="m-num">{{ item.price }}</span>
                 </p>
               </div>
             </div>
@@ -71,9 +70,30 @@
 <script>
 import Swiper from "swiper";
 import "swiper/css/swiper.min.css";
+import { mapState } from "vuex";
 export default {
   name: "News",
-  props: ["bannerList"],
+  mounted() {
+    this.getNewsList();
+  },
+  methods: {
+    getNewsList() {
+      this.$store.dispatch("getNewsList");
+    },
+    toDetail(item) {
+      this.$router.push({
+        name: "detail",
+        query: {
+          id: item.id,
+        },
+      });
+    },
+  },
+  computed: {
+    ...mapState({
+      newsList: (state) => state.product.newsList,
+    }),
+  },
 };
 </script>
 

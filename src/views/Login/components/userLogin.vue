@@ -1,95 +1,95 @@
 <template>
-			<!-- 输入表单验证 -->
-			<div class="content">
-				<!-- 二维码 -->
-				<div id="custom_display_2">
-					<a class="qrCode" href="#" @click="changes_login_qrcode"></a>
-				</div>
-				<!-- <button v-if='qrCode'>asdasd</button> -->
-				<div class="tablesArea">
-					<!-- Logo -->
-					<div class="lgnheader">
-						<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<rect class="imgItem" width="48" height="48" rx="3" ry="3" style="fill:#ff6700"></rect>
-							<rect x="10" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect>
-							<rect x="33.75" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect>
-							<rect x="11.25" y="15" width="15" height="4.1" style="fill:#FFFFFF"></rect>
-							<rect x="26.2" y="20.55" width="4.2" height="12.5" style="fill:#FFFFFF"></rect>
-							<rect x="20.6" y="15" width="9.8" height="9.8" rx="4.4" ry="4.4" style="fill:#FFFFFF"></rect>
-							<rect x="20.2" y="19" width="6" height="6" rx="2" ry="2" style="fill:#ff6700"></rect>
-							<rect x="18" y="19.1" width="4" height="2.2" style="fill:#ff6700"></rect>
-							<rect x="24.2" y="23" width="1.94" height="10" style="fill:#ff6700"></rect>
-							<rect x="18.1" y="22.8" width="4.2" height="10.2" style="fill:#FFFFFF"></rect>
-						</svg>
-						<h4 class="header_tit_txt" id="login-title">小米帐号登录</h4>
-						<div class="site_info"></div>
+	<!-- 输入表单验证 -->
+	<div class="content">
+		<!-- 二维码 -->
+		<div id="custom_display_2">
+			<a class="qrCode" href="#" @click="changes_login_qrcode"></a>
+		</div>
+		<!-- <button v-if='qrCode'>asdasd</button> -->
+		<div class="tablesArea">
+			<!-- Logo -->
+			<div class="lgnheader">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<rect class="imgItem" width="48" height="48" rx="3" ry="3" style="fill:#ff6700"></rect>
+					<rect x="10" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect>
+					<rect x="33.75" y="15" width="4.2" height="18" style="fill:#FFFFFF"></rect>
+					<rect x="11.25" y="15" width="15" height="4.1" style="fill:#FFFFFF"></rect>
+					<rect x="26.2" y="20.55" width="4.2" height="12.5" style="fill:#FFFFFF"></rect>
+					<rect x="20.6" y="15" width="9.8" height="9.8" rx="4.4" ry="4.4" style="fill:#FFFFFF"></rect>
+					<rect x="20.2" y="19" width="6" height="6" rx="2" ry="2" style="fill:#ff6700"></rect>
+					<rect x="18" y="19.1" width="4" height="2.2" style="fill:#ff6700"></rect>
+					<rect x="24.2" y="23" width="1.94" height="10" style="fill:#ff6700"></rect>
+					<rect x="18.1" y="22.8" width="4.2" height="10.2" style="fill:#FFFFFF"></rect>
+				</svg>
+				<h4 class="header_tit_txt" id="login-title">小米帐号登录</h4>
+				<div class="site_info"></div>
+			</div>
+
+			<!-- 输入框 -->
+			<div class="tabs_con">
+				<div id="loginbox">
+					<input v-if="login_regise_sms" class="item_account" autocomplete="off" type="text" name="user" id="username"
+						placeholder="邮箱/手机号码/小米ID">
+					<div v-if="!login_regise_sms" class="phone_login_name">
+						<p class="phone_start_box">
+							<span class="phone_start">+86</span>
+						</p>
+						<input type="text" placeholder="手机号码">
 					</div>
 
-					<!-- 输入框 -->
-					<div class="tabs_con">
-						<div id="loginbox">
-							<input v-if="login_regise_sms" class="item_account" autocomplete="off" type="text" name="user"
-								id="username" placeholder="邮箱/手机号码/小米ID">
-							<div v-if="!login_regise_sms" class="phone_login_name">
-								<p class="phone_start_box">
-									<span class="phone_start">+86</span>
-								</p>
-								<input type="text" placeholder="手机号码">
+					<input v-if="login_regise_sms" type="password" class="item_account" placeholder="密码" autocomplete="off"
+						id="pwd" name="password">
+					<div v-if="!login_regise_sms" class="phone_login_msmCode">
+						<input type="text" class="phone_login_sms" placeholder="短信验证码">
+						<div class="code_panel">
+							<a class="send_ticket" href="javascript:;">获取验证码</a>
+						</div>
+					</div>
+					<button>登陆</button>
+
+					<div class="other_panel clearfix">
+						<span class="sms_link">
+							<a href="javascript:;" class="meassg" @click="changes_user_status" id="ChangeLoginType">手机短信登录/注册</a>
+						</span>
+						<div class="reverse">
+							<div class="reg_forget_links" v-if="login_regise_sms">
+								<a class="outer-link" href="">立即注册</a>
+								<span class="segmentation">|</span>
+								<a class="outer-link" href="">忘记密码？</a>
 							</div>
-
-							<input v-if="login_regise_sms" type="password" class="item_account" placeholder="密码" autocomplete="off"
-								id="pwd" name="password">
-							<div v-if="!login_regise_sms" class="phone_login_msmCode">
-								<input type="text" class="phone_login_sms" placeholder="短信验证码">
-								<div class="code_panel">
-									<a class="send_ticket" href="javascript:;">获取验证码</a>
-								</div>
+							<!-- 收不到验证码 -->
+							<div class="sms-unavaliable" v-if="!login_regise_sms">
+								<a target="_blank"
+									href="https://account.xiaomi.com/helpcenter/faq/_/02.faqs/05.sms-and-email-verification-code/faq-1">收不到验证码？</a>
 							</div>
-							<button>登陆</button>
+						</div>
 
-							<div class="other_panel clearfix">
-								<span class="sms_link">
-									<a href="javascript:;" class="meassg" @click="changes_user_status" id="ChangeLoginType">手机短信登录/注册</a>
-								</span>
-								<div class="reverse">
-									<div class="reg_forget_links" v-if="login_regise_sms">
-										<a class="outer-link" href="">立即注册</a>
-										<span class="segmentation">|</span>
-										<a class="outer-link" href="">忘记密码？</a>
-									</div>
-									<!-- 收不到验证码 -->
-									<div class="sms-unavaliable" v-if="!login_regise_sms">
-										<a target="_blank"
-											href="https://account.xiaomi.com/helpcenter/faq/_/02.faqs/05.sms-and-email-verification-code/faq-1">收不到验证码？</a>
-									</div>
-								</div>
+						<!-- 其他登录方式 s -->
+						<div style="display: block;" class="other_login_type">
+							<fieldset class="oth_type_tit">
+								<legend align="center" class="oth_type_txt">其他方式登录</legend>
+							</fieldset>
 
-								<!-- 其他登录方式 s -->
-								<div style="display: block;" class="other_login_type">
-									<fieldset class="oth_type_tit">
-										<legend align="center" class="oth_type_txt">其他方式登录</legend>
-									</fieldset>
-
-									<div id="sns-login-links" class="oth_type_links">
-										<a class="sns-qq icon_type " data-type="qq" href="" title="QQ登录" target="_blank">
-											<i class="iconfont iconqq"></i>
-										</a>
-										<a class="btn_weibo icon_type " data-type="weibo" href="" title="微博登录" target="_blank">
-											<i class="iconfont iconweibo"></i>
-										</a>
-										<a class="alipay icon_type " data-type="alipay" href="" title="支付宝登录" target="_blank">
-											<i class="iconfont iconzhifubao"></i>
-										</a>
-										<a class="btn_weixin icon_type " data-type="weixin" href="" title="微信登录" target="_blank">
-											<i class="iconfont iconweixin"></i>
-										</a>
-									</div>
-								</div>
+							<div id="sns-login-links" class="oth_type_links">
+								<a class="sns-qq icon_type " data-type="qq" href="" title="QQ登录" target="_blank">
+									<i class="iconfont iconqq"></i>
+								</a>
+								<a class="btn_weibo icon_type " data-type="weibo" href="" title="微博登录" target="_blank">
+									<i class="iconfont iconweibo"></i>
+								</a>
+								<a class="alipay icon_type " data-type="alipay" href="" title="支付宝登录" target="_blank">
+									<i class="iconfont iconzhifubao"></i>
+								</a>
+								<a class="btn_weixin icon_type " data-type="weixin" href="" title="微信登录" target="_blank">
+									<i class="iconfont iconweixin"></i>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
 
 </template>
 
@@ -109,7 +109,7 @@
 			},
 			// 切换 二维码登陆 = 正常登陆
 			changes_login_qrcode() {
-				this.qrCode = !this.qrCode;
+				// this.qrCode = !this.qrCode;
 				this.$emit('update:qrState', this.qrCode);
 			}
 		},
@@ -119,6 +119,8 @@
 <style lang="less" scoped>
 	// 父元素
 	.content {
+		width: 100%;
+		height: 550px;
 		position: relative;
 
 		// 二维码
@@ -142,7 +144,7 @@
 				position: absolute;
 				right: 0px;
 				top: 0px;
-				background: url(https://account.xiaomi.com/static/res/fa9e760/account-static/respassport/acc-2014/img/icon_ercode.png) no-repeat; 
+				background: url(https://account.xiaomi.com/static/res/fa9e760/account-static/respassport/acc-2014/img/icon_ercode.png) no-repeat;
 			}
 		}
 
@@ -204,7 +206,7 @@
 
 						.phone_start_box {
 							display: inline-block;
-							width: 50px;
+							width: 65px;
 							height: 48px;
 							line-height: 48px;
 							text-align: center;
@@ -213,7 +215,7 @@
 
 							.phone_start {
 								position: absolute;
-								left: 15px;
+								left: 20px;
 								animation: phoneSlider;
 								animation-duration: .5s;
 								animation-timing-function: linear;
@@ -227,7 +229,7 @@
 								}
 
 								to {
-									left: 15px;
+									left: 20px;
 									z-index: 1;
 								}
 							}
@@ -275,7 +277,7 @@
 
 					// 登陆按钮
 					button {
-						margin: 20px 0;
+						margin: 10px 0;
 						height: 50px;
 						width: 358px;
 						line-height: 50px;
@@ -308,6 +310,10 @@
 								border: 0 none;
 								height: auto;
 								line-height: normal;
+
+								&:hover {
+									color: #ff6700 !important;
+								}
 							}
 						}
 
@@ -367,7 +373,7 @@
 						// 其他登陆方式
 						.other_login_type {
 							color: #757575;
-							padding-top: 50px;
+							padding-top: 30px;
 							text-align: center;
 
 							// oth_type_tit 分割线
@@ -388,7 +394,7 @@
 							// 其他方法QQ 微信....
 							.oth_type_links {
 								text-align: center;
-								padding-top: 5px;
+								padding-top: 10px;
 								width: 358px;
 								height: 30px;
 
