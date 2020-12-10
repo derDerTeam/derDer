@@ -12,6 +12,7 @@ import SliderLoop from "@/components/SliderLoop";
 import Header from "@/components/Header";
 import Top from "@/components/Top";
 import Footer from "@/components/Footer";
+import '@/mock/mockServer'
 
 //注册全局组件
 //低部组件

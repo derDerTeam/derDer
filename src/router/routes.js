@@ -2,7 +2,7 @@ import Order from "@/views/Order";
 import Search from "@/views/Search";
 import Detail from "@/views/Detail";
 const Product = () => import("@/views/Product");
-import CartList from '@/views/CartList'
+import ShopCart from '@/views/ShopCart'
 
 export default [
   {
@@ -26,7 +26,7 @@ export default [
     component: Detail,
   },
   {
-    path: '/cartList',
-    component:CartList
+    path: '/shopCart',
+    component:ShopCart
 }
 ];
