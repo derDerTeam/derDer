@@ -4,7 +4,7 @@ export function daojishi(that) {
   var nowTime = new Date();
   //获取活动结束时间，这里注意，月份是0-11
   //比较活动结束日期和当前时间
-  var EndTime = "2020/12/10 15:00:00";
+  var EndTime = that.seckillList.date;
   var chaTime = Date.parse(EndTime) - nowTime.getTime();
 
   var nMS = 0;

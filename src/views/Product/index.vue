@@ -55,7 +55,6 @@ export default {
     //获取banner数据
     this.getBannerList();
     this.getSeckillList();
-    daojishi(this);
   },
   methods: {
     getBannerList() {
@@ -70,6 +69,15 @@ export default {
       bannerList: (state) => state.product.bannerList || [],
       seckillList: (state) => state.product.seckillList || [],
     }),
+  },
+  watch: {
+    seckillList: {
+      handler(newValue, oldValue) {
+        if (newValue.date) {
+          daojishi(this);
+        }
+      },
+    },
   },
 };
 </script>
