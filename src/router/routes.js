@@ -1,21 +1,21 @@
 import Order from "@/views/Order";
 import Search from "@/views/Search";
 import Detail from "@/views/Detail";
+import Trade from "@/views/Trade";
+import Pay from "@/views/Pay";
 const Product = () => import("@/views/Product");
+import ShopCart from "@/views/ShopCart";
 const Login = () => import("@/views/Login");
 const Register = () => import("@/views/Register");
-import CartList from "@/views/CartList";
-import MyOrder from '@/views/Order/MyOrder'
-import MyAsset from '@/views/Order/MyAsset'
-import MyCollect from '@/views/Order/MyCollect'
-
-
+import MyOrder from "@/views/Order/MyOrder";
+import MyAsset from "@/views/Order/MyAsset";
+import MyCollect from "@/views/Order/MyCollect";
 
 export default [
   {
     path: "/order",
     component: Order,
-    children:[
+    children: [
       {
         path: "myorder",
         component: MyOrder,
@@ -32,12 +32,14 @@ export default [
         path: "",
         component: MyOrder,
       },
-    ]
+    ],
   },
   {
     path: "/search/:keyword?",
     component: Search,
-    props: (route)=>({keyword:route.params.keyword}),
+    props: (route) => ({
+      keyword: route.params.keyword,
+    }),
     name: "search",
   },
   {
@@ -62,7 +64,15 @@ export default [
     name: "detail",
   },
   {
-    path: "/cartList",
-    component: CartList,
+    path: "/shopCart",
+    component: ShopCart,
+  },
+  {
+    path: "/trade",
+    component: Trade,
+  },
+  {
+    path: "/pay",
+    component: Pay,
   },
 ];

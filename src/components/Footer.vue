@@ -1,3 +1,4 @@
+<Footer></Footer>
 <template>
   <div class="S-footer">
     <div class="container">
@@ -19,6 +20,7 @@
   </div>
 </template>
 <script>
+
 // @ is an alias to /src
 export default {
   name: "Footer",
