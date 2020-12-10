@@ -2,14 +2,18 @@
   <div class="container">
     <div class="h-sec-top">
       <h2 class="h-subTit">小米有品众筹<span>永远好奇 永远年轻</span></h2>
-      <span class="h-more" data-src="" data-target="_blank" href="javascript:;"
+      <a
+        class="h-more"
+        data-src=""
+        target="_blank"
+        href="https://m.xiaomiyoupin.com/w/crowdfunding?_rt=weex&pageid=5&noDL=1"
         ><span>更多</span
         ><a
           class="m-icons m-icons-more more-icon"
           data-src=""
           href="javascript:;"
         ></a
-      ></span>
+      ></a>
     </div>
     <div class="m-sec-main mt1 clearfix">
       <div
