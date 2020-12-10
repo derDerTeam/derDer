@@ -2,7 +2,7 @@
   <div class="top">
     <div class="headerContainer clearfix">
       <div class="rightNav">
-        <div class="nologin" v-if="!isLogin">
+        <div class="nologin" v-if="!$store.state.login.userIfon">
           <router-link to="/login">
             <span>登录</span>
           </router-link>
@@ -13,7 +13,7 @@
         <!-- 登录状态 -->
         <div class="S-title login-info" v-else>
           <i class="S-login"></i>
-          <span class="S-username">{{ $store.state }}</span>
+          <span class="S-username">{{ $store.state.login.userIfon.name }}</span>
           <i class="S-down-icon"></i>
           <ul class="S-login-info-ul">
             <li>
@@ -69,9 +69,9 @@ export default {
   name: "Top",
   data() {
     return {
-      isLogin: false,
+      
     };
-  },
+	},
 };
 </script>
 

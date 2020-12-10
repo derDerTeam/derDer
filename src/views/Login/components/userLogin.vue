@@ -28,8 +28,8 @@
 			<!-- 输入框 -->
 			<div class="tabs_con">
 				<div id="loginbox">
-					<input v-if="login_regise_sms" v-model="account.user_acc" class="item_account" autocomplete="off" type="text" name="user" id="username"
-						placeholder="邮箱/手机号码/小米ID">
+					<input v-if="login_regise_sms" v-model="account.user_acc" class="item_account" autocomplete="off" type="text"
+						name="user" id="username" placeholder="邮箱/手机号码/小米ID">
 					<div v-if="!login_regise_sms" class="phone_login_name">
 						<p class="phone_start_box">
 							<span class="phone_start">+86</span>
@@ -37,15 +37,15 @@
 						<input type="text" v-model="account.user_acc" placeholder="手机号码">
 					</div>
 
-					<input v-if="login_regise_sms" v-model="account.passwd" type="password" class="item_account" placeholder="密码" autocomplete="off"
-						id="pwd" name="password">
+					<input v-if="login_regise_sms" v-model="account.passwd" type="password" class="item_account" placeholder="密码"
+						autocomplete="off" id="pwd" name="password">
 					<div v-if="!login_regise_sms" class="phone_login_msmCode">
 						<input type="text" v-model="account.passwd" class="phone_login_sms" placeholder="短信验证码">
 						<div class="code_panel">
 							<a class="send_ticket" href="javascript:;">获取验证码</a>
 						</div>
 					</div>
-					<button>登陆</button>
+					<button @click="req_login">登陆</button>
 
 					<div class="other_panel clearfix">
 						<span class="sms_link">
@@ -70,7 +70,7 @@
 							<fieldset class="oth_type_tit">
 								<legend align="center" class="oth_type_txt">其他方式登录</legend>
 							</fieldset>
-                
+
 							<div id="sns-login-links" class="oth_type_links">
 								<a class="sns-qq icon_type " data-type="qq" href="" title="QQ登录" target="_blank">
 									<i class="iconfont iconqq"></i>
@@ -95,6 +95,9 @@
 </template>
 
 <script>
+	import {
+		mapActions
+	} from "@/store/index";
 	export default {
 		name: "userLogin",
 		data() {
@@ -116,11 +119,32 @@
 			},
 			// 切换 二维码登陆 = 正常登陆
 			changes_login_qrcode() {
-				// this.qrCode = !this.qrCode;
 				this.$emit('update:qrState', this.qrCode);
-			}
-		},
-	}
+			},
+
+			// 登录 提交信息
+			async req_login() {
+					let {user_acc, passwd} = this.account;
+					if (user_acc.trim() && passwd.trim()) {
+						try {
+							let result = await this.$store.dispatch("getTokeInfo", {user_acc, passwd});
+							console.log(result)
+							if (result.code === 200) {
+								alert("登录成功");
+								let redirect = this.$route.query.redirect;
+								this.$router.push(redirect || "/");
+							} else {
+								alert(result.msg);
+							}
+						} catch (error) {
+							alert("登录失败");
+						}
+					}else {
+						alert("输入有误!")
+					}
+				}
+			},
+		}
 </script>
 
 <style lang="less" scoped>

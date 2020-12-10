@@ -44,3 +44,13 @@ export const reqRecommendList = () => {
     method: "get",
   });
 };
+
+export const reqTokeInfo = (name, passwd) => {
+	return Ajax({
+		url: "/login",
+		method: "get",
+		params:{
+			name, passwd
+		}
+	})
+}
