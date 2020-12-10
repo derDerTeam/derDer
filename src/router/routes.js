@@ -2,9 +2,9 @@ import Order from "@/views/Order";
 import Search from "@/views/Search";
 import Detail from "@/views/Detail";
 const Product = () => import("@/views/Product");
-const Login = () => import('@/views/Login');
-const Register = () => import('@/views/Register');
-import CartList from '@/views/CartList'
+const Login = () => import("@/views/Login");
+const Register = () => import("@/views/Register");
+import CartList from "@/views/CartList";
 
 export default [
   {
@@ -14,18 +14,20 @@ export default [
   {
     path: "/search/:keyword?",
     component: Search,
+    name: "search",
   },
   {
     path: "/product",
     component: Product,
-	},
-	{
-		path: "/login",
-		component: Login
-	},{
-		path: "/register",
-		component: Register
-	},
+  },
+  {
+    path: "/login",
+    component: Login,
+  },
+  {
+    path: "/register",
+    component: Register,
+  },
   {
     path: "/",
     redirect: "/product",
@@ -33,9 +35,10 @@ export default [
   {
     path: "/detail",
     component: Detail,
+    name: "detail",
   },
   {
-    path: '/cartList',
-    component:CartList
-}
+    path: "/cartList",
+    component: CartList,
+  },
 ];

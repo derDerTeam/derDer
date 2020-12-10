@@ -16,12 +16,13 @@
     <Tabbed></Tabbed>
     <Crowd></Crowd>
     <Seckill
-      :bannerList="[1, 1, 2, 3, 4, 5]"
+      :seckillList="seckillList"
       :nH="nH"
       :nM="nM"
       :nS="nS"
+      :nD="nD"
     ></Seckill>
-    <News :bannerList="[1, 1, 2, 3, 4, 5]"></News>
+    <News></News>
     <Recommend></Recommend>
     <FixedBar></FixedBar>
     <Footer></Footer>
@@ -37,56 +38,38 @@ import Seckill from "./seckill";
 import News from "@/views/Product/news";
 import Recommend from "@/views/Product/recommend";
 import { daojishi } from "@/utils/dateUtils";
+import { mapState } from "vuex";
 export default {
   name: "Product",
   data() {
     return {
-      bannerList: [
-        {
-          id: 1,
-          imgUrl:
-            "https://img.youpin.mi-img.com/test/577750a5a3ad543ded7ea6da51c5ebdd.jpeg?w=1080&h=450",
-        },
-        {
-          id: 2,
-          imgUrl:
-            "https://img.youpin.mi-img.com/test/a4a6cf98d6f9b836cd9e1f4482c1ba98.png?w=1080&h=450",
-        },
-        {
-          id: 3,
-          imgUrl:
-            "https://img.youpin.mi-img.com/test/8b1131d1b913b992a76f7eea24ed371d.jpeg?w=1080&h=450",
-        },
-        {
-          id: 4,
-          imgUrl:
-            "https://img.youpin.mi-img.com/test/568f57a2b342972d0022916966b2b6a7.jpeg?w=1080&h=450",
-        },
-        {
-          id: 5,
-          imgUrl:
-            "https://img.youpin.mi-img.com/test/577750a5a3ad543ded7ea6da51c5ebdd.jpeg?w=1080&h=450",
-        },
-        {
-          id: 6,
-          imgUrl:
-            "https://img.youpin.mi-img.com/test/577750a5a3ad543ded7ea6da51c5ebdd.jpeg?w=1080&h=450",
-        },
-        {
-          id: 7,
-          imgUrl:
-            "https://img.youpin.mi-img.com/test/577750a5a3ad543ded7ea6da51c5ebdd.jpeg?w=1080&h=450",
-        },
-      ],
+      nD: "",
       nH: "",
       nM: "",
       nS: "",
+      skList: {},
     };
   },
   components: { Category, Tabbed, Crowd, Seckill, News, Recommend, FixedBar },
   mounted() {
-    daojishi(this, "2020/12/10 09:00:00");
-    console.log(this.nH, this.nM, this.nS);
+    //获取banner数据
+    this.getBannerList();
+    this.getSeckillList();
+    daojishi(this);
+  },
+  methods: {
+    getBannerList() {
+      this.$store.dispatch("getBannerList");
+    },
+    getSeckillList() {
+      this.$store.dispatch("getSeckillList");
+    },
+  },
+  computed: {
+    ...mapState({
+      bannerList: (state) => state.product.bannerList || [],
+      seckillList: (state) => state.product.seckillList || [],
+    }),
   },
 };
 </script>

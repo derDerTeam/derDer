@@ -5,48 +5,12 @@
     </div>
     <div class="m-product-list  clearfix">
       <div
-        class="m-goods-item-container first pro-item-category"
+        class="m-goods-item-container  pro-item-category"
         :class="{ first: index % 4 === 0 || index === 0 }"
-        data-src="https://www.xiaomiyoupin.com/detail?gid=134980"
-        data-target="_blank"
-      >
-        <div class="category-img-container">
-          <div class="product-img">
-            <div
-              class="m-product-image-container undefined"
-              data-src="https://img.youpin.mi-img.com/shopmain/dfce9da45c02dacf6b4e2d1beca53631.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-              style="width: 264px; height: 198px;"
-            >
-              <div
-                class="img-container"
-                style="padding-left: 35px; padding-right: 35px; padding-bottom: 3px; width: 194px; height: 195px;"
-              >
-                <img
-                  src="https://img.youpin.mi-img.com/shopmain/dfce9da45c02dacf6b4e2d1beca53631.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  data-src="https://img.youpin.mi-img.com/shopmain/dfce9da45c02dacf6b4e2d1beca53631.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  alt="飞米 FIMI X8SE 2020 无人机"
-                  style="height: 195px; width: 195px; margin-left: -0.5px;"
-                />
-              </div>
-            </div>
-          </div>
-          <p class="pro-desc">4K HDR视频，8公里图传，35分钟...</p>
-        </div>
-        <div class="category-box">
-          <div class="m-goods-common-tag-con"></div>
-          <p class="pro-info" title="飞米 FIMI X8SE 2020 无人机">
-            飞米 FIMI X8SE 2020 ...
-          </p>
-          <p class="pro-price">
-            <span class="pro-unit">¥</span><span class="m-num">99</span
-            ><span class="pro-flag">起</span>
-          </p>
-        </div>
-      </div>
-      <div
-        class="m-goods-item-container  pro-item-category"
         data-src="https://www.xiaomiyoupin.com/detail?gid=137231"
         data-target="_blank"
+        v-for="(recommend, index) in recommendList"
+        :key="recommend.id"
       >
         <div class="category-img-container">
           <div class="product-img">
@@ -60,280 +24,52 @@
                 style="padding-left: 35px; padding-right: 35px; padding-bottom: 3px; width: 194px; height: 195px;"
               >
                 <img
-                  src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
+                  :src="recommend.imgUrl"
                   data-src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
                   alt="Redmi K30S 至尊纪念版"
                   style="height: 195px; width: 195px; margin-left: -0.5px;"
+                  @click="toDetail(item)"
                 />
               </div>
             </div>
           </div>
-          <p class="pro-desc">骁龙865处理器；7档变速高刷，...</p>
+          <p class="pro-desc">{{ recommend.desc }}</p>
         </div>
-        <div class="m-goods-pro-tag-con">2色可选</div>
+        <div v-if="recommend.isOption === 'true'" class="m-goods-pro-tag-con">
+          {{ recommend.optionNum }}色可选
+        </div>
         <div class="category-box">
           <div class="m-goods-common-tag-con">
             <span
+              v-if="recommend.isNew === 'true'"
               class="common-tag common-tag-text"
               style="background-color: rgb(141, 186, 109);"
               >新品</span
             ><span
+              v-if="recommend.isMe === 'true'"
               class="common-tag common-tag-text"
               style="background-color: rgb(255, 103, 1);"
               >小米自营</span
             >
             <span
+              v-if="recommend.isKill === 'true'"
               class="common-tag common-tag-text"
               style="background-color: rgb(217, 107, 108);"
               >有品秒杀</span
             >
             <span
+              v-if="recommend.isSpecial === 'true'"
               class="common-tag common-tag-text"
               style="background-color: rgb(217, 107, 108);"
               >特价</span
             >
           </div>
           <p class="pro-info" title="Redmi K30S 至尊纪念版">
-            Redmi K30S 至尊纪念版...
+            {{ recommend.tital }}
           </p>
           <p class="pro-price">
-            <span class="pro-unit">¥</span><span class="m-num">2599</span
-            ><span class="pro-flag">起</span>
-          </p>
-        </div>
-      </div>
-      <div
-        class="m-goods-item-container  pro-item-category"
-        data-src="https://www.xiaomiyoupin.com/detail?gid=137231"
-        data-target="_blank"
-      >
-        <div class="category-img-container">
-          <div class="product-img">
-            <div
-              class="m-product-image-container undefined"
-              data-src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-              style="width: 264px; height: 198px;"
-            >
-              <div
-                class="img-container"
-                style="padding-left: 35px; padding-right: 35px; padding-bottom: 3px; width: 194px; height: 195px;"
-              >
-                <img
-                  src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  data-src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  alt="Redmi K30S 至尊纪念版"
-                  style="height: 195px; width: 195px; margin-left: -0.5px;"
-                />
-              </div>
-            </div>
-          </div>
-          <p class="pro-desc">骁龙865处理器；7档变速高刷，...</p>
-        </div>
-        <div class="m-goods-pro-tag-con">2色可选</div>
-        <div class="category-box">
-          <div class="m-goods-common-tag-con">
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(141, 186, 109);"
-              >新品</span
-            ><span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(255, 103, 1);"
-              >小米自营</span
-            >
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(217, 107, 108);"
-              >有品秒杀</span
-            >
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(217, 107, 108);"
-              >特价</span
-            >
-          </div>
-          <p class="pro-info" title="Redmi K30S 至尊纪念版">
-            Redmi K30S 至尊纪念版...
-          </p>
-          <p class="pro-price">
-            <span class="pro-unit">¥</span><span class="m-num">2599</span
-            ><span class="pro-flag">起</span>
-          </p>
-        </div>
-      </div>
-      <div
-        class="m-goods-item-container  pro-item-category"
-        data-src="https://www.xiaomiyoupin.com/detail?gid=137231"
-        data-target="_blank"
-      >
-        <div class="category-img-container">
-          <div class="product-img">
-            <div
-              class="m-product-image-container undefined"
-              data-src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-              style="width: 264px; height: 198px;"
-            >
-              <div
-                class="img-container"
-                style="padding-left: 35px; padding-right: 35px; padding-bottom: 3px; width: 194px; height: 195px;"
-              >
-                <img
-                  src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  data-src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  alt="Redmi K30S 至尊纪念版"
-                  style="height: 195px; width: 195px; margin-left: -0.5px;"
-                />
-              </div>
-            </div>
-          </div>
-          <p class="pro-desc">骁龙865处理器；7档变速高刷，...</p>
-        </div>
-        <div class="m-goods-pro-tag-con">2色可选</div>
-        <div class="category-box">
-          <div class="m-goods-common-tag-con">
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(141, 186, 109);"
-              >新品</span
-            ><span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(255, 103, 1);"
-              >小米自营</span
-            >
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(217, 107, 108);"
-              >有品秒杀</span
-            >
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(217, 107, 108);"
-              >特价</span
-            >
-          </div>
-          <p class="pro-info" title="Redmi K30S 至尊纪念版">
-            Redmi K30S 至尊纪念版...
-          </p>
-          <p class="pro-price">
-            <span class="pro-unit">¥</span><span class="m-num">2599</span
-            ><span class="pro-flag">起</span>
-          </p>
-        </div>
-      </div>
-      <div
-        class="m-goods-item-container  pro-item-category"
-        data-src="https://www.xiaomiyoupin.com/detail?gid=137231"
-        data-target="_blank"
-      >
-        <div class="category-img-container">
-          <div class="product-img">
-            <div
-              class="m-product-image-container undefined"
-              data-src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-              style="width: 264px; height: 198px;"
-            >
-              <div
-                class="img-container"
-                style="padding-left: 35px; padding-right: 35px; padding-bottom: 3px; width: 194px; height: 195px;"
-              >
-                <img
-                  src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  data-src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  alt="Redmi K30S 至尊纪念版"
-                  style="height: 195px; width: 195px; margin-left: -0.5px;"
-                />
-              </div>
-            </div>
-          </div>
-          <p class="pro-desc">骁龙865处理器；7档变速高刷，...</p>
-        </div>
-        <div class="m-goods-pro-tag-con">2色可选</div>
-        <div class="category-box">
-          <div class="m-goods-common-tag-con">
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(141, 186, 109);"
-              >新品</span
-            ><span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(255, 103, 1);"
-              >小米自营</span
-            >
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(217, 107, 108);"
-              >有品秒杀</span
-            >
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(217, 107, 108);"
-              >特价</span
-            >
-          </div>
-          <p class="pro-info" title="Redmi K30S 至尊纪念版">
-            Redmi K30S 至尊纪念版...
-          </p>
-          <p class="pro-price">
-            <span class="pro-unit">¥</span><span class="m-num">2599</span
-            ><span class="pro-flag">起</span>
-          </p>
-        </div>
-      </div>
-      <div
-        class="m-goods-item-container  pro-item-category"
-        data-src="https://www.xiaomiyoupin.com/detail?gid=137231"
-        data-target="_blank"
-      >
-        <div class="category-img-container">
-          <div class="product-img">
-            <div
-              class="m-product-image-container undefined"
-              data-src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-              style="width: 264px; height: 198px;"
-            >
-              <div
-                class="img-container"
-                style="padding-left: 35px; padding-right: 35px; padding-bottom: 3px; width: 194px; height: 195px;"
-              >
-                <img
-                  src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  data-src="https://img.youpin.mi-img.com/shopmain/7387face5887e41de764f83cb23c46a1.png@base@tag=imgScale&amp;F=webp&amp;h=800&amp;w=800?w=800&amp;h=800"
-                  alt="Redmi K30S 至尊纪念版"
-                  style="height: 195px; width: 195px; margin-left: -0.5px;"
-                />
-              </div>
-            </div>
-          </div>
-          <p class="pro-desc">骁龙865处理器；7档变速高刷，...</p>
-        </div>
-        <div class="m-goods-pro-tag-con">2色可选</div>
-        <div class="category-box">
-          <div class="m-goods-common-tag-con">
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(141, 186, 109);"
-              >新品</span
-            ><span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(255, 103, 1);"
-              >小米自营</span
-            >
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(217, 107, 108);"
-              >有品秒杀</span
-            >
-            <span
-              class="common-tag common-tag-text"
-              style="background-color: rgb(217, 107, 108);"
-              >特价</span
-            >
-          </div>
-          <p class="pro-info" title="Redmi K30S 至尊纪念版">
-            Redmi K30S 至尊纪念版...
-          </p>
-          <p class="pro-price">
-            <span class="pro-unit">¥</span><span class="m-num">2599</span
+            <span class="pro-unit">¥</span
+            ><span class="m-num">{{ recommend.price }}</span
             ><span class="pro-flag">起</span>
           </p>
         </div>
@@ -343,10 +79,32 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "Recommend",
   data() {
-    return { index: 1 };
+    return {};
+  },
+  mounted() {
+    this.getRecommendList();
+  },
+  methods: {
+    getRecommendList() {
+      this.$store.dispatch("getRecommendList");
+    },
+    toDetail(item) {
+      this.$router.push({
+        name: "detail",
+        query: {
+          id: item.id,
+        },
+      });
+    },
+  },
+  computed: {
+    ...mapState({
+      recommendList: (state) => state.product.recommendList,
+    }),
   },
 };
 </script>
