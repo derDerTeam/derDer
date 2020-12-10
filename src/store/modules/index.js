@@ -5,6 +5,5 @@ import shopCart from '@/store/modules/shopCart'
 import search from "@/store/modules/search"
 
 export default {
-  product, login,shopCart, search
+	product, login, shopCart, search
 };
-
