@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+
+
 import FixedBar from "@/components/FixedBar";
 Vue.config.productionTip = false;
 import ElementUI from "element-ui";

@@ -2,25 +2,35 @@
   <div class="container" style="border-bottom-color: rgb(231, 231, 231);">
     <ul>
       <li>
-        <div>
-          <img
-            src="https://img.youpin.mi-img.com/jianyu/efb5e1c094c3e185d2add3e49bee0366.png?w=126&amp;h=126"
-            data-src="https://img.youpin.mi-img.com/jianyu/efb5e1c094c3e185d2add3e49bee0366.png?w=126&amp;h=126"
-            alt="上新精选"
-            style="width: 80px; height: 80px;"
-          />
-        </div>
-        <p class="title" style="color: rgb(102, 102, 102);">上新精选</p>
+        <a
+          href="https://m.xiaomiyoupin.com/w/new_product_v3?_rt=weex&pageid=4728&sign=846b35b9e94a50a84a0d07b9ab2cc36a&pdl=jianyu&spmref=YouPinPC.$Home$.icon.0.77421220"
+          target="_block"
+        >
+          <div>
+            <img
+              src="https://img.youpin.mi-img.com/jianyu/efb5e1c094c3e185d2add3e49bee0366.png?w=126&amp;h=126"
+              data-src="https://img.youpin.mi-img.com/jianyu/efb5e1c094c3e185d2add3e49bee0366.png?w=126&amp;h=126"
+              alt="上新精选"
+              style="width: 80px; height: 80px;"
+            />
+          </div>
+          <p class="title" style="color: rgb(102, 102, 102);">上新精选</p></a
+        >
       </li>
       <li>
-        <div>
-          <img
-            src="https://img.youpin.mi-img.com/jianyu/24c86a799f3ea8ccfa675ff7563d50fb.png?w=126&amp;h=126"
-            alt="小米众筹"
-            style="width: 80px; height: 80px;"
-          />
-        </div>
-        <p class="title" style="color: rgb(102, 102, 102);">小米众筹</p>
+        <a
+          href="https://m.xiaomiyoupin.com/w/new_product_v3?_rt=weex&pageid=4728&sign=846b35b9e94a50a84a0d07b9ab2cc36a&pdl=jianyu&spmref=YouPinPC.$Home$.icon.0.77421220"
+          target="_block"
+        >
+          <div>
+            <img
+              src="https://img.youpin.mi-img.com/jianyu/24c86a799f3ea8ccfa675ff7563d50fb.png?w=126&amp;h=126"
+              alt="小米众筹"
+              style="width: 80px; height: 80px;"
+            />
+          </div>
+          <p class="title" style="color: rgb(102, 102, 102);">小米众筹</p>
+        </a>
       </li>
       <li>
         <div>
