@@ -10,7 +10,7 @@ import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import * as API from "@/api";
 
-import SliderLoop from "@/components/SliderLoop";
+import Slider from "@/components/SliderLoop";
 import Header from "@/components/Header";
 import Top from "@/components/Top";
 import Footer from "@/components/Footer";
@@ -24,6 +24,7 @@ Vue.component("Header", Header);
 //顶部组件
 Vue.component("Top", Top);
 //轮播图组件
+Vue.component("Slider", Slider);
 Vue.use(ElementUI);
 new Vue({
   beforeCreate() {

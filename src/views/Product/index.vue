@@ -7,10 +7,7 @@
         <Category></Category>
       </div>
       <div class="rightBanner">
-        <SliderLoop
-          :bannerList="bannerList"
-          class="bannerContainer"
-        ></SliderLoop>
+        <Slider :bannerList="bannerList" class="bannerContainer"></Slider>
       </div>
     </div>
     <Tabbed></Tabbed>

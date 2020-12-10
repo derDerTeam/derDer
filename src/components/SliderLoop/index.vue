@@ -11,7 +11,7 @@
       </div>
     </div>
     <!-- 如果需要分页器 -->
-    <div class="swiper-pagination"></div>
+    <!-- <div class="swiper-pagination" ref="pag"></div> -->
 
     <!-- 如果需要导航按钮 -->
     <div class="swiper-button-prev"></div>
@@ -23,7 +23,7 @@
 import Swiper from "swiper";
 import "swiper/css/swiper.min.css";
 export default {
-  name: "SliderLoop",
+  name: "Slider",
   props: ["bannerList"],
   watch: {
     bannerList: {
@@ -33,13 +33,13 @@ export default {
         this.$nextTick(() => {
           //swiper
           new Swiper(this.$refs.bannerSwiper, {
-            // loop: true, // 循环模式选项
+            loop: true, // 循环模式选项
 
             // 如果需要分页器
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
+            // pagination: {
+            //   el: this.$refs.pag,
+            //   // clickable: true,
+            // },
 
             autoplay: true,
             // 如果需要前进后退按钮
