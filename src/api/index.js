@@ -1,4 +1,6 @@
 import Ajax from "@/ajax/Ajax";
+import MockAjax from "@/ajax/MockAjax";
+import Axios from "axios";
 
 //例子
 export const reqBannerList = () => {
@@ -50,3 +52,19 @@ export const reqSearchList = () => {
     method: "get",
   });
 };
+
+// 请求详情页的相关推荐
+export const reqRecommendResponseList = () => {
+  return Ajax({
+    url:"/product/detail",
+    method:"get"
+  })
+};
+
+// 评论列表
+// export const reqRegs = () => {
+//   return Ajax({
+//     url:"/product/detail",
+//     method:"get"
+//   })
+// };
