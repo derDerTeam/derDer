@@ -5,81 +5,23 @@
     <div class="searchContainer">
       
        <!-- 有商品数据 -->
-      <div class="searchContent">
-         <div class="searchTit"> 为您找到54条数据</div>
+      <div class="searchContent" v-if="keyword">
+         <div class="searchTit" > 为您找到{{total}}条数据</div>
          <!-- 品牌内容 -->
-       <div class="goodsList clearFix" >
-         <router-link to="/detail">
-               <div class="goodsItem">
-                  <img src="https://img.youpin.mi-img.com/shopmain/55442f5624d8a9fa6cf18606f907be23.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-                  <p>云米自动波轮洗衣机5.5kg</p>
-                  <span><i>￥</i>678</span>
-               </div>
-            </router-link>
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/46d71f901b78fe0847dc3ab6bf62290f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
+       <div class="goodsList  clearFix" >
+         <!-- <router-link to="/detail"> -->
+            <div class="goodsItem clearFix"  v-for="(good,index) in goodsList" :key="good.id" @click="toDetail">
+               <img :src="good.url" alt="">
+               <p>{{good.name}}</p>
+               <span><i>￥</i>{{good.price}}</span>
             </div>
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/55c83daa2293fc3bb5e929a90aadd97a.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/2949b8ef8a23d5adbad86b304b192f2c.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
+            <!-- </router-link> -->
          </div>
-         <div class="goodsList clearFix">
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/c0e8a45d5175b81dfd6e2ecb38ae522c.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/f8c437f56aafed294d2abf128243e968.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/c0e8a45d5175b81dfd6e2ecb38ae522c.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-         </div>
-         <div class="goodsList clearFix">
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/f8c437f56aafed294d2abf128243e968.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/46d71f901b78fe0847dc3ab6bf62290f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/f8c437f56aafed294d2abf128243e968.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-            <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/46d71f901b78fe0847dc3ab6bf62290f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-               <p>云米自动波轮洗衣机5.5kg</p>
-               <span><i>￥</i>678</span>
-            </div>
-         </div>
+        
      </div>
 
       <!-- 没有商品数据 -->
-      <div class="noGoods">
+      <div class="noGoods" v-else>
          <!-- 头部信 -->
          <div class="noData">
              <img src="./images/006.jpg" alt="">
@@ -102,7 +44,7 @@
                      </div>
                   </router-link>
                   <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+                    <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
                      <p>云米自动波轮洗衣机5.5kg</p>
                      <span><i>￥</i>678</span>
                   </div>
@@ -112,7 +54,7 @@
                      <span><i>￥</i>678</span>
                   </div>
                   <div class="goodsItem">
-               <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
+                    <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
                      <p>云米自动波轮洗衣机5.5kg</p>
                      <span><i>￥</i>678</span>
                   </div>
@@ -121,9 +63,7 @@
          </div>
       </div>
        
-     
-
-       <!-- 分页 -->
+       <!-- 分页
        <div class="search-pagination">
         <el-pagination
           background
@@ -131,7 +71,8 @@
           :total="1000">
         </el-pagination>
       </div>
-      
+       -->
+       
   </div>
   <FixedBar></FixedBar>
   <Footer></Footer>
@@ -139,15 +80,125 @@
 </template>
 
 <script>
+
   export default {
     name:'Search',
+    props:['keyword'],
     data(){
-      
+      return{
+         isShow:true,
+         goodsList:[
+            {
+               id:1,
+               url:'https://img.youpin.mi-img.com/shopmain/cf28d14ccbdf277876ffcbcea70fe4ca.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'小白智能看护灯',
+               price:135
+            },
+            {
+               id:2,
+               url:'https://img.youpin.mi-img.com/shopmain/f18a3247c248eb907c40d8b2e7d3bcdf.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'美的AAA级健康读写台灯',
+               price:566
+            },
+            {
+               id:3,
+               url:'https://img.youpin.mi-img.com/shopmain/8bbecefb998b37875641501d45a0543a.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'华趣国AA级遥控触控落地灯',
+               price:565
+            },
+            {
+               id:4,
+               url:'https://img.youpin.mi-img.com/shopmain/fdaa598c8019f88d25abfd342ca2c6bc.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'露得清维A醇肤色修护晚霜',
+               price:1323
+            },
+            {
+               id:5,
+               url:'https://img.youpin.mi-img.com/shopmain/cf28d14ccbdf277876ffcbcea70fe4ca.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'周大福天然A货翡翠玉石男女手饰',
+               price:599
+            },
+            {
+               id:6,
+               url:'https://img.youpin.mi-img.com/shopmain/cf28d14ccbdf277876ffcbcea70fe4ca.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'小米10 青春版 5G',
+               price:966
+            },
+            {
+               id:7,
+               url:"https://img.youpin.mi-img.com/shopmain/0c33f90cd572d163a74dd256a890570f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800",
+               name:'哆啦A梦十二星座香薰',
+               price:4621
+            },
+            {
+               id:8,
+               url:'https://img.youpin.mi-img.com/shopmain/f0134e31a98b0123c27a4263adde2d87.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'哆啦A梦太阳能旋转香薰',
+               price:6262
+            },
+            {
+               id:9,
+               url:'https://img.youpin.mi-img.com/shopmain/cf28d14ccbdf277876ffcbcea70fe4ca.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'小白智能看护灯',
+               price:895
+            },
+            {
+               id:10,
+               url:'https://img.youpin.mi-img.com/shopmain/a8a93803119875c4948951de8bd1269c.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'小白智能看护灯',
+               price:562
+            },
+            {
+               id:11,
+               url:'https://img.youpin.mi-img.com/shopmain/bab309cb1107f9749e3d98cfed952b45.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'小白智能看护灯',
+               price:4626
+            },
+            {
+               id:12,
+               url:'https://img.youpin.mi-img.com/shopmain/ecdba85bbf29ec08ac14f3fdb4232b88.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'小白智能看护灯',
+               price:654
+            },
+            {
+               id:13,
+               url:'https://img.youpin.mi-img.com/shopmain/72614268b07639f9329139db8d1175ea.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'小白智能看护灯',
+               price:995
+            },
+            {
+               id:14,
+               url:'https://img.youpin.mi-img.com/shopmain/004c2c579a87859c68a52e65c6bdc1a6.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'小白智能看护灯',
+               price:4546
+            },
+             {
+               id:15,
+               url:'https://img.youpin.mi-img.com/shopmain/2dd1d6c4151c10d3752211b3e68cba8a.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'哆啦A梦十二星座香薰',
+               price:4621
+            },
+            {
+               id:16,
+               url:'https://img.youpin.mi-img.com/shopmain/b9c90b8ec8372c84dd23120499a644ae.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+               name:'哆啦A梦太阳能旋转香薰',
+               price:6262
+            },
+         ],
+         total:16,
+      }
+    },
+    mounted(){
+     
     },
    methods:{
-      
-   }
-    
+    toDetail(){
+       this.$router.push('/detail')
+     },
+
+   },
+   
+  
   }
 </script>
 
@@ -163,6 +214,7 @@
          //没有商品数据
          .noGoods{
             // height: 600px;
+            margin-bottom: 200px;
             .noData{
                text-align: center;
                margin-top: 80px;
@@ -175,6 +227,8 @@
                   padding: 3px 25px;
                   border: 1px solid #333;
                   margin-bottom: 50px;
+                  text-decoration: none;
+                 
                }
             }
             .recommend{
@@ -237,13 +291,14 @@
          .searchContent{
             width: 1080px;
             margin: 0 auto;
+            margin-bottom: 150px;
             .searchTit{
                font-size: 14px;
                margin: 30px 0 10px 0;
             }
             .goodsList{
-            
-            .clearFix::after{
+               
+               .clearFix::after{
                content:"";
                display: block;
                clear:both;
@@ -251,19 +306,23 @@
                .goodsItem{
                cursor: pointer;
                float: left;
-               width:262px ;
+               width:260px ;
                height: 267px;
-               background-color: #fff;
+               background-color: #fafafa;
                text-align: center;
                margin-right: 5px;
-               margin-bottom: 5px;
+               margin-bottom: 6px;
                transition: all 0.5s;
-               
+               .clearFix::after{
+               content:"";
+               display: block;
+               clear:both;
+               }
                }
                .goodsItem:hover{
-               height: 260px;
-               box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
-                     0px 0px 20px rgba(0,0,0,0.1) inset;
+               // height: 265px;
+               box-shadow: 0px 1px 4px rgba(0,55,55,0.5),
+                     0px 0px 20px rgba(0,0,0,0.3) inset;
 
                }
             

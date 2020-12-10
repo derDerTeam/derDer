@@ -1,6 +1,7 @@
 
-import product from "@/store/modules/product";
+import product from "@/store/modules/product"
 export default {
   product,
+ 
 };
 

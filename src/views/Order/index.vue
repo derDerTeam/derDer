@@ -3,7 +3,7 @@
    <Top></Top>
   <Header></Header>
   
-  <div class="orderContainer">
+   <div class="orderContainer">
     
     <!-- 头部 -->
     <div class="header">
@@ -35,7 +35,8 @@
             <ul>
             <li>
               <span class="active-circle"></span>
-              <a href="###">我的订单</a>
+              <!-- <a href="###">我的订单</a> -->
+              <router-link to="/myorder">我的订单</router-link>
             </li>
             <li>
               <a href="###">我的资产</a>
@@ -50,7 +51,8 @@
         </div>
       </div>
       
-      <!-- 右边区域 -->
+       <!-- 右边区域 -->
+    
       <div class="rightContent">
         <div class="personal-main">
           <!-- 导航切换 -->
@@ -79,16 +81,21 @@
 
       </div>
 
+     
       </div>  
   </div>
+   
 <FixedBar></FixedBar>
 <Footer></Footer>
 </div>
 </template>
 
 <script>
+
 export default {
-  name:''
+
+  name:'',
+ 
 }
 </script>
 
@@ -177,7 +184,7 @@ div{
       width: 900px;
       height: 700px; 
       background-color: #fafafa;
-    //  margin-bottom: 100px;
+      //  margin-bottom: 100px;
      .personal-main{
       padding:11px 0 11px 60px;
        .personal-selector{

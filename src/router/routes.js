@@ -6,6 +6,8 @@ const Login = () => import('@/views/Login');
 const Register = () => import('@/views/Register');
 import CartList from '@/views/CartList'
 
+
+
 export default [
   {
     path: "/order",
@@ -14,6 +16,7 @@ export default [
   {
     path: "/search/:keyword?",
     component: Search,
+    props: (route)=>({keyword:route.params.keyword})
   },
   {
     path: "/product",
