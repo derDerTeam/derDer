@@ -64,7 +64,7 @@
             @click="changeNum"
             >
          </el-pagination> -->
-         <Pagination></Pagination>
+         <!-- <Pagination></Pagination> -->
       </div>
       
        
@@ -76,7 +76,7 @@
 
 <script>
 import { mapGetters, mapState } from 'vuex';
-import Pagination from './Pagination'
+// import Pagination from './Pagination'
   export default {
     name:'Search',
     props:['keyword'],
@@ -84,8 +84,6 @@ import Pagination from './Pagination'
       return{
 
        searchParams: {
-        
-         keyword: "",
          pageNo: 1,
          pageSize: 2,
        }, 
@@ -226,9 +224,7 @@ import Pagination from './Pagination'
      ...mapState({search:state=>state.search.searchList}),
    //   ...mapGetters(['goods'])
   } ,
-  components:{
-     Pagination
-  }
+
   
   }
 </script>
