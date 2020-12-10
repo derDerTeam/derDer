@@ -1,25 +1,7 @@
 // 所有接口请求函数
 import Ajax from "@/ajax/Ajax";
-import MockAjax from "@/ajax/MockAjax";
-import Axios from "axios";
 import mockAjax from "@/ajax/MockAjax";
 import Axios from "axios";
-
-//例子
-// export const reqCategoryList = () => {
-//   return Ajax({
-//     url: "/product/getBaseCategoryList",
-//     method: "get",
-//   });
-// };
-
-// 请求购物车列表数据
-// export const reqShopCartList = () => {
-//   return mockAjax({
-//     url:'/product/newsList',
-//     method:'get'
-//   })
-// }
 
 // 请求添加购物车（添加或修改）
 export const reqAddOrUpdateShopCart = (skuId, skuTital) => {
@@ -30,8 +12,8 @@ export const reqAddOrUpdateShopCart = (skuId, skuTital) => {
 };
 
 export const reqShopCartList = () => {
-  return mockAjax({
-    url: "/product/news",
+  return Ajax({
+    url: "/shop/shopcart",
     method: "get",
   });
 };
@@ -90,14 +72,44 @@ export const reqSearchList = () => {
 // 请求详情页的相关推荐
 export const reqRecommendResponseList = () => {
   return Ajax({
-    url:"/product/detail",
-    method:"get"
-  })
+    url: "/product/detail",
+    method: "get",
+  });
 };
 
 export const reqTradeInfo = () => {
   return Ajax({
     url: "/product/trade",
     method: "get",
+  });
+};
+
+export const reqRgs = () => {
+  return Ajax({
+    url: "/product/trade",
+    method: "get",
+  });
+};
+//获取登录验证码
+export const reqCode = () => {
+  return Ajax({
+    url: "/userInfo/code",
+    method: "get",
+  });
+};
+export const reqLogin = (data) => {
+  return Ajax({
+    url: "/userInfo/login",
+    method: "post",
+    data,
+  });
+};
+export const reqUserByToken = (token) => {
+  return Ajax({
+    url: "/userInfo/byToken",
+    method: "get",
+    params: {
+      token,
+    },
   });
 };

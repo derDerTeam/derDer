@@ -79,13 +79,17 @@ export default {
       });
     },
     toSearch(cate) {
-      this.$router.push({
+      let location = {
         name: "search",
         query: {
           cateId: cate.id,
           cateName: cate.name,
         },
-      });
+      };
+      // if (this.$route.params) {
+      //   location.params = this.$route.params;
+      // }
+      this.$router.push(location);
     },
   },
   computed: {

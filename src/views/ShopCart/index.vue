@@ -11,7 +11,11 @@
         <div class="cart-main">
           <div class="cart-th">
             <div class="cart-th1">
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                :checked="isAllChecked"
+                @click="changeAllChecked(isAllChecked)"
+              />
               <span>全选</span>
             </div>
             <div class="cart-th2">商品信息</div>
@@ -21,21 +25,37 @@
             <div class="cart-th6">操作</div>
           </div>
           <div class="detailItem">
-            <input class="ifOrAll" type="checkbox" />
+            <input
+              class="ifOrAll"
+              type="checkbox"
+              :checked="isAllChecked"
+              @click="changeAllChecked(isAllChecked)"
+            />
             <span>有品精选</span>
             <span class="sure">已免运费</span>
           </div>
           <div class="cart-body">
-            <ul class="cart-list">
+            <ul
+              class="cart-list"
+              v-for="(item, index) in shopCartList"
+              :key="item.id"
+            >
               <li class="cart-list-con1">
-                <input type="checkbox" name="chk_list" />
+                <input
+                  type="checkbox"
+                  :checked="item.isChecked"
+                  @click="chengChecked(item)"
+                  name="chk_list"
+                />
               </li>
               <li class="cart-list-con2">
-                <img src="./images/001.jpg" />
-                <div class="item-msg">飞米 FIMI X8SE 2020 白色 单机版</div>
+                <img :src="item.goodsUrl" />
+                <div class="item-msg">
+                  <router-link to="/detail">{{ item.title }}</router-link>
+                </div>
               </li>
               <li class="cart-list-con4">
-                <span class="price">￥2999</span>
+                <span class="price">￥{{ item.price }}</span>
               </li>
               <!-- <li class="cart-list-con5">
               <a href="javascript:void(0)" class="mins">-</a>
@@ -49,56 +69,35 @@
               <a href="javascript:void(0)" class="plus">+</a>
             </li> -->
               <li class="cart-list-con5">
-                <a href="javascript:void(0)" class="mins">-</a>
-                <input
-                  autocomplete="off"
-                  type="text"
-                  value="1"
-                  minnum="1"
-                  class="itxt"
-                />
-                <a href="javascript:void(0)" class="plus">+</a>
-              </li>
-              <li class="cart-list-con6">
-                <span class="sum">￥399</span>
-              </li>
-              <li class="cart-list-con7">
-                <a href="#none" class="sindelet">删除</a>
-              </li>
-            </ul>
-            <ul class="cart-list">
-              <li class="cart-list-con1">
-                <input type="checkbox" name="chk_list" />
-              </li>
-              <li class="cart-list-con2">
-                <img src="./images/001.jpg" />
-                <div class="item-msg">飞米 FIMI X8SE 2020 白色 单机版</div>
-                <!-- <div class="item-msg">{{ cart.skuTital }}</div> -->
-              </li>
-              <li class="cart-list-con4">
-                <span class="price">2999</span>
-              </li>
-              <li class="cart-list-con5">
                 <a
                   href="javascript:void(0)"
+                  @click="
+                    item.number > 1 ? (item.number -= 1) : (item.number = 1)
+                  "
                   class="mins"
-                  @click="changeSkuNum(cart, -1, 0)"
                   >-</a
                 >
                 <input
                   autocomplete="off"
                   type="text"
-                  value="1"
+                  :value="item.number"
                   minnum="1"
                   class="itxt"
                 />
-                <a href="javascript:void(0)" class="plus">+</a>
+                <a
+                  href="javascript:void(0)"
+                  @click="item.number += 1"
+                  class="plus"
+                  >+</a
+                >
               </li>
               <li class="cart-list-con6">
-                <span class="sum">399</span>
+                <span class="sum">￥399</span>
               </li>
               <li class="cart-list-con7">
-                <a href="#none" class="sindelet">删除</a>
+                <a href="#none" class="sindelet" @click="deleteShop(index)"
+                  >删除</a
+                >
               </li>
             </ul>
           </div>
@@ -106,17 +105,20 @@
 
         <div class="cart-tool">
           <div class="select-all">
-            <input class="chooseAll" type="checkbox" />
+            <input
+              class="chooseAll"
+              :checked="isAllChecked"
+              type="checkbox"
+              @click="changeAllChecked(isAllChecked)"
+            />
             <span>全选</span>
-            <div class="chosed">
-              已选 0 件
-            </div>
+            <div class="chosed">已选 {{ totalNumer }} 件</div>
           </div>
           <div class="option"></div>
           <div class="money-box">
             <div class="sumprice">
               <em>合计: ￥</em>
-              <i class="summoney">9999</i>
+              <i class="summoney">{{ totalPrice }}</i>
             </div>
             <!-- <div class="sumpriceOne">
               <em>总额: ￥</em>
@@ -127,7 +129,7 @@
               <i class="summoneyTwo">9999</i>
             </div> -->
             <div class="sumbtn">
-              <a class="sum-btn">结算</a>
+              <a class="sum-btn" @click="toTrade">结算</a>
             </div>
           </div>
         </div>
@@ -140,28 +142,65 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex'
+import { mapActions, mapState } from "vuex";
 
 import Top from "../../components/Top";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 export default {
-  name: "CartList",
+  name: "shopCart",
   components: {
     Top,
     Footer,
     Header,
+  },
+  data() {
+    return {};
   },
   mounted() {
     this.getShopCartList();
   },
   methods: {
     getShopCartList() {
-      console.log("ass")
       this.$store.dispatch("getShopCartList");
     },
+    //删除单项
+    deleteShop(index) {
+      this.$store.dispatch("deleteShop", index);
+    },
+    //修改单个商品的选中
+    chengChecked(item) {
+      this.$store.dispatch("chengChecked", item);
+    },
+    //修改全部商品
+    changeAllChecked(flag) {
+      this.$store.dispatch("changeAllChecked", !flag);
+    },
     // 修改购物车商品数量
-
+  },
+  computed: {
+    ...mapState({
+      shopCartList: (state) => state.shopCart.shopCartList || [],
+    }),
+    totalNumer() {
+      return this.shopCartList.reduce((pre, item) => {
+        pre += item.number;
+        return pre;
+      }, 0);
+    },
+    totalPrice() {
+      return this.shopCartList.reduce((pre, item) => {
+        pre += item.number * item.price;
+        return pre;
+      }, 0);
+    },
+    isAllChecked() {
+      return this.shopCartList.every((item) => item.isChecked);
+    },
+    toTrade() {
+      localStorage.setItem("shopCartList", JSON.stringify(this.shopCartList));
+      this.$router.push("/trade");
+    },
   },
 };
 </script>

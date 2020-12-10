@@ -2,7 +2,7 @@
   <div class="top">
     <div class="headerContainer clearfix">
       <div class="rightNav">
-        <div class="nologin" v-if="!isLogin">
+        <div class="nologin" v-if="!$store.state.user.token">
           <router-link to="/login">
             <span>登录</span>
           </router-link>
@@ -12,12 +12,25 @@
         </div>
         <!-- 登录状态 -->
         <div class="S-title login-info" v-else>
-          <i class="S-login"></i>
-          <span class="S-username">{{ $store.state }}</span>
+          <i class="S-login">
+            <img
+              :src="
+                $store.state.user.userInfo
+                  ? $store.state.user.userInfo.headImgUrl
+                  : ''
+              "
+              alt=""
+            />
+          </i>
+          <span class="S-username">{{
+            $store.state.user.userInfo
+              ? $store.state.user.userInfo.nickName
+              : ""
+          }}</span>
           <i class="S-down-icon"></i>
           <ul class="S-login-info-ul">
             <li>
-              <a href="#">我的订单</a>
+              <router-link to="/order">我的订单</router-link>
             </li>
             <li>
               <a href="#">我的订单</a>
@@ -32,8 +45,7 @@
               <a href="#">我的订单</a>
             </li>
             <li>
-              <!-- @click="backLogin" -->
-              <a href="#">退出登录</a>
+              <a href="javascript:;" @click="backLogin">退出登录</a>
             </li>
           </ul>
         </div>
@@ -65,12 +77,23 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "Top",
   data() {
     return {
       isLogin: false,
     };
+  },
+  methods: {
+    backLogin() {
+      this.$store.dispatch("logOut");
+    },
+  },
+  computed: {
+    ...mapState({
+      userInfo: (state) => state.user.userInfo,
+    }),
   },
 };
 </script>

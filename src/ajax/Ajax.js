@@ -14,14 +14,10 @@ instance.interceptors.request.use(function(config) {
   //1添加功能 进度的功能
   NProgress.start();
   //2可以对请求报文进行处理
-  // let userTempId = store.state.user.userTempId;
-  // if (userTempId) {
-  //   config.headers.userTempId = userTempId;
-  // }
-  // let userToken = store.state.user.token;
-  // if (userToken) {
-  //   config.headers.token = userToken;
-  // }
+  let userToken = store.state.user.token;
+  if (userToken) {
+    config.headers.token = userToken;
+  }
   return config;
 });
 //响应连接器  1可以添加功能 2可以处理响应报文

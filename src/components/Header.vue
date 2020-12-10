@@ -57,9 +57,13 @@ export default {
       if (this.keyword === "") {
         return;
       }
-      this.$router.push({
+      let location = {
         path: "/search/" + this.keyword,
-      });
+      };
+      if (this.$route.query) {
+        location.query = this.$route.query;
+      }
+      this.$router.push(location);
     },
   },
 };

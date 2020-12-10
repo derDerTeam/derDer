@@ -9,10 +9,17 @@
         <div class="leftPreview clearfix">
           <!-- 左侧大图 -->
           <div class="zoom">
-            <img src="https://img.youpin.mi-img.com/shopmain/5d0757bc79afe0887fcaef83c2a78142.jpg@base@tag=imgScale&F=webp&h=1080&w=1080?w=1080&h=1080" alt="" />
+            <img
+              src="https://img.youpin.mi-img.com/shopmain/5d0757bc79afe0887fcaef83c2a78142.jpg@base@tag=imgScale&F=webp&h=1080&w=1080?w=1080&h=1080"
+              alt=""
+            />
           </div>
           <!-- 右侧缩略图 -->
-          <div class="imageList" v-for="(image,index) in imgList" :key="image.id">
+          <div
+            class="imageList"
+            v-for="(image, index) in imgList"
+            :key="image.id"
+          >
             <img :src="image.url" alt="" />
           </div>
         </div>
@@ -211,8 +218,8 @@ export default {
           id: 4,
           url:
             "https://img.youpin.mi-img.com/shopmain/388ab1a62405951833274739c4a0cffe.jpg@base@tag=imgScale&F=webp&h=166&w=166",
-        }
-      ],  
+        },
+      ],
     };
   },
   mounted() {
@@ -221,7 +228,7 @@ export default {
   },
   methods: {
     toCartList() {
-      this.$router.push("/cartList");
+      this.$router.push("/shopcart");
     },
     getRecommendResponseList() {
       this.$store.dispatch("getRecommendResponseList");
