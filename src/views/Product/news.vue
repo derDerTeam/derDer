@@ -2,14 +2,18 @@
   <div class="container clearfix">
     <div class="h-sec-top clearfix">
       <h2 class="h-subTit">每日新品<span>每天10点 惊喜不断</span></h2>
-      <span class="h-more" data-src="" data-target="_blank" href="javascript:;"
+      <a
+        class="h-more"
+        data-src=""
+        target="_blank"
+        href="https://m.xiaomiyoupin.com/w/new_product_v3?_rt=weex&pageid=4728&sign=846b35b9e94a50a84a0d07b9ab2cc36a&pdl=jianyu&noDL=1"
         ><span>更多</span
         ><a
           class="m-icons m-icons-more more-icon"
           data-src=""
           href="javascript:;"
         ></a
-      ></span>
+      ></a>
     </div>
     <div class="m-sec-main mt1">
       <div class="swiper-container swiper-container-horizontal">
