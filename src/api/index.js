@@ -1,5 +1,7 @@
 // 所有接口请求函数
 import Ajax from "@/ajax/Ajax";
+import MockAjax from "@/ajax/MockAjax";
+import Axios from "axios";
 import mockAjax from "@/ajax/MockAjax";
 import Axios from "axios";
 
@@ -85,7 +87,14 @@ export const reqSearchList = () => {
   });
 };
 
-//请求获取订单交易信息
+// 请求详情页的相关推荐
+export const reqRecommendResponseList = () => {
+  return Ajax({
+    url:"/product/detail",
+    method:"get"
+  })
+};
+
 export const reqTradeInfo = () => {
   return Ajax({
     url: "/product/trade",
