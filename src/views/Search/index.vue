@@ -51,15 +51,22 @@
        <!-- <div>
           
        </div> -->
-       <!-- 分页
+       <!-- 分页 -->
        <div class="search-pagination">
-        <el-pagination
-          background
-          layout="prev, pager, next"
-          :total="1000">
-        </el-pagination>
+         <!-- <el-pagination
+            style="text-align:center"
+            :current-page="1"
+            :page-sizes="[3, 5, 10]"
+            :page-size="pageSize"
+            :pager-count='5'
+            layout=" prev, pager, next, jumper, ->,sizes,total"
+            :total="total"
+            @click="changeNum"
+            >
+         </el-pagination> -->
+         <Pagination></Pagination>
       </div>
-       -->
+      
        
   </div>
   <FixedBar></FixedBar>
@@ -75,7 +82,20 @@ import Pagination from './Pagination'
     props:['keyword'],
     data(){
       return{
-         isShow:true,
+
+       searchParams: {
+        
+         keyword: "",
+         pageNo: 1,
+         pageSize: 2,
+       }, 
+
+
+         // //当前页
+         // page:1,
+         // //每页展示的数据
+         // pageSize:3,
+         // isShow:true,
          goodsList:[
             {
                id:1,
@@ -186,14 +206,21 @@ import Pagination from './Pagination'
       getSearchList() {
       this.$store.dispatch("getSearchList");
     },
-
-
-
+     //分页
+    changeNum(page){
+      this.pageNo = page
+      this.getSearchList()
+    },
+    
       //跳转到详情页
     toDetail(){
        this.$router.push('/detail')
      },
 
+   
+   
+   
+   
    },
   computed:{
      ...mapState({search:state=>state.search.searchList}),
