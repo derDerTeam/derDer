@@ -251,20 +251,22 @@ import Pagination from './Pagination'
                      clear:both;
                      }
                      .goodsItem{
-                     cursor: pointer;
-                     float: left;
-                     width:262px ;
-                     height: 267px;
-                     background-color: #fff;
-                     text-align: center;
-                     margin-right: 5px;
-                     margin-bottom: 5px;
-                     transition: all 0.5s;
+                        cursor: pointer;
+                        float: left;
+                        width:262px ;
+                        height: 267px;
+                        background-color: #fff;
+                        text-align: center;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                     // transition: all 0.5s;
                      
                      }
                      .goodsItem:hover{
-                     height: 267px;
-                     box-shadow: 0px 1px 4px rgba(0,0,0,0.5),
+
+                     // height: 267px;
+                     color: red;
+                      box-shadow: 0px 1px 4px rgba(0,0,0,0.5),
                            0px 0px 20px rgba(0,0,0,0.4) inset;
 
                      }
