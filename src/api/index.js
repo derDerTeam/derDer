@@ -50,3 +50,12 @@ export const reqSearchList = () => {
     method: "get",
   });
 };
+
+//请求获取订单交易信息
+
+export const reqTradeInfo = () => {
+  return Ajax({
+    url:'/product/trade',
+    method:'get'
+  })
+}
