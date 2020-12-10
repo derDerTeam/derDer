@@ -1,15 +1,38 @@
 <template>
-	<div>
-		注册
-	</div>
+  <div id="wrapper">
+    <!-- 主体 -->
+    <div class="main-content"></div>
+    <Lfooter></Lfooter>
+  </div>
 </template>
 
 <script>
-	export default {
-		
-	}
+import Lfooter from "./components/Lfooter";
+export default {
+  name: "Login",
+  data() {
+    return {
+      qrCode: true,
+    };
+  },
+  methods: {},
+  components: {
+    userLogin,
+    Lfooter,
+    qrCode,
+  },
+};
 </script>
 
 <style lang="less" scoped>
+#wrapper {
+  background-color: #f5f5f5;
 
+  .main-content {
+    background-color: #fff;
+    max-width: 854px;
+    height: 100%;
+    margin: 0 auto 20px;
+  }
+}
 </style>
