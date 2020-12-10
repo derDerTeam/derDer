@@ -70,7 +70,7 @@
 							<fieldset class="oth_type_tit">
 								<legend align="center" class="oth_type_txt">其他方式登录</legend>
 							</fieldset>
-
+                
 							<div id="sns-login-links" class="oth_type_links">
 								<a class="sns-qq icon_type " data-type="qq" href="" title="QQ登录" target="_blank">
 									<i class="iconfont iconqq"></i>
