@@ -44,4 +44,10 @@ export const reqRecommendList = () => {
     method: "get",
   });
 };
+export const reqSearchList = () => {
+  return Ajax({
+    url: "/search/searchList",
+    method: "get",
+  });
+};
 

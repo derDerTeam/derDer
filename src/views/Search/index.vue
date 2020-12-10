@@ -21,10 +21,10 @@
      </div>
 
       <!-- 没有商品数据 -->
-      <div class="noGoods" v-else>
+      <div class="noGoods" v-else >
          <!-- 头部信 -->
          <div class="noData">
-             <img src="./images/006.jpg" alt="">
+            <img src="./images/006.jpg" alt="">
             <p>抱歉，暂无商品数据</p>
             <!-- <a href="#">继续逛</a> -->
             <router-link to="/">继续逛</router-link>
@@ -35,34 +35,22 @@
          <p>为您推荐</p>
          <div class="recommendGoods">
             <!-- 品牌内容 -->
-            <div class="goodsList clearFix" >
+            <div class="goodsList clearFix">
                <router-link to="/detail">
-                     <div class="goodsItem">
-                        <img src="https://img.youpin.mi-img.com/shopmain/46d71f901b78fe0847dc3ab6bf62290f.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-                        <p>云米自动波轮洗衣机5.5kg</p>
-                        <span><i>￥</i>678</span>
+                     <div class="goodsItem"   v-for="(item,index) in search" :key="item.index">
+                        <img :src="item.data.goods.imgSquare" alt="">
+                        <p>{{item.data.goods.name}}</p>
+                        <span><i>￥</i>{{item.data.goods.gid}}</span>
                      </div>
                   </router-link>
-                  <div class="goodsItem">
-                    <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-                     <p>云米自动波轮洗衣机5.5kg</p>
-                     <span><i>￥</i>678</span>
-                  </div>
-                  <div class="goodsItem">
-                     <img src="https://img.youpin.mi-img.com/shopmain/f8c437f56aafed294d2abf128243e968.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-                     <p>云米自动波轮洗衣机5.5kg</p>
-                     <span><i>￥</i>678</span>
-                  </div>
-                  <div class="goodsItem">
-                    <img src="https://img.youpin.mi-img.com/shopmain/c24641b6406c34f4ca2ffe64c0a0c14b.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800" alt="">
-                     <p>云米自动波轮洗衣机5.5kg</p>
-                     <span><i>￥</i>678</span>
-                  </div>
                </div>
             </div>
          </div>
       </div>
        
+       <!-- <div>
+          
+       </div> -->
        <!-- 分页
        <div class="search-pagination">
         <el-pagination
@@ -80,7 +68,8 @@
 </template>
 
 <script>
-
+import { mapGetters, mapState } from 'vuex';
+import Pagination from './Pagination'
   export default {
     name:'Search',
     props:['keyword'],
@@ -189,15 +178,30 @@
       }
     },
     mounted(){
-     
+     this.getSearchList()
     },
    methods:{
+     
+     //封装函数
+      getSearchList() {
+      this.$store.dispatch("getSearchList");
+    },
+
+
+
+      //跳转到详情页
     toDetail(){
        this.$router.push('/detail')
      },
 
    },
-   
+  computed:{
+     ...mapState({search:state=>state.search.searchList}),
+   //   ...mapGetters(['goods'])
+  } ,
+  components:{
+     Pagination
+  }
   
   }
 </script>
@@ -259,9 +263,9 @@
                      
                      }
                      .goodsItem:hover{
-                     height: 260px;
-                     box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
-                           0px 0px 20px rgba(0,0,0,0.1) inset;
+                     height: 267px;
+                     box-shadow: 0px 1px 4px rgba(0,0,0,0.5),
+                           0px 0px 20px rgba(0,0,0,0.4) inset;
 
                      }
                   
