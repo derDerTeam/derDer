@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+
+
 import FixedBar from "@/components/FixedBar";
 Vue.config.productionTip = false;
 import ElementUI from "element-ui";
@@ -12,6 +14,7 @@ import SliderLoop from "@/components/SliderLoop";
 import Header from "@/components/Header";
 import Top from "@/components/Top";
 import Footer from "@/components/Footer";
+import '@/mock/mockServer'
 
 //注册全局组件
 //低部组件

@@ -1,0 +1,3865 @@
+[
+  {
+    "children": [
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e7f2d9bbe31ee08b9a583",
+            "sort": 1564381437839,
+            "id": "5d3e80d59bbe31ee08b9a584",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/677b8fabb7f762ccfb33f866d4abc66e.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/695ee059d7c4048ed35264a182cd9143.png?w\u003d800\u0026h\u003d800",
+              "name": "新品榜"
+            },
+            "jumpUrl": "https://m.youpin.mi.com/w/mifans?_rt\u003dweex\u0026pageid\u003d1809",
+            "queryId": "9b24b1eac926b2b7eb5a4f937fd9fc86"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e7f2d9bbe31ee08b9a583",
+            "sort": 1564381485659,
+            "id": "5d3e81369bbe31ee08b9a585",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/0295fc6232b4042f95f9ada568438ce0.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/a0ec09a588d06a08d4769b8ad9fce867.png?w\u003d800\u0026h\u003d800",
+              "name": "热销榜"
+            },
+            "jumpUrl": "https://m.youpin.mi.com/w/mifans?_rt\u003dweex\u0026pageid\u003d588"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e7f2d9bbe31ee08b9a583",
+            "sort": 1564381636942,
+            "id": "5d3e90b49bbe31ee08b9a589",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/7eab3fa3e15b71910dfc46e56bf4c89c.png?w\u003d800\u0026h\u003d800",
+              "name": "酒坊"
+            },
+            "jumpUrl": "https://m.youpin.mi.com/w/mifans?_rt\u003dweex\u0026pageid\u003d667"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e7f2d9bbe31ee08b9a583",
+            "sort": 1564381680869,
+            "id": "5d3e90fd9bbe31ee08b9a58a",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/5ffcdf936993a38f95accb6e552548a1.png?w\u003d800\u0026h\u003d800",
+              "name": "面馆"
+            },
+            "jumpUrl": "https://m.youpin.mi.com/w/mifans?_rt\u003dweex\u0026pageid\u003d2031"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e7f2d9bbe31ee08b9a583",
+            "sort": 1565597038064,
+            "id": "5e8bf66732aacd992e2aaa37",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/d797c29aa1654c135f6907cf2deaa0ea.png",
+              "name": "火锅节"
+            },
+            "jumpUrl": "https://m.youpin.mi.com/w/mifans?_rt\u003dweex\u0026pageid\u003d1888"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e7f2d9bbe31ee08b9a583",
+            "sort": 1571023780374,
+            "id": "5d3e91719bbe31ee08b9a58c",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/829ed7a9babb1ada1388f10eeeb2d114.png?w\u003d800\u0026h\u003d800",
+              "name": "特产馆"
+            },
+            "jumpUrl": "https://m.youpin.mi.com/w/mifans?_rt\u003dweex\u0026pageid\u003d2091"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e7f2d9bbe31ee08b9a583",
+            "sort": 1576565413424,
+            "id": "5d3e912d9bbe31ee08b9a58b",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/d5860f3bda6751e1703165b6d7710e73.png?w\u003d800\u0026h\u003d800",
+              "name": "零食铺"
+            },
+            "jumpUrl": "https://m.youpin.mi.com/w/mifans?_rt\u003dweex\u0026pageid\u003d2075"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e7f2d9bbe31ee08b9a583",
+            "sort": 1578310569666,
+            "id": "5df87aa5759371eeb36043bd",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/6c09cb042b31a48d7c0dcafe11d27456.png?w\u003d800\u0026h\u003d800",
+              "name": "生鲜季"
+            },
+            "jumpUrl": "https://m.youpin.mi.com/w/mifans?_rt\u003dweex\u0026pageid\u003d2419"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e7f2d9bbe31ee08b9a583",
+            "sort": 1586230887562,
+            "id": "5e131ba920b012c226102f40",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/888acb2861ea6d1ab267b5553a28a522.png?w\u003d800\u0026h\u003d800",
+              "name": "健身轻食"
+            },
+            "jumpUrl": "https://m.youpin.mi.com/w/mifans?_rt\u003dweex\u0026pageid\u003d2178"
+          }
+        ],
+        "name": "精选会场",
+        "sort": 1564369737092,
+        "id": "5d3e7f2d9bbe31ee08b9a583",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["猪牛羊肉"],
+                    "category3": [
+                      "其它肉类",
+                      "内脏类",
+                      "牛肉",
+                      "特殊商品",
+                      "猪肉",
+                      "羊肉"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61639bbe312985388dd5",
+            "sort": 1564373868402,
+            "id": "5d3e736c9bbe31ee08b9a55f",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/1245ecfe2f9deca31772d18b9f560360.png",
+              "name": "牛羊肉类"
+            },
+            "queryId": "80c1d591f10688ace58e5f9aae10a075"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["禽肉蛋品"],
+                    "category3": [
+                      "其他禽类",
+                      "特殊商品",
+                      "蛋类",
+                      "鸡肉",
+                      "鸭肉"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61639bbe312985388dd5",
+            "sort": 1564373967736,
+            "id": "5d3e73cf9bbe31ee08b9a560",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/cc013cc7c938fb568755d56ccc776508.png?w\u003d800\u0026h\u003d800",
+              "name": "禽肉蛋品"
+            },
+            "queryId": "9b06b2571582b6880adef0850d421367"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["海鲜水产"],
+                    "category3": [
+                      "其他水产",
+                      "海产干货",
+                      "海产礼盒",
+                      "海参",
+                      "海鲜制品",
+                      "海鲜卡券",
+                      "特殊商品",
+                      "藻类",
+                      "虾类",
+                      "蟹类",
+                      "贝类",
+                      "软足类",
+                      "鱼类"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61639bbe312985388dd5",
+            "sort": 1564374004053,
+            "id": "5d3e73f49bbe31ee08b9a561",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/8419689cf9f3172caf03c3e8a387bdd4.png?w\u003d800\u0026h\u003d800",
+              "name": "海鲜水产"
+            },
+            "queryId": "10582ef0a61f2fb56e7af5c8c53f3ab1"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["蔬菜"],
+                    "category3": [
+                      "半加工蔬菜",
+                      "叶菜类",
+                      "根茎类",
+                      "特殊商品",
+                      "茄果瓜类",
+                      "葱姜蒜椒",
+                      "鲜菌菇"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  },
+                  {
+                    "category2": ["水果"],
+                    "category3": [
+                      "奇异果/猕猴桃",
+                      "山竹",
+                      "更多水果",
+                      "木瓜",
+                      "枣",
+                      "柚子",
+                      "柠檬",
+                      "桃/李/杏",
+                      "桔/橘",
+                      "梨",
+                      "椰青",
+                      "榴莲",
+                      "橙子",
+                      "水果礼盒/券",
+                      "火龙果",
+                      "牛油果",
+                      "瓜",
+                      "百香果",
+                      "石榴",
+                      "芒果",
+                      "苹果",
+                      "草莓",
+                      "荔枝",
+                      "菠萝/凤梨",
+                      "葡萄/提子",
+                      "蓝莓",
+                      "车厘子/樱桃",
+                      "香蕉",
+                      "龙眼"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61639bbe312985388dd5",
+            "sort": 1564374029485,
+            "id": "5d3e740d9bbe31ee08b9a562",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/9e6fe01d695ad9355b18dbe4030cd3be.png?w\u003d800\u0026h\u003d800",
+              "name": "时令果蔬"
+            },
+            "queryId": "0684c4d40146e0d80cfcdaa0d420ba67"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["海鲜水产"],
+                    "category3": [
+                      "其他水产",
+                      "海产干货",
+                      "海产礼盒",
+                      "海参",
+                      "海鲜制品",
+                      "海鲜卡券",
+                      "特殊商品",
+                      "藻类",
+                      "虾类",
+                      "蟹类",
+                      "贝类",
+                      "软足类",
+                      "鱼类"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  },
+                  {
+                    "category2": ["猪牛羊肉"],
+                    "category3": [
+                      "其它肉类",
+                      "内脏类",
+                      "牛肉",
+                      "特殊商品",
+                      "猪肉",
+                      "羊肉"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  },
+                  {
+                    "category2": ["禽肉蛋品"],
+                    "category3": [
+                      "其他禽类",
+                      "特殊商品",
+                      "蛋类",
+                      "鸡肉",
+                      "鸭肉"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  },
+                  {
+                    "category2": ["冷藏/冷冻食品"],
+                    "category3": [
+                      "方便菜",
+                      "水饺/馄饨",
+                      "汤圆/元宵",
+                      "火锅丸料",
+                      "特殊商品",
+                      "肉制品",
+                      "西式烘焙",
+                      "面点"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61639bbe312985388dd5",
+            "sort": 1564375106332,
+            "id": "5d3e78429bbe31ee08b9a579",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/aa328f8e95a8fd33da266f3b8262d8ab.png",
+              "name": "冷冻食品"
+            },
+            "queryId": "99327cb23a82daf346f7451a022942e4"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              { "queryName": "方家铺子", "rule": [{}], "queryType": 0 }
+            ],
+            "pid": "5d3e61639bbe312985388dd5",
+            "sort": 1569127677424,
+            "id": "5d86fcfdfc70b26a5d6ae251",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/2f962ca79c6e9545c425a926baf8d462.png?w\u003d800\u0026h\u003d800",
+              "name": "南北干货"
+            },
+            "queryId": "527d29f88c05627bc5b846129601ef88"
+          }
+        ],
+        "name": "生鲜干货",
+        "sort": 1564378753873,
+        "id": "5d3e61639bbe312985388dd5",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["粮油调味"],
+                    "category3": ["方便食品"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d82e09220b012d07802ace0",
+            "sort": 1568859326996,
+            "id": "5d84356afc70b26a5d6ae24f",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/f7afc73e516744b83ea1c3472050ec28.png?w\u003d800\u0026h\u003d800",
+              "name": "方便速食"
+            },
+            "queryId": "7c93754873ea73c83284ae532a725b5d"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        112474,
+                        110843,
+                        106158,
+                        105798,
+                        108244,
+                        109339,
+                        109344,
+                        110452,
+                        112823,
+                        113196,
+                        104632,
+                        107814,
+                        115352,
+                        115350,
+                        115349,
+                        115249,
+                        115246,
+                        116856,
+                        116861,
+                        116857,
+                        116858,
+                        116866,
+                        117609,
+                        110375,
+                        119114,
+                        122483,
+                        119688,
+                        123358,
+                        124144,
+                        121464,
+                        136802,
+                        104159,
+                        113244,
+                        114231,
+                        118736
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d82e09220b012d07802ace0",
+            "sort": 1572314083359,
+            "id": "5db79be375937160cd1bff72",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/bdd06d26e4c59c4ec22a8b13a9c34ce2.png?w\u003d800\u0026h\u003d800",
+              "name": "方便菜"
+            },
+            "queryId": "ebdd60f042f143ab360e6e05b4c495e0"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        110532,
+                        110533,
+                        112823,
+                        113196,
+                        115350,
+                        115352,
+                        116710,
+                        117377,
+                        117378,
+                        118639,
+                        118640,
+                        120014,
+                        122228,
+                        122362,
+                        124219,
+                        124347,
+                        124124,
+                        124856,
+                        124625,
+                        127089,
+                        128710,
+                        128703,
+                        128693,
+                        128543,
+                        128662,
+                        126670,
+                        130093,
+                        130121,
+                        130928,
+                        131083,
+                        131209,
+                        131221,
+                        131489,
+                        128745,
+                        132364
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d82e09220b012d07802ace0",
+            "sort": 1589886255463,
+            "id": "5ec3bd2f7593718ecda8ac5f",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/8ffa63b211e12981375d71b9b0528190.png?w\u003d800\u0026h\u003d800",
+              "name": "轻食运动"
+            },
+            "queryId": "ffef6e365a31eada3f4f968fee9c6a0d"
+          }
+        ],
+        "name": "方便食品",
+        "sort": 1564472934947,
+        "id": "5d82e09220b012d07802ace0",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["休闲食品"],
+                    "category3": [
+                      "休闲零食",
+                      "坚果炒货",
+                      "糖果/巧克力",
+                      "蜜饯果干",
+                      "饼干蛋糕"
+                    ],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63539bbe312985388de3",
+            "sort": 1564374719165,
+            "id": "5d3e76bf9bbe31ee08b9a573",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/0c3879e8c05b18b7e3b302adeddf1a69.png?w\u003d800\u0026h\u003d800",
+              "name": "休闲零食"
+            },
+            "queryId": "39dde2ca83902960bd55e23e7c0c5eaf"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["休闲食品"],
+                    "category3": ["坚果炒货"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63539bbe312985388de3",
+            "sort": 1564374751016,
+            "id": "5d3e76df9bbe31ee08b9a574",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/382f54339f81beaf94093558c293f3e5.png?w\u003d800\u0026h\u003d800",
+              "name": "坚果炒货"
+            },
+            "queryId": "84fc604903cc2a1eb8b00408b7b14887"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["休闲食品"],
+                    "category3": ["饼干蛋糕"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63539bbe312985388de3",
+            "sort": 1564374885460,
+            "id": "5d3e77659bbe31ee08b9a578",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/caac4136bbd3146d7c695961d327be7b.png",
+              "name": "饼干蛋糕"
+            },
+            "queryId": "568bae64ed50c3de6ff65dad0dbe923c"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["休闲食品"],
+                    "category3": ["熟食腊味"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63539bbe312985388de3",
+            "sort": 1564376781796,
+            "id": "5d3e7ecd9bbe31ee08b9a582",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/3da95e57b31c47592e46a958da2996dc.png?w\u003d800\u0026h\u003d800",
+              "name": "熟食腊味"
+            },
+            "queryId": "db6a888b0fabc9187fe8ff0fe6608a9e"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["地方特产"],
+                    "category3": [
+                      "东北",
+                      "云南",
+                      "其他特产",
+                      "内蒙古",
+                      "北京",
+                      "四川",
+                      "山西",
+                      "新疆",
+                      "湖南",
+                      "福建"
+                    ],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63539bbe312985388de3",
+            "sort": 1568943327800,
+            "id": "5d842cdffc70b26a5d6ae24e",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/76fe3c914458ea1f9a6e200bec8c0372.png?w\u003d800\u0026h\u003d800",
+              "name": "地方特产"
+            },
+            "queryId": "f3d0d546e66ae1577ec528f6dc39a8f4"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["进口食品"],
+                    "category3": [
+                      "休闲零食",
+                      "冲调品",
+                      "咖啡豆/咖啡粉",
+                      "方便食品",
+                      "水",
+                      "油",
+                      "牛奶",
+                      "米面调味",
+                      "糖果/巧克力",
+                      "饮料",
+                      "饼干蛋糕"
+                    ],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63539bbe312985388de3",
+            "sort": 1603965121712,
+            "id": "5f9a90c120b012be296acc22",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/d697603556ca0c648f7a5ae5872853f6.png",
+              "name": "进口食品"
+            },
+            "queryId": "ed45476b5eb901b58209d01e6ea0b7fd"
+          }
+        ],
+        "name": "零食特产",
+        "sort": 1564568480603,
+        "id": "5d3e63539bbe312985388de3",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["传统滋补"],
+                    "category3": [
+                      "三七",
+                      "人参/西洋参",
+                      "保健蜂产品",
+                      "其他",
+                      "养生茶饮",
+                      "冬虫夏草",
+                      "当归",
+                      "枸杞",
+                      "灵芝/孢子粉",
+                      "燕窝",
+                      "特殊商品",
+                      "石斛/枫斗",
+                      "药食同源",
+                      "藏红花",
+                      "阿胶",
+                      "雪蛤",
+                      "青钱柳",
+                      "鹿茸"
+                    ],
+                    "category1": ["医药保健"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61579bbe312985388dd4",
+            "sort": 1564373588182,
+            "id": "5e561857fc70b294d66fbbac",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/0d165e1dda68945699b80b9927916269.png?w\u003d800\u0026h\u003d800",
+              "name": "传统滋补"
+            },
+            "queryId": "5f6ad94cb59c41a6fb534ec83aedc6c6"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["营养成分"],
+                    "category3": [
+                      "保健酒饮",
+                      "健肌粉",
+                      "其他",
+                      "叶酸",
+                      "叶黄素",
+                      "大豆异黄酮",
+                      "左旋肉碱",
+                      "氨糖",
+                      "牛初乳",
+                      "特殊商品",
+                      "玛咖",
+                      "番茄红素",
+                      "益生菌",
+                      "维生素/矿物质",
+                      "胶原蛋白",
+                      "膳食纤维",
+                      "芦荟提取",
+                      "葡萄籽",
+                      "虾青素",
+                      "蛋白质",
+                      "螺旋藻",
+                      "褪黑素",
+                      "辅酶Q10",
+                      "酵素",
+                      "鱼油/磷脂"
+                    ],
+                    "category1": ["医药保健"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61579bbe312985388dd4",
+            "sort": 1582700985446,
+            "id": "5e5619b920b012c226102f5a",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/0327b52a5c66bca7ca4921ccb3af5183.png?w\u003d800\u0026h\u003d800",
+              "name": "营养成分"
+            },
+            "queryId": "94c3d6aa13209f39a9f069f5507abe8f"
+          }
+        ],
+        "name": "滋补保健",
+        "sort": 1564639390642,
+        "id": "5d3e61579bbe312985388dd4",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["白酒"],
+                    "category3": ["白酒"],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61489bbe312985388dd3",
+            "sort": 1564370438994,
+            "id": "5d3e66069bbe312985388df6",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/dab584635fdec171fe97bf1f836f8ecb.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/b54a55a8106ba88dd13aea17443b9060.png?w\u003d800\u0026h\u003d800",
+              "name": "白酒"
+            },
+            "queryId": "4b02439f9a76e44006b37dd96d1a20c8"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["葡萄酒"],
+                    "category3": ["葡萄酒"],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61489bbe312985388dd3",
+            "sort": 1564370506195,
+            "id": "5d3e688e9bbe31ee08b9a545",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/e1a4410f5e996b6e5c16cf573a614a31.png?w\u003d800\u0026h\u003d800",
+              "name": "葡萄酒"
+            },
+            "queryId": "b928516566f271fc282fc3d036edef87"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["啤酒"],
+                    "category3": ["啤酒"],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61489bbe312985388dd3",
+            "sort": 1564371086429,
+            "id": "5d3e664a9bbe312985388df7",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/52b95903bbc8aa8556de213262e70a78.png?w\u003d800\u0026h\u003d800",
+              "name": "啤酒"
+            },
+            "queryId": "70b7ffe1eeab9482f46632eeb8b2dc22"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["洋酒"],
+                    "category3": [
+                      "伏特加",
+                      "其它洋酒",
+                      "力娇酒",
+                      "威士忌",
+                      "朗姆酒",
+                      "白兰地/干邑",
+                      "金酒",
+                      "鸡尾酒/预调酒",
+                      "龙舌兰"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  },
+                  {
+                    "category2": ["黄酒/养生酒"],
+                    "category3": ["养生酒"],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61489bbe312985388dd3",
+            "sort": 1564371291210,
+            "id": "5d3e695b9bbe31ee08b9a546",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/55e991985f5bb0eb1afee5597254d2c2.png?w\u003d800\u0026h\u003d800",
+              "name": "洋酒/其他酒"
+            },
+            "queryId": "a6fa6f78abe8bd42a5acb5822e64ff49"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["洋酒"],
+                    "category3": ["清酒/烧酒"],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61489bbe312985388dd3",
+            "sort": 1564372131707,
+            "id": "5d9f08bf4b768925ccd5714f",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/8dfb2cdc48c1e7cdd1a786fa40880cfc.png?w\u003d800\u0026h\u003d800",
+              "name": "清酒"
+            },
+            "queryId": "04316b0f3a17b3fb3df4ec53fcf2e2ac"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["黄酒/养生酒"],
+                    "category3": ["养生酒", "黄酒"],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e61489bbe312985388dd3",
+            "sort": 1570703551839,
+            "id": "5d3e6ca39bbe31ee08b9a54c",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/f75364d8207de38b7f1e3ce7d417269f.png",
+              "name": "黄酒/养生酒"
+            },
+            "queryId": "22884b06240eaa320a175da59b189392"
+          }
+        ],
+        "name": "酒水",
+        "sort": 1564641185346,
+        "id": "5d3e61489bbe312985388dd3",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["茗茶"],
+                    "category3": ["绿茶", "龙井"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63139bbe312985388de0",
+            "sort": 1564374187451,
+            "id": "5d3e74ab9bbe31ee08b9a566",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/ff96bda801100f19e41efd9c8a5496f3.png?w\u003d800\u0026h\u003d800",
+              "name": "绿茶"
+            },
+            "queryId": "b99a3c73dfb9983e23b61fc18e6fe1b6"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["茗茶"],
+                    "category3": ["红茶"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63139bbe312985388de0",
+            "sort": 1564374212995,
+            "id": "5d3e74c49bbe31ee08b9a567",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/196314f2c7f7377f81a3bf618154b9d1.png",
+              "name": "红茶"
+            },
+            "queryId": "5320875e627b7eb583fbd353891dd7d6"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["茗茶"],
+                    "category3": ["乌龙茶", "铁观音"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63139bbe312985388de0",
+            "sort": 1564374254565,
+            "id": "5d3e74ee9bbe31ee08b9a568",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/96e38ef38de5a583395cd0c6e0917157.png?w\u003d800\u0026h\u003d800",
+              "name": "青茶"
+            },
+            "queryId": "9f1b00b45bf9ec16034ea39f9e014236"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["茗茶"],
+                    "category3": ["普洱"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63139bbe312985388de0",
+            "sort": 1564374287259,
+            "id": "5d3e750f9bbe31ee08b9a569",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/7b00b550fa37731a535f90fb3fd08356.png?w\u003d800\u0026h\u003d800",
+              "name": "普洱茶"
+            },
+            "queryId": "b9fc76f2a32763e69d4027b3ae09ccff"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["茗茶"],
+                    "category3": ["白茶", "黑茶"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63139bbe312985388de0",
+            "sort": 1564374326262,
+            "id": "5d3e755f9bbe31ee08b9a56c",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/8081d427db4f29d31f56e1b9742352b4.png",
+              "name": "黑茶/白茶"
+            },
+            "queryId": "041ad166b67b82f9b05ef45b10462678"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["茗茶"],
+                    "category3": [
+                      "其它茶",
+                      "养生茶",
+                      "花果茶",
+                      "花草茶",
+                      "茉莉花茶"
+                    ],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63139bbe312985388de0",
+            "sort": 1564374367762,
+            "id": "5d3e75369bbe31ee08b9a56b",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/85b9e14b57905daf37c558951b4672bf.png",
+              "name": "花茶/养生茶"
+            },
+            "queryId": "18632a79cc8a1438c39981296588e549"
+          }
+        ],
+        "name": "茗茶",
+        "sort": 1565151422929,
+        "id": "5d3e63139bbe312985388de0",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["饮料冲调"],
+                    "category3": ["成人奶粉", "牛奶乳品"],
+                    "category1": ["食品饮料"]
+                  },
+                  {
+                    "category2": ["乳品冷饮"],
+                    "category3": [
+                      "低温奶",
+                      "冰淇淋",
+                      "冷藏饮料",
+                      "奶酪黄油",
+                      "特殊商品"
+                    ],
+                    "category1": ["生鲜酒水"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d42809e4b76899a3594f1c1",
+            "sort": 1564639737603,
+            "id": "5d42822620b0121c095c6520",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/6527ad382611d55e88d332d7e793f3cb.png?w\u003d800\u0026h\u003d800",
+              "name": "乳品冷饮"
+            },
+            "queryId": "cee759e44a8b87986ee5317663ff72b7"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["饮料冲调"],
+                    "category3": ["蜂蜜/柚子茶"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d42809e4b76899a3594f1c1",
+            "sort": 1564639892063,
+            "id": "5d4282bef2d6daa73ef7b20f",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/6657ee30a1f783e526d15875ef1d96e8.png",
+              "name": "蜂蜜"
+            },
+            "queryId": "9cff6abcc71fd22a11de7dc95e1290a1"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["饮料冲调"],
+                    "category3": ["冲饮谷物", "咖啡/奶茶", "成人奶粉"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d42809e4b76899a3594f1c1",
+            "sort": 1564639934959,
+            "id": "5d428294f2d6daa73ef7b20e",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/425bda5de995ed44cfc7d5f0c6117101.png?w\u003d800\u0026h\u003d800",
+              "name": "冲调饮品"
+            },
+            "queryId": "a677baededc8916f225808b06ac218b2"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["进口食品"],
+                    "category3": ["饮料"],
+                    "category1": ["食品饮料"]
+                  },
+                  {
+                    "category2": ["饮料冲调"],
+                    "category3": ["饮料"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d42809e4b76899a3594f1c1",
+            "sort": 1564639991399,
+            "id": "5d4282f796ee92dde7c04880",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/2f06a4de874697745ca48560f6baece7.png?w\u003d800\u0026h\u003d800",
+              "name": "饮料"
+            },
+            "queryId": "1ea407387a613f02f79c2dc85f6870eb"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["饮料冲调"],
+                    "category3": ["饮用水"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d42809e4b76899a3594f1c1",
+            "sort": 1564640029661,
+            "id": "5d42831d20b0121c095c6521",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/9be8341ed7d63313358017a6b3af8124.png?w\u003d800\u0026h\u003d800",
+              "name": "饮用水"
+            },
+            "queryId": "60e8b15dfec67203486528dae19875a3"
+          }
+        ],
+        "name": "冲饮乳品",
+        "sort": 1565834352488,
+        "id": "5d42809e4b76899a3594f1c1",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["粮油调味"],
+                    "category3": ["杂粮", "烘焙原料", "米", "面"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63499bbe312985388de2",
+            "sort": 1564374569026,
+            "id": "5d3e76029bbe31ee08b9a56e",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/76e21b89939f61f8625c1f22b246e247.png?w\u003d800\u0026h\u003d800",
+              "name": "米面杂粮"
+            },
+            "queryId": "e7101c7cfc21d83e87b101dc532dc7cb"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["粮油调味"],
+                    "category3": ["调味品"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63499bbe312985388de2",
+            "sort": 1564374657728,
+            "id": "5d3e76679bbe31ee08b9a571",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/09e5a37e569b9689762a2630976d7c95.png?w\u003d800\u0026h\u003d800",
+              "name": "调味品"
+            },
+            "queryId": "0d8df2983b90ec94608c14b708007a5e"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["粮油调味"],
+                    "category3": ["食用油"],
+                    "category1": ["食品饮料"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3e63499bbe312985388de2",
+            "sort": 1564641600183,
+            "id": "5d3e76819bbe31ee08b9a572",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/cb64ce51b0ecb6d4df0b6016ba9b9ac3.png?w\u003d800\u0026h\u003d800",
+              "name": "食用油"
+            },
+            "queryId": "14a1499dc9fb46f7c4ec86831a668d9e"
+          }
+        ],
+        "name": "粮油调味",
+        "sort": 1565835011062,
+        "id": "5d3e63499bbe312985388de2",
+        "type": 0
+      },
+      {
+        "displayType": 1,
+        "children": [
+          {
+            "jumpType": 0,
+            "displayType": 1,
+            "bannerGoodsCard": {
+              "goodsImg": [
+                "https://img.youpin.mi-img.com/800_pic/ee4947e22f8473decc3b1099f1e7bce7.png",
+                "https://img.youpin.mi-img.com/800_pic/5c1c68475845c16798dcdac2e30476a9.png",
+                "https://img.youpin.mi-img.com/800_pic/8315ddca6812f07ddea0333d8275b4af.png"
+              ],
+              "name": "谷小酒",
+              "banner": "https://img.youpin.mi-img.com/youpinoper/2189f5bf5855e6d0e71025cc949d4f7a.jpg"
+            },
+            "pid": "5d416ba09bbe3107d38c8143",
+            "sort": 1564650831214,
+            "id": "5d4175c420b0121c095c6510",
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dYCNuOaG7XZV3GTGWz7hRlQ\u0026hideNavBar\u003d1"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 1,
+            "bannerGoodsCard": {
+              "goodsImg": [
+                "https://img.youpin.mi-img.com/shopmain/297bdcef4d99bba50c146b7da69aefce.png?w\u003d800\u0026h\u003d800",
+                "https://img.youpin.mi-img.com/shopmain/8ffa63b211e12981375d71b9b0528190.png?w\u003d800\u0026h\u003d800",
+                "https://img.youpin.mi-img.com/shopmain/c535b0a32a1e0f6aad525537e90c25ec.png?w\u003d800\u0026h\u003d800"
+              ],
+              "name": "ffit8轻食代餐",
+              "banner": "https://img.youpin.mi-img.com/youpinoper/56147474f378a1353d178414f89cd7a9.jpg"
+            },
+            "pid": "5d416ba09bbe3107d38c8143",
+            "sort": 1572608821369,
+            "id": "5eb263b47593718ecda8ac49",
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003docOD8mlfmHGweO70G7fL4g"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 1,
+            "bannerGoodsCard": {
+              "goodsImg": [
+                "https://img.youpin.mi-img.com/shopmain/52fe45581316c42c03cc9887b70cd990.png?w\u003d800\u0026h\u003d800",
+                "https://img.youpin.mi-img.com/shopmain/d5860f3bda6751e1703165b6d7710e73.png?w\u003d800\u0026h\u003d800",
+                "https://img.youpin.mi-img.com/shopmain/9d07479fa96ea91538d0d645c27566e7.png?w\u003d800\u0026h\u003d800"
+              ],
+              "name": "良品铺子",
+              "banner": "https://img.youpin.mi-img.com/ferriswheel/eoo6q6ql4b4_undefined1607417261399.png?w\u003d786\u0026h\u003d270"
+            },
+            "pid": "5d416ba09bbe3107d38c8143",
+            "sort": 1577404637052,
+            "id": "5d6898724b76898fa826f6e6",
+            "jumpUrl": "https://m.xiaomiyoupin.com/w/spchome?_rt\u003dweex\u0026id\u003dkfSD6FLHZvQuONtVJd4HEA\u0026hideNavBar\u003d1\u0026useWebKit\u003d1\u0026spmref\u003dYouPinPC.$Detail$.0.0.40595307"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 1,
+            "bannerGoodsCard": {
+              "goodsImg": [
+                "https://img.youpin.mi-img.com/shopmain/d67de09edd0226ad921911334b438f84.png?w\u003d800\u0026h\u003d800",
+                "https://img.youpin.mi-img.com/shopmain/8de93de6a5c01ea69f07bd55c561da3b.png?w\u003d800\u0026h\u003d800",
+                "https://img.youpin.mi-img.com/shopmain/d34cbf34b145d19f2de9f442caad825e.png?w\u003d800\u0026h\u003d800"
+              ],
+              "name": "青源堂",
+              "banner": "https://img.youpin.mi-img.com/youpinoper/cdec252afd8c188d286a25bfccccc002.jpg"
+            },
+            "pid": "5d416ba09bbe3107d38c8143",
+            "sort": 1588749236039,
+            "id": "5ed70811fc70b264ec36efcc",
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003d9DwlTEARBcAgX-z1oKzGsw"
+          }
+        ],
+        "name": "优选品牌",
+        "sort": 1572488521097,
+        "id": "5d416ba09bbe3107d38c8143",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1564378871043,
+            "id": "5e56284732aacd992e2aaa03",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/65966d220b531bbc2bbc5e5932884a4e.jpg",
+              "name": "茅台"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003dmswBW19YdTGHceklr_Uujw"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1564462566832,
+            "id": "5d3fce139bbe31ee08b9a7ac",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/ac849164e408d0b4502d1e19f4b00e67.jpg",
+              "name": "逸香"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dBManTX2k2VhOKCtm1mbacg\u0026hideNavBar\u003d1"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1564462666943,
+            "id": "5d3fce4a9bbe31ee08b9a7ae",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/48ab1d536475695aa23a091ac6df1af3.jpg",
+              "name": "平仄"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003d34S1IDbyUoeIJbCUuID-9g\u0026hideNavBar\u003d1\u0026spmref\u003dYouPin_I.$Detail$_102360.banner1.0.23776459\u0026sbh\u003d20"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1564462699665,
+            "id": "5d3fce6b9bbe31ee08b9a7af",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/2b0dc17ef50b850ffbb5e6b05611b679.jpg",
+              "name": "认养一头牛"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003drsjr9-D3gOQ4hkRdtV7LJw\u0026hideNavBar\u003d1\u0026useWebKit\u003d1\u0026spmref\u003dYouPinPC.$Detail$.0.0.20075691#/home"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1564462733203,
+            "id": "5d3fceb39bbe31ee08b9a7b1",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/ferriswheel/1vdlb4k5i0c_undefined1607418116291.jpeg?w\u003d228\u0026h\u003d228",
+              "name": "良品铺子"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/w/spchome?_rt\u003dweex\u0026id\u003dkfSD6FLHZvQuONtVJd4HEA\u0026hideNavBar\u003d1\u0026useWebKit\u003d1\u0026spmref\u003dYouPinPC.$Detail$.0.0.40595307"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1564462793610,
+            "id": "5d3fcde69bbe31ee08b9a7ab",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/a4c27599ab2d8a599b0823eb8ebab5b1.jpg",
+              "name": "知吾煮"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dOoSObYwT4hJxyapKNbNflw\u0026hideNavBar\u003d1\u0026useWebkit\u003d1"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1564462857086,
+            "id": "5eb25db932aacd287a3cd159",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/c9f8b5651a8742aaba34f31767dd87c9.png",
+              "name": "嘉华鲜花饼"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003dnxxJmTAo_F4Kj5E5KAUmEg"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1564462877882,
+            "id": "5d3fcef39bbe31ee08b9a7b4",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/be562433b0f5fe48fa02b561cf4667bf.png",
+              "name": "阿宽"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003d69VQPvwXrmsyKentkPMpHg\u0026hideNavBar\u003d1"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1582704711608,
+            "id": "5e562a9b759371eeb36043de",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/eb21a2833399bfc973a0b22cc25830be.jpeg",
+              "name": "大希地"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003dMgs3loYT2brtzzTFPE-yjg"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1582705307043,
+            "id": "5e56299920b012c226102f5b",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/e8f3b64d8fb2cbf32e5ba8a7ccbce890.png",
+              "name": "姿美堂"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003dj9PWYofVi6VsPQoxK-HP2g"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1582705613717,
+            "id": "5eb25c6a32aacd287a3cd158",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/9450234cc41a2433bfe874fe025c49ef.png",
+              "name": "阅农部落"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003dYgGEmhX4tuLU4LJSAfd5Jw"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1582705866245,
+            "id": "5d3fcf099bbe31ee08b9a7b5",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/a3a52f0b4a3c8bb8e6195ab4f1ec2e64.jpg",
+              "name": "泰祥"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dP-Q_ZKK6SkqtCV6kpLIW1A\u0026hideNavBar\u003d1"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1588747370465,
+            "id": "5e562bcdfc70b294d66fbbad",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/5444af5a50bae69a1c346c549c384bc2.jpeg",
+              "name": "和厨"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003d0MkmfIYWUA83yqrnVzEJHQ"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1588747840347,
+            "id": "5eb25e407593718ecda8ac48",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/42a8cd6eb18972d9f07aba40206f72cb.png",
+              "name": "福临门"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003dAVniCSEr-RP5LPg13LhsTA\u0026hideNavBar\u003d1"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d3e86819bbe31ee08b9a587",
+            "sort": 1591153568942,
+            "id": "5ed713a0fc70b264ec36efcd",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/115e89a5603134a8a62459fa48709241.jpg",
+              "name": "俄优品"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003dfe76HBBs0LTuSkBtnFVsGA"
+          }
+        ],
+        "name": "美食品牌",
+        "sort": 1578488005840,
+        "id": "5d3e86819bbe31ee08b9a587",
+        "type": 0
+      }
+    ],
+    "name": "美食酒饮",
+    "bannerUrl": "https://m.xiaomiyoupin.com/w/universal?_rt\u003dweex\u0026pageid\u003d5041\u0026sign\u003d1c11ce93b029a64235fb70283844b32d\u0026pdl\u003djianyu",
+    "banner": "https://img.youpin.mi-img.com/ferriswheel/33h3i9pa28g_undefined1606988154106.jpeg?w\u003d786\u0026h\u003d228",
+    "sort": 1564121719934,
+    "id": "5d3a9a6c9bbe31fc2aa3958e",
+    "type": 0
+  },
+  {
+    "children": [
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        104322,
+                        119853,
+                        114483,
+                        114614,
+                        136489,
+                        104813,
+                        136223,
+                        119815,
+                        136285,
+                        136373,
+                        119855,
+                        104768,
+                        136496,
+                        136212,
+                        114124,
+                        105985,
+                        136895,
+                        113754,
+                        135466,
+                        104786,
+                        126909,
+                        126635,
+                        122918,
+                        115156,
+                        110038,
+                        134384,
+                        105982,
+                        135606,
+                        113343,
+                        114484,
+                        124624,
+                        106773,
+                        130070,
+                        101078,
+                        105384,
+                        117636,
+                        126631,
+                        115747,
+                        100406,
+                        124084,
+                        117816,
+                        134294,
+                        105761,
+                        102604,
+                        135850,
+                        110592,
+                        113458,
+                        135135,
+                        136362,
+                        132002,
+                        122735,
+                        103849,
+                        136836,
+                        110447,
+                        105113,
+                        135037,
+                        121998
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d42c3a09bbe317de85705fc",
+            "sort": 1564659217053,
+            "id": "5d42c79efc70b29871f29fff",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/0295fc6232b4042f95f9ada568438ce0.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/95befba65dbdc3fc5f0fc8da353626b8.png?w\u003d800\u0026h\u003d800",
+              "name": "鞋靴榜单"
+            },
+            "queryId": "c400c0347f28abd147eb07bea001ecca"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        106581,
+                        102339,
+                        100324,
+                        122267,
+                        106155,
+                        117079,
+                        132552,
+                        109477,
+                        126977,
+                        103787,
+                        115825,
+                        111105,
+                        250,
+                        890,
+                        116007,
+                        107760,
+                        109250,
+                        104179,
+                        107287,
+                        102225,
+                        109783,
+                        104295,
+                        135699,
+                        106149,
+                        115931,
+                        123207,
+                        101814,
+                        102855,
+                        102363,
+                        105823,
+                        121708,
+                        109749,
+                        117259,
+                        117422,
+                        107781,
+                        103372,
+                        132906,
+                        117080,
+                        126558,
+                        110720,
+                        107335,
+                        111762,
+                        759,
+                        137343,
+                        106280,
+                        106281,
+                        124715,
+                        130166,
+                        113933,
+                        137676,
+                        177,
+                        109805,
+                        105044,
+                        117606,
+                        102381,
+                        462,
+                        102118,
+                        103360,
+                        121972,
+                        124709,
+                        137678,
+                        127281,
+                        102747,
+                        104612,
+                        110467,
+                        115686,
+                        110484,
+                        108156,
+                        108849,
+                        104812
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d42c3a09bbe317de85705fc",
+            "sort": 1565341165570,
+            "id": "5d42cc6a96ee92d6d2daebea",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/0295fc6232b4042f95f9ada568438ce0.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/a2957a45d7de4201ac54be3f0eda7328.png?w\u003d800\u0026h\u003d800",
+              "name": "箱包榜单"
+            },
+            "queryId": "198d301ab04417c22272bc8cf13c4e2c"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        136522,
+                        120328,
+                        132756,
+                        120468,
+                        125833,
+                        124099,
+                        120725,
+                        120345,
+                        133975,
+                        136545,
+                        127221,
+                        129683,
+                        122644,
+                        125585,
+                        120389,
+                        125536,
+                        136529,
+                        120312,
+                        129543,
+                        120360,
+                        122369,
+                        120475,
+                        120459,
+                        122594,
+                        120458,
+                        120375,
+                        130925,
+                        120357,
+                        120380,
+                        137511,
+                        120704,
+                        122370,
+                        129755,
+                        136970,
+                        120341,
+                        127212,
+                        137525,
+                        120773,
+                        122659,
+                        125430,
+                        120445,
+                        136547,
+                        137494,
+                        137495,
+                        127010,
+                        124025,
+                        120450,
+                        120452,
+                        124140,
+                        137520,
+                        120779,
+                        120412,
+                        122368,
+                        120474,
+                        120154,
+                        133419
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d42c3a09bbe317de85705fc",
+            "sort": 1585036129425,
+            "id": "5e79bb61fc70b294d66fbbc6",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/0295fc6232b4042f95f9ada568438ce0.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/d40295fcb206adbca63506c01339387e.png?w\u003d800\u0026h\u003d800",
+              "name": "奢品榜单"
+            },
+            "queryId": "2f06cd53d671860d6ff819924297d0c3"
+          }
+        ],
+        "name": "为你推荐",
+        "sort": 1564473526507,
+        "id": "5d42c3a09bbe317de85705fc",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["流行男鞋"],
+                    "category3": ["正装鞋"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8479bbe31ee08b9a7cd",
+            "sort": 1564473959928,
+            "id": "5d3ffb439bbe31ee08b9a7d5",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/63848fea4ea455f73ca3e08bd0c81465.png?w\u003d800\u0026h\u003d800",
+              "name": "商务正装鞋"
+            },
+            "queryId": "f7c3711de29ddc2098d3fd5ce1a68b80"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["流行男鞋"],
+                    "category3": ["商务休闲鞋"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8479bbe31ee08b9a7cd",
+            "sort": 1564474081599,
+            "id": "5d3ffae19bbe31ee08b9a7d3",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/0295fc6232b4042f95f9ada568438ce0.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/800_pic/13f20ab3c441fcfc2625494074e5f695.png",
+              "name": "商务休闲鞋"
+            },
+            "queryId": "90579ecd15552fc17b09a3b749c792ae"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["流行男鞋"],
+                    "category3": ["休闲鞋", "功能鞋", "增高鞋", "定制鞋"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8479bbe31ee08b9a7cd",
+            "sort": 1564474179649,
+            "id": "5d3ffa679bbe31ee08b9a7d2",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/2f71bfad6b564ea3f72fa3847747dd55.png?w\u003d800\u0026h\u003d800",
+              "name": "都市休闲鞋"
+            },
+            "queryId": "106ccb8664085ba0116534591a03deb9"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["流行男鞋"],
+                    "category3": ["工装鞋", "男靴"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8479bbe31ee08b9a7cd",
+            "sort": 1564474254987,
+            "id": "5d3ffb8e9bbe31ee08b9a7d6",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/0295fc6232b4042f95f9ada568438ce0.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/800_pic/7e1aa61e6cbcec31a7869c9311e72966.png",
+              "name": "男靴"
+            },
+            "queryId": "9af63541475f639d5de1045adcb693af"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["流行男鞋"],
+                    "category3": ["拖鞋/人字拖"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8479bbe31ee08b9a7cd",
+            "sort": 1564474430352,
+            "id": "5d3ffc3e9bbe31ee08b9a7d8",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/0382e0d1c49a95db23f3556553d69deb.png?w\u003d800\u0026h\u003d800",
+              "name": "居家拖鞋"
+            },
+            "queryId": "69ce5c18a18292734d71e25538683441"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  { "whiteGids": { "gids": [114292, 107844, 119732, 108141] } }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8479bbe31ee08b9a7cd",
+            "sort": 1564476684377,
+            "id": "5d401da99bbe31133f317bec",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/14391ebac1e8e8d330f4b7d677d11cf8.png",
+              "name": "凉拖鞋"
+            },
+            "queryId": "c4d250e44af1148d2f1076e489ab8273"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["时尚女鞋"],
+                    "category3": ["鞋配件"],
+                    "category1": ["鞋靴"]
+                  },
+                  {
+                    "category2": ["流行男鞋"],
+                    "category3": ["鞋配件"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8479bbe31ee08b9a7cd",
+            "sort": 1564482985239,
+            "id": "5d401deb9bbe31133f317bed",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/368329ed937a17ecb08bba00fb49b2e9.png",
+              "name": "鞋配"
+            },
+            "queryId": "7b12d15515b2f3f74b811bcacc0c1590"
+          }
+        ],
+        "name": "男鞋",
+        "sort": 1564473822558,
+        "id": "5d3ff8479bbe31ee08b9a7cd",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["时尚女鞋"],
+                    "category3": [
+                      "女靴",
+                      "筒靴",
+                      "雨鞋/雨靴",
+                      "雪地靴",
+                      "靴子",
+                      "马丁靴"
+                    ],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8b69bbe31ee08b9a7ce",
+            "sort": 1564499949049,
+            "id": "5d4061ab9bbe31133f317c21",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/0295fc6232b4042f95f9ada568438ce0.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/354ef1d11ec665a6bc3e2e70925bc58c.png?w\u003d800\u0026h\u003d800",
+              "name": "女靴"
+            },
+            "queryId": "28f6b77992b753ad5533c4b182f41af9"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["时尚女鞋"],
+                    "category3": ["单鞋"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8b69bbe31ee08b9a7ce",
+            "sort": 1564500304892,
+            "id": "5d405fed9bbe31133f317c1f",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/dab584635fdec171fe97bf1f836f8ecb.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/2f7d403ab3d27cd87d234bd44ec33164.png?w\u003d800\u0026h\u003d800",
+              "name": "中低跟单鞋"
+            },
+            "queryId": "f9025a4b8e6e3dea01f12a1b7e5e692a"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["时尚女鞋"],
+                    "category3": ["高跟鞋"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8b69bbe31ee08b9a7ce",
+            "sort": 1564500395241,
+            "id": "5d4061509bbe31133f317c20",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/17df7277f6b38f02bff47e0a3d359899.png?w\u003d800\u0026h\u003d800",
+              "name": "高跟鞋"
+            },
+            "queryId": "2b7c6d88313f37aa3aca16dafc8be641"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["时尚女鞋"],
+                    "category3": [
+                      "休闲鞋",
+                      "内增高",
+                      "妈妈鞋",
+                      "布鞋/绣花鞋",
+                      "帆布鞋",
+                      "松糕鞋",
+                      "特殊商品",
+                      "特色鞋"
+                    ],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8b69bbe31ee08b9a7ce",
+            "sort": 1576229573154,
+            "id": "5df35ac520b012c226102f3a",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/71b5933dfbf3ba5535889f9d664c4420.png?w\u003d800\u0026h\u003d800",
+              "name": "休闲鞋"
+            },
+            "queryId": "c99de2c9d1f023cc825409cde6043996"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["时尚女鞋"],
+                    "category3": ["凉鞋", "拖鞋/人字拖"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8b69bbe31ee08b9a7ce",
+            "sort": 1589178739905,
+            "id": "5eb8f1737593718ecda8ac51",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/f70f7939292637bcdb6b449aa5ba17e7.png?w\u003d800\u0026h\u003d800",
+              "name": "凉拖鞋"
+            },
+            "queryId": "8688704f320394f7f041ad26ab1a6c97"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [{ "whiteGids": { "gids": [102688, 101916, 101231] } }],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8b69bbe31ee08b9a7ce",
+            "sort": 1589180836346,
+            "id": "5eb8f9a4fc70b264ec36efb3",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/c5c706dc6550ec2e5cca88adbe1cf8b9.png",
+              "name": "鞋配"
+            },
+            "queryId": "31073f2aaeae3a8cea61be348a0be810"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "category2": ["流行男鞋"],
+                    "category3": ["拖鞋/人字拖"],
+                    "category1": ["鞋靴"]
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff8b69bbe31ee08b9a7ce",
+            "sort": 1603881608404,
+            "id": "5f994a8820b0121e80dedb12",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/db41eaf36ea7cc10cd5c88e79d770133.png",
+              "name": "居家拖鞋"
+            },
+            "queryId": "88772789acec0229ae2aac613bfc55eb"
+          }
+        ],
+        "name": "女鞋",
+        "sort": 1564641081595,
+        "id": "5d3ff8b69bbe31ee08b9a7ce",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        106581,
+                        100324,
+                        109477,
+                        107781,
+                        114980,
+                        101568,
+                        107843,
+                        123207,
+                        107012,
+                        120873,
+                        120873,
+                        116007
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5ee3597bfc70b264ec36efdb",
+            "sort": 1591958542674,
+            "id": "5ee35c0e20b012ed56099d90",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/dab584635fdec171fe97bf1f836f8ecb.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/e2da33e63cd1daeea1001f002ea057b4.png?w\u003d800\u0026h\u003d800",
+              "name": "拉链箱"
+            },
+            "queryId": "bac0a58b85e3994d9366ad302e1c467d"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [117079, 250, 117080, 122267, 103372]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5ee3597bfc70b264ec36efdb",
+            "sort": 1591958615808,
+            "id": "5ee35c577593718ecda8ac7c",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/0295fc6232b4042f95f9ada568438ce0.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/506a274c0fb5acb3178eb4e32ecc387c.png?w\u003d800\u0026h\u003d800",
+              "name": "铝框箱"
+            },
+            "queryId": "03b92aa61dca901829af3e9d35d6222a"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [{ "whiteGids": { "gids": [102339, 100542, 102515] } }],
+                "queryType": 1
+              }
+            ],
+            "pid": "5ee3597bfc70b264ec36efdb",
+            "sort": 1591958746072,
+            "id": "5ee35cda7593718ecda8ac7d",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/1f3d6bb8731e141e27773bc91e666e73.png",
+              "name": "金属箱"
+            },
+            "queryId": "c07db1ec650647c22bb8aa872fa69837"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        107334,
+                        102855,
+                        118285,
+                        102837,
+                        108566,
+                        118942,
+                        117422
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5ee3597bfc70b264ec36efdb",
+            "sort": 1591959306330,
+            "id": "5ee35f0afc70b264ec36efdc",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/261c3d0d0adbc1e3f908181bf8f82e94.png",
+              "name": "旅行配件"
+            },
+            "queryId": "328ced04be87850e466e8fb91cf953b9"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [120873, 116007, 116017, 118285, 117422]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5ee3597bfc70b264ec36efdb",
+            "sort": 1591959361183,
+            "id": "5ee35d4b7593718ecda8ac7e",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/f85d551f0b8db1264414c9a99febc414.png?w\u003d800\u0026h\u003d800",
+              "name": "IP合作系列"
+            },
+            "queryId": "79790779c4bc401659f91ebe89a0f86f"
+          }
+        ],
+        "name": "旅行箱",
+        "sort": 1565004061556,
+        "id": "5ee3597bfc70b264ec36efdb",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        119698,
+                        105823,
+                        109783,
+                        105940,
+                        111762,
+                        112540,
+                        106850,
+                        890,
+                        105813,
+                        106772,
+                        103787,
+                        462,
+                        111649
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff98e9bbe31ee08b9a7cf",
+            "sort": 1564500468752,
+            "id": "5d4062899bbe31133f317c24",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/e73bbe3feb55f51a8e7c348aabeefd9f.png?w\u003d800\u0026h\u003d800",
+              "name": "双肩包"
+            },
+            "queryId": "1cf1b89efc44f938046c3170b65d45b3"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        109250,
+                        105043,
+                        105953,
+                        106238,
+                        760,
+                        105813,
+                        105482,
+                        101814,
+                        102096
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff98e9bbe31ee08b9a7cf",
+            "sort": 1564500526860,
+            "id": "5d40622e9bbe31133f317c23",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/d1d61953a3513b67a3e5812e8962be97.png?w\u003d800\u0026h\u003d800",
+              "name": "单肩/斜挎包"
+            },
+            "queryId": "a99361bba87a3144960d226a477825a5"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  { "whiteGids": { "gids": [107287, 116817, 105044, 101826] } }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff98e9bbe31ee08b9a7cf",
+            "sort": 1564500617905,
+            "id": "5d4062bc9bbe31133f317c25",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/0272a0e3d37612244a02cc00247f086c.png",
+              "name": "胸包腰包"
+            },
+            "queryId": "4cd62a7ecbbe784386ca9c7fb7ede51c"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [{ "whiteGids": { "gids": [110607, 111568, 117422] } }],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff98e9bbe31ee08b9a7cf",
+            "sort": 1603873977490,
+            "id": "5f992cb97593711a6ed0422c",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/4fe26820e28a625788ffde16fa5d1747.png?w\u003d800\u0026h\u003d800",
+              "name": "卡包名片夹"
+            },
+            "queryId": "365eca6a8589074ea13a64e6ca089e86"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [119698, 120614, 121885, 123180, 123467, 115892]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff98e9bbe31ee08b9a7cf",
+            "sort": 1603874162985,
+            "id": "5f992d7332aacd89382eb07f",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/42c7a6c8e43b265901773951eb92ff05.png?w\u003d800\u0026h\u003d800",
+              "name": "IP合作系列"
+            },
+            "queryId": "1844714e199ef10ea975f2b6206c1d72"
+          }
+        ],
+        "name": "男包",
+        "sort": 1566210381112,
+        "id": "5d3ff98e9bbe31ee08b9a7cf",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        117446,
+                        104330,
+                        108196,
+                        113173,
+                        890,
+                        105813,
+                        104295,
+                        107760,
+                        108934,
+                        109805,
+                        109040,
+                        111649,
+                        133636
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9969bbe31ee08b9a7d0",
+            "sort": 1564500729704,
+            "id": "5d4063199bbe31133f317c27",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/5911e3dc5521936e5586c26891da218b.png",
+              "name": "双肩包"
+            },
+            "queryId": "3822947c2e1026658339f066bfa7f2c0"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        118097,
+                        107056,
+                        104625,
+                        106149,
+                        109838,
+                        107519,
+                        102118,
+                        106233,
+                        110893,
+                        101427,
+                        105482,
+                        102096
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9969bbe31ee08b9a7d0",
+            "sort": 1564500761708,
+            "id": "5d4062f99bbe31133f317c26",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/7ef8a2aa2d5e7098d79913bb21294dfa.png",
+              "name": "单肩/斜挎"
+            },
+            "queryId": "84355c1c595cda51d8a17ace4efb809c"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [107335, 106829, 108889, 113168, 133033]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9969bbe31ee08b9a7d0",
+            "sort": 1564500819324,
+            "id": "5d4063539bbe31133f317c28",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/b65967a36a3cbc1cddc0491598264e45.png?w\u003d800\u0026h\u003d800",
+              "name": "手提包"
+            },
+            "queryId": "46d8f0d9099d78bc38f5bfe587c441b8"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  { "whiteGids": { "gids": [104625, 110893, 126667, 131573] } }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9969bbe31ee08b9a7d0",
+            "sort": 1564500862809,
+            "id": "5d40637e9bbe31133f317c29",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/0d296f7bc601f9692b0a0bd1777e8e8e.png?w\u003d800\u0026h\u003d800",
+              "name": "托特包"
+            },
+            "queryId": "c0bb4b1d1411dc2af01c4d0f84269312"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [{ "whiteGids": { "gids": [117422, 110607, 111568] } }],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9969bbe31ee08b9a7d0",
+            "sort": 1603877352630,
+            "id": "5f9939e820b0121e80dedb10",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/a7858c2cdf953dec5c1c6dc11ad36235.png?w\u003d800\u0026h\u003d800",
+              "name": "钱包卡包"
+            },
+            "queryId": "a62abf77451420486be7be5e1ad822be"
+          }
+        ],
+        "name": "女包",
+        "sort": 1568098436384,
+        "id": "5d3ff9969bbe31ee08b9a7d0",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        116007,
+                        117080,
+                        114980,
+                        106581,
+                        107843,
+                        117079,
+                        107012,
+                        101568,
+                        100542,
+                        102515,
+                        103372,
+                        102339,
+                        250,
+                        107781,
+                        100324,
+                        109477,
+                        110721,
+                        106996,
+                        123207,
+                        122267
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9de9bbe31ee08b9a7d1",
+            "sort": 1564500912858,
+            "id": "5d4063b09bbe31133f317c2a",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/dab584635fdec171fe97bf1f836f8ecb.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/shopmain/6f8190875f737a68e6918711eac6a73c.png?w\u003d800\u0026h\u003d800",
+              "name": "旅行箱/包"
+            },
+            "queryId": "4895d31eb0e36faf3694bda9e0f9bf60"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        118942,
+                        118285,
+                        102855,
+                        107334,
+                        102837,
+                        108566,
+                        137343
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9de9bbe31ee08b9a7d1",
+            "sort": 1564500991849,
+            "id": "5d4064459bbe31133f317c2e",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/983a85081244949dc3bbb87ac5af86bc.png?w\u003d800\u0026h\u003d800",
+              "name": "旅行配件"
+            },
+            "queryId": "61a54b0d66099c0b2a3e2f72c118485b"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        119698,
+                        890,
+                        105813,
+                        104295,
+                        106772,
+                        103787,
+                        107760,
+                        108934,
+                        109805,
+                        106850,
+                        109040,
+                        462,
+                        102552,
+                        111649,
+                        105482,
+                        101826,
+                        101814,
+                        102096
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9de9bbe31ee08b9a7d1",
+            "sort": 1564501028545,
+            "id": "5d4064249bbe31133f317c2d",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/800_pic/86b7da2b1a1e429c786b1396de63fae5.png",
+              "name": "休闲运动包"
+            },
+            "queryId": "5ffbe99c02b246e764acff554894c75b"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [104179, 109284, 106155, 759, 102225]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9de9bbe31ee08b9a7d1",
+            "sort": 1568099285678,
+            "id": "5d4063ff9bbe31133f317c2c",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/468e7a7753ab13d6fa96ba0645aa3036.png?w\u003d800\u0026h\u003d800",
+              "name": "电脑包"
+            },
+            "queryId": "aa41190b227539f24784165925ac42cd"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [117422, 110607, 111568, 101420, 604]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9de9bbe31ee08b9a7d1",
+            "sort": 1584462327082,
+            "id": "5e70f9f732aacd992e2aaa16",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/0960c0c7879f50df78a7d7fa308c4a4c.png?w\u003d800\u0026h\u003d800",
+              "name": "钱包/卡包"
+            },
+            "queryId": "d782de97d7ff4caf028604b0e17742db"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [{ "whiteGids": { "gids": [118891, 119275, 111570] } }],
+                "queryType": 1
+              }
+            ],
+            "pid": "5d3ff9de9bbe31ee08b9a7d1",
+            "sort": 1584462413539,
+            "id": "5e70fa4d759371eeb36043f1",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/cbeffbe4014051c731fe296287e8a8be.png?w\u003d800\u0026h\u003d800",
+              "name": "钥匙包/扣"
+            },
+            "queryId": "084b9f0ab8e114d3cd7242173cf4bbfa"
+          }
+        ],
+        "name": "功能箱包",
+        "sort": 1583806879730,
+        "id": "5d3ff9de9bbe31ee08b9a7d1",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        120461,
+                        120311,
+                        120303,
+                        120448,
+                        122645,
+                        122654,
+                        133975,
+                        120328,
+                        124099,
+                        125833,
+                        133419,
+                        120468,
+                        120345,
+                        127379,
+                        136970,
+                        122368,
+                        120375,
+                        122644,
+                        120389,
+                        120445,
+                        122370,
+                        122641,
+                        122369,
+                        120458,
+                        120475,
+                        122594,
+                        136971,
+                        120459,
+                        125922,
+                        130925,
+                        122630,
+                        122659,
+                        120450,
+                        120704,
+                        120312,
+                        122363,
+                        122585,
+                        122657,
+                        129244,
+                        120457,
+                        120474,
+                        122653,
+                        124140,
+                        120412,
+                        120470,
+                        127212,
+                        131075,
+                        136968,
+                        125829,
+                        123146,
+                        133422,
+                        122679,
+                        120465,
+                        120343,
+                        127219,
+                        127010,
+                        120399,
+                        123164,
+                        120409,
+                        120313,
+                        127320,
+                        122584,
+                        120429,
+                        120207,
+                        127392,
+                        125919,
+                        120382,
+                        127328,
+                        122655,
+                        125824,
+                        125831,
+                        122556,
+                        136976,
+                        120154,
+                        133966
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e78e45932aacd992e2aaa20",
+            "sort": 1584981883646,
+            "id": "5e78ea09759371eeb36043fa",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/92cc0420bc1ef8f1817a38c213b7e860.png?w\u003d800\u0026h\u003d800",
+              "name": "COACH"
+            },
+            "queryId": "46895bc9088c9f377d9baeeb920564ee"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              { "queryName": "Michael Kors", "rule": [{}], "queryType": 0 }
+            ],
+            "pid": "5e78e45932aacd992e2aaa20",
+            "sort": 1584983040579,
+            "id": "5e78f56c20b012a07e8d13b6",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/92277e5ca63a55d59450fa5ca57e41b3.png?w\u003d800\u0026h\u003d800",
+              "name": "Michael Kors"
+            },
+            "queryId": "d6266da6fbc4a53bc736adb86c379e97"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        120330,
+                        120316,
+                        120372,
+                        120359,
+                        120349,
+                        120428,
+                        120406,
+                        120384,
+                        120456,
+                        120452,
+                        120446,
+                        120443,
+                        120438,
+                        120435,
+                        120419
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e78e45932aacd992e2aaa20",
+            "sort": 1584983211986,
+            "id": "5e78f62efc70b294d66fbbc5",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/f91ddb2debcf31dc70a2a07eb2d5d0e3.png?w\u003d800\u0026h\u003d800",
+              "name": "PINKO"
+            },
+            "queryId": "26661a5797f7a689bb252beb5ab8d19a"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        120675,
+                        120673,
+                        119977,
+                        119976,
+                        120727,
+                        120721,
+                        120716,
+                        120714,
+                        120713,
+                        120710,
+                        120708,
+                        120707,
+                        120705,
+                        120686,
+                        120681,
+                        120665,
+                        120664,
+                        120663,
+                        120662,
+                        120660,
+                        120601,
+                        120654,
+                        120659,
+                        120425,
+                        120422,
+                        120421,
+                        120415,
+                        120413,
+                        120410,
+                        120402,
+                        120400,
+                        120398,
+                        120387,
+                        119983
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e78e45932aacd992e2aaa20",
+            "sort": 1584983636370,
+            "id": "5e78efec32aacd992e2aaa25",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/29a81ae153ed8fb9764e64b6aaf4aea2.png?w\u003d800\u0026h\u003d800",
+              "name": "LONGCHAMP"
+            },
+            "queryId": "f5d5b7ae6b86213945b5a63ef0b4840d"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        120388,
+                        120378,
+                        120367,
+                        120354,
+                        120348,
+                        120344,
+                        120339,
+                        120325,
+                        120288,
+                        119903,
+                        120107,
+                        120152,
+                        120157,
+                        120159,
+                        120161,
+                        120164,
+                        120172,
+                        120179,
+                        120288,
+                        120325,
+                        120339,
+                        120344,
+                        120348,
+                        120354,
+                        120367,
+                        120378,
+                        120388,
+                        127194,
+                        127204,
+                        127207,
+                        127210,
+                        127216,
+                        127229,
+                        127237,
+                        127488,
+                        127491,
+                        127494,
+                        129644
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e78e45932aacd992e2aaa20",
+            "sort": 1584984044549,
+            "id": "5e78ecac759371eeb36043fc",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/437760507feb636757ef343c67b4f5a1.png?w\u003d800\u0026h\u003d800",
+              "name": "Emporio Armani"
+            },
+            "queryId": "e2761c5c40798a802bb3acb7eac5cc73"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        119996,
+                        119991,
+                        119986,
+                        119986,
+                        119991,
+                        119996,
+                        120723,
+                        120741,
+                        120773,
+                        120774,
+                        120776,
+                        120779,
+                        120780,
+                        120785,
+                        120786,
+                        120788,
+                        120789,
+                        120790,
+                        120791,
+                        120795,
+                        120796,
+                        120800,
+                        120987,
+                        120990,
+                        120993,
+                        127155,
+                        127161,
+                        127168,
+                        127181,
+                        127197,
+                        127208,
+                        127214,
+                        127217,
+                        127220,
+                        127221,
+                        127222,
+                        127225,
+                        127228,
+                        127231,
+                        127233,
+                        127238,
+                        127239,
+                        127242,
+                        127244,
+                        127247,
+                        127248,
+                        127250,
+                        127253,
+                        127255,
+                        127260,
+                        127265,
+                        127272,
+                        127274,
+                        127275,
+                        127277,
+                        127278,
+                        127279,
+                        127280,
+                        127282,
+                        127304,
+                        127305,
+                        127306,
+                        127308,
+                        129585,
+                        129593,
+                        129598,
+                        129601
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e78e45932aacd992e2aaa20",
+            "sort": 1584985452513,
+            "id": "5e78f0ca20b012a07e8d13b4",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/4114b36f57141816cb7bc0287a139c95.png?w\u003d800\u0026h\u003d800",
+              "name": "PRADA"
+            },
+            "queryId": "6325c7d95d1977ee734a6cd3ff07c053"
+          }
+        ],
+        "name": "大牌箱包",
+        "sort": 1585036275864,
+        "id": "5e78e45932aacd992e2aaa20",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        119978,
+                        119999,
+                        120074,
+                        120115,
+                        120145,
+                        120192,
+                        120284,
+                        120725,
+                        120879,
+                        121417,
+                        121421,
+                        121425,
+                        121644,
+                        121648,
+                        121653,
+                        121654,
+                        121717,
+                        121735,
+                        123160,
+                        123173,
+                        123178,
+                        123185,
+                        123189,
+                        123192,
+                        123196,
+                        123218,
+                        123219,
+                        123228,
+                        123246,
+                        123312,
+                        123324,
+                        123330,
+                        123340,
+                        123407,
+                        123413,
+                        123438,
+                        123445,
+                        123448,
+                        123451,
+                        123601,
+                        123603,
+                        123617,
+                        123622,
+                        123624,
+                        123649,
+                        123655,
+                        123660,
+                        123685,
+                        123703,
+                        123707,
+                        125067,
+                        125402,
+                        125403,
+                        125405,
+                        125407,
+                        125409,
+                        125410,
+                        125411,
+                        125412,
+                        125424,
+                        125425,
+                        125426,
+                        125427,
+                        125428,
+                        125429,
+                        125430,
+                        125431,
+                        125432,
+                        125433,
+                        125434,
+                        125436,
+                        125437,
+                        125438,
+                        125439,
+                        125440,
+                        125441
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e79bbf3fc70b294d66fbbc7",
+            "sort": 1585037051287,
+            "id": "5eb8f77820b012ed56099d66",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/ecde4a91fd93b20eaedabce8f0a5f72c.png?w\u003d800\u0026h\u003d800",
+              "name": "奢品男鞋"
+            },
+            "queryId": "1a3bab7fa89c8b16fa58f4126b9ca093"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        119893,
+                        119898,
+                        119923,
+                        119955,
+                        119988,
+                        119992,
+                        119995,
+                        119998,
+                        120022,
+                        120214,
+                        120216,
+                        120236,
+                        120241,
+                        120261,
+                        120295,
+                        120296,
+                        120298,
+                        120326,
+                        121009,
+                        121422,
+                        121721,
+                        121724,
+                        121730,
+                        121732,
+                        123155,
+                        123243,
+                        123250,
+                        123255,
+                        123277,
+                        123289,
+                        123293,
+                        123345,
+                        123392,
+                        123395,
+                        123398,
+                        123400,
+                        123410,
+                        123415,
+                        123418,
+                        123465,
+                        123630,
+                        123632,
+                        123635,
+                        123641,
+                        123644,
+                        123646,
+                        123648,
+                        123651,
+                        123652,
+                        123653,
+                        123654,
+                        123656,
+                        123663,
+                        123666,
+                        123668,
+                        123671,
+                        123676,
+                        123691,
+                        123692,
+                        123696,
+                        123699,
+                        123702,
+                        123709,
+                        123710,
+                        123713,
+                        125237,
+                        125240,
+                        125241,
+                        125249,
+                        125251,
+                        125253,
+                        125255,
+                        125267,
+                        125274,
+                        125401,
+                        125406,
+                        125413
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e79bbf3fc70b294d66fbbc7",
+            "sort": 1585037139999,
+            "id": "5eb8f7477593718ecda8ac53",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/32ceba27950a5110d9efafcb1e79bb27.png?w\u003d800\u0026h\u003d800",
+              "name": "奢品女鞋"
+            },
+            "queryId": "52be931bba2bd840f928a943f5c3de9d"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        123392,
+                        123395,
+                        123410,
+                        123415,
+                        123398,
+                        123418,
+                        123400,
+                        123438,
+                        123407,
+                        120725,
+                        123445,
+                        123448,
+                        123451,
+                        123603,
+                        127883,
+                        127886,
+                        127887,
+                        127888,
+                        127889,
+                        127087,
+                        127891,
+                        127897,
+                        127902,
+                        127899,
+                        127905,
+                        127079,
+                        127917,
+                        127924,
+                        127936,
+                        127956,
+                        127960,
+                        127962,
+                        127093,
+                        127967,
+                        127973,
+                        127980,
+                        128205,
+                        128217,
+                        127990,
+                        127083,
+                        127117,
+                        128221,
+                        128226,
+                        128231,
+                        128238,
+                        128249,
+                        127127,
+                        128256,
+                        127141,
+                        128259,
+                        127121,
+                        127122,
+                        127084
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e79bbf3fc70b294d66fbbc7",
+            "sort": 1586345379297,
+            "id": "5e79bf54fc70b294d66fbbc8",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/ff2e14bbb0d03a87b65394287c824062.png?w\u003d800\u0026h\u003d800",
+              "name": "PARDA"
+            },
+            "queryId": "f7cfd253a3af3bf20e4e640cdf5cf1bf"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        119978,
+                        119988,
+                        125402,
+                        125403,
+                        125405,
+                        125407,
+                        125424,
+                        125425,
+                        125426,
+                        125427,
+                        125428,
+                        125429,
+                        125434,
+                        125436,
+                        125437,
+                        125438,
+                        125439,
+                        125440,
+                        125441
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e79bbf3fc70b294d66fbbc7",
+            "sort": 1589180231243,
+            "id": "5eb8f5787593718ecda8ac52",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/4a102d58bb4af9a40e01935ec794a902.png?w\u003d800\u0026h\u003d800",
+              "name": "Armani"
+            },
+            "queryId": "4cf71b0ffbcc3365bd15c0d6210c1c00"
+          },
+          {
+            "jumpType": 1,
+            "displayType": 0,
+            "query": [
+              {
+                "rule": [
+                  {
+                    "whiteGids": {
+                      "gids": [
+                        119923,
+                        119992,
+                        119995,
+                        119998,
+                        120192,
+                        120284,
+                        120326,
+                        120725,
+                        121009,
+                        121417,
+                        121421,
+                        121422,
+                        121425,
+                        121644,
+                        123155,
+                        123160,
+                        123173,
+                        123178,
+                        123185,
+                        123189,
+                        123192,
+                        123196,
+                        123228,
+                        123246,
+                        123392,
+                        123395,
+                        123398,
+                        123400,
+                        123407,
+                        123410,
+                        123415,
+                        123418,
+                        123438,
+                        123445,
+                        123448,
+                        123451,
+                        123601,
+                        123603,
+                        123617,
+                        123622,
+                        123632,
+                        123641,
+                        123644,
+                        123646,
+                        123648,
+                        123651,
+                        123654,
+                        123656,
+                        123663,
+                        123668,
+                        123685,
+                        123691,
+                        123710,
+                        123713,
+                        125067,
+                        125237,
+                        125240,
+                        125241,
+                        125249,
+                        125251,
+                        125253,
+                        125255,
+                        125267,
+                        125274,
+                        125401,
+                        125406,
+                        125409,
+                        125410,
+                        125411,
+                        125412,
+                        125430,
+                        125431,
+                        125432,
+                        125433
+                      ]
+                    }
+                  }
+                ],
+                "queryType": 1
+              }
+            ],
+            "pid": "5e79bbf3fc70b294d66fbbc7",
+            "sort": 1589180389387,
+            "id": "5eb8f5cafc70b264ec36efb2",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/shopmain/95c6835b327f9fa06161029f1270df47.png?w\u003d800\u0026h\u003d800",
+              "name": "其他奢品"
+            },
+            "queryId": "2aea04068a1e22574b36225e120fd0ec"
+          }
+        ],
+        "name": "大牌鞋靴",
+        "sort": 1591957883405,
+        "id": "5e79bbf3fc70b294d66fbbc7",
+        "type": 0
+      },
+      {
+        "displayType": 0,
+        "children": [
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d5a794d4b7689a1f97e256e",
+            "sort": 1566210491446,
+            "id": "5d5a79bb4b7689a1f97e256f",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/0295fc6232b4042f95f9ada568438ce0.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/youpinoper/aea973c730bfbc0439ac505e505801f8.jpg",
+              "name": "90分"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dTCSMAdU-xdQFHQyTGyc2VA\u0026hideNavBar\u003d1\u0026spmref\u003dYouPin_A.$Detail$_712.brand.0.77603940\u0026sbh\u003d24"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d5a794d4b7689a1f97e256e",
+            "sort": 1566210530431,
+            "id": "5d5a79e2f2d6daacf3a0a75d",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/43cd1bf0a96c4afd643bd31f703554ad.jpg",
+              "name": "七面"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dTvrLhmdWxYgYq2Uhfml3Pw\u0026hideNavBar\u003d1\u0026spmref\u003dYouPin_I.$Detail$_104813.brand.0.75250925\u0026sbh\u003d44"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d5a794d4b7689a1f97e256e",
+            "sort": 1566210715668,
+            "id": "5eba887920b012ed56099d68",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/677b8fabb7f762ccfb33f866d4abc66e.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/youpinoper/d494ea5a898d116ad28800f7493003c3.png",
+              "name": "奢侈品"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003d2vQHQHDxXWTCJN4WqxXh2w\u0026hideNavBar\u003d1\u0026useWebkit\u003d1"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d5a794d4b7689a1f97e256e",
+            "sort": 1566210859108,
+            "id": "5d5a7a9bf2d6daacf3a0a75e",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/0d8fa1022b91c93a709561545b95bcd3.jpg",
+              "name": "yuncoo"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dWOD1U6Q9QxMEZGuR4zF9eQ\u0026hideNavBar\u003d1\u0026spmref\u003dYouPin_I.$GoodsCategoryMore$_5d3af2c59bbe31fc2aa3962c.Y.1.98111599\u0026sbh\u003d44"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d5a794d4b7689a1f97e256e",
+            "sort": 1566211024022,
+            "id": "5d5a7cab96ee920335884f16",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/bf18dc6a8eacea18eee009bab0f50e42.jpg",
+              "name": "VLLICON"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dhks-VYAhCveZ1-QrI8Ovgw\u0026hideNavBar\u003d1\u0026spmref\u003dYouPin_I.$GoodsCategoryMore$_5d3af2dd9bbe31fc2aa3962f.V.1.3371116\u0026sbh\u003d20"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d5a794d4b7689a1f97e256e",
+            "sort": 1566211243095,
+            "id": "5dc5493075937160cd1bff79",
+            "smallImgCard": {
+              "badge": "https://img.youpin.mi-img.com/editor1/677b8fabb7f762ccfb33f866d4abc66e.png?w\u003d60\u0026h\u003d60",
+              "img": "https://img.youpin.mi-img.com/youpinoper/d302e06f947d6f518c16ec3c8f6516d0.png",
+              "name": "良计"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dcGxamBfW24GHUswhwU3zVg\u0026hideNavBar\u003d1\u0026useWebkit\u003d1"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d5a794d4b7689a1f97e256e",
+            "sort": 1569747913094,
+            "id": "5d9073c9f2d6da80615ee405",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/3c47c038b5324eb9966f5e9070084d61.jpg",
+              "name": "anello"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/api/zhaoshang/shop?id\u003dak-BIQ562iUW5OU2eBaKNA\u0026hideNavBar\u003d1\u0026useWebKit\u003d1\u0026spmref\u003dYouPin_A.$Detail$_109040.brand.0.2127016\u0026sbh\u003d24"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d5a794d4b7689a1f97e256e",
+            "sort": 1573210416090,
+            "id": "5d5a7b2b20b0126e06042e89",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/cf0ae8c587545452da5ccc98a65418e7.png",
+              "name": "芯迈"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003dTmiOwj3-cHksX23zAsO1LQ\u0026hideNavBar\u003d1\u0026spmref\u003dYouPin_I.$Detail$_105384.brand.0.58524682\u0026sbh\u003d44"
+          },
+          {
+            "jumpType": 0,
+            "displayType": 0,
+            "pid": "5d5a794d4b7689a1f97e256e",
+            "sort": 1589282937181,
+            "id": "5d5a7bd09bbe315b44590418",
+            "smallImgCard": {
+              "img": "https://img.youpin.mi-img.com/youpinoper/28057671cf8ea78713d2980048f81fb4.png",
+              "name": "aishoes"
+            },
+            "jumpUrl": "https://m.xiaomiyoupin.com/app/shop/pages/shopcenter/c/1.html?id\u003d9X5Uhw1TirmVlrV9EVL3Gw\u0026hideNavBar\u003d1\u0026spmref\u003dYouPin_I.$Detail$_107844.brand.0.95148958\u0026sbh\u003d44"
+          }
+        ],
+        "name": "热门品牌",
+        "sort": 1605022061556,
+        "id": "5d5a794d4b7689a1f97e256e",
+        "type": 0
+      }
+    ],
+    "bannerUrl": "https://m.xiaomiyoupin.com/w/universal?_rt\u003dweex\u0026pageid\u003d5011\u0026sign\u003d7ac1de0e8cab5391e52213094a8ba372\u0026pdl\u003djianyu",
+    "name": "鞋靴箱包",
+    "banner": "https://img.youpin.mi-img.com/ferriswheel/u1r2t2o8un8_undefined1606986091263.jpeg?w\u003d786\u0026h\u003d228",
+    "sort": 1564121696051,
+    "id": "5d3a9a459bbe31fc2aa3958a",
+    "type": 0
+  }
+]

@@ -4,10 +4,12 @@ import modules from "./modules/index";
 
 Vue.use(Vuex);
 
+
 export default new Vuex.Store({
   state: {},
   mutations: {},
   actions: {},
-  getters: {},
   modules,
+  getters: {},
+  
 });

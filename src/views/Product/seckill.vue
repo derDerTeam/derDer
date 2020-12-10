@@ -20,14 +20,18 @@
           </div>
         </div>
       </div>
-      <span class="h-more" data-src="" data-target="_blank" href="javascript:;"
+      <a
+        class="h-more"
+        data-src=""
+        target="_blank"
+        href="https://m.xiaomiyoupin.com/w/secbuy?_rt=weex&activity_id=5&noDL=1"
         ><span>更多</span
         ><a
           class="m-icons m-icons-more more-icon"
           data-src=""
           href="javascript:;"
         ></a
-      ></span>
+      ></a>
     </div>
     <div class="swiper-container" id="mySwiper" ref="bannerSwiper">
       <div class="swiper-wrapper">
