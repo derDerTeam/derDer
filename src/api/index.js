@@ -49,8 +49,16 @@ export const reqRecommendList = () => {
 
 // 请求详情页的相关推荐
 export const reqRecommendResponseList = () => {
-  return MockAjax({
-    url:"/detail",  //不确定怎么写
+  return Ajax({
+    url:"/product/detail",
     method:"get"
   })
-}
+};
+
+// 评论列表
+// export const reqRegs = () => {
+//   return Ajax({
+//     url:"/product/detail",
+//     method:"get"
+//   })
+// };

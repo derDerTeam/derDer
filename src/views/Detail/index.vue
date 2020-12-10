@@ -9,14 +9,11 @@
         <div class="leftPreview clearfix">
           <!-- 左侧大图 -->
           <div class="zoom">
-            <img src="./images/3.jpg" alt="" />
+            <img src="https://img.youpin.mi-img.com/shopmain/5d0757bc79afe0887fcaef83c2a78142.jpg@base@tag=imgScale&F=webp&h=1080&w=1080?w=1080&h=1080" alt="" />
           </div>
           <!-- 右侧缩略图 -->
-          <div class="imageList">
-            <img src="./images/3.jpg" alt="" />
-            <img src="./images/3.jpg" alt="" />
-            <img src="./images/3.jpg" alt="" />
-            <img src="./images/3.jpg" alt="" />
+          <div class="imageList" v-for="(image,index) in imgList" :key="image.id">
+            <img :src="image.url" alt="" />
           </div>
         </div>
 
@@ -104,50 +101,49 @@
             <el-tab-pane label="产品介绍">
               <img
                 style="width:700px;height:800px"
-                src="./images/tab1.jpg"
+                src="https://img.youpin.mi-img.com/shopmain/ab2e3dcb5c465dbcd7963a1c08e9acfa.jpg?w=1080&h=695"
                 alt=""
               />
             </el-tab-pane>
             <el-tab-pane label="评论">
-              <el-tabs
-                type="card"
-              >
+              <el-tabs type="card">
                 <el-tab-pane label="全部" name="first">
                   <div class="commentItem">
-                <div>
-                  <div class="myImg"><img src="./images/3.jpg" alt="" /></div>
-                  <div class="info">
-                    <div class="name">马克图布</div>
-                    <div class="attch">
-                      <span>2020-12-04 01:04</span>
-                      <span class="margin">|</span>
-                      <span>黑色、3XL</span>
+                    <div>
+                      <div class="myImg">
+                        <img src="./images/3.jpg" alt="" />
+                      </div>
+                      <div class="info">
+                        <div class="name">马克图布</div>
+                        <div class="attch">
+                          <span>2020-12-04 01:04</span>
+                          <span class="margin">|</span>
+                          <span>黑色、3XL</span>
+                        </div>
+                      </div>
                     </div>
+                    <div class="evaluate">物美价廉！！！！！！</div>
                   </div>
-                </div>
-                <div class="evaluate">物美价廉！！！！！！</div>
-              </div>
-                  </el-tab-pane
-                >
-                <el-tab-pane label="好评" name="second"
-                  >
+                </el-tab-pane>
+                <el-tab-pane label="好评" name="second">
                   <div class="commentItem">
-                <div>
-                  <div class="myImg"><img src="./images/3.jpg" alt="" /></div>
-                  <div class="info">
-                    <div class="name">hah</div>
-                    <div class="attch">
-                      <span>2020-12-09 10:04</span>
-                      <span class="margin">|</span>
-                      <span>白色、3XL</span>
+                    <div>
+                      <div class="myImg">
+                        <img src="./images/3.jpg" alt="" />
+                      </div>
+                      <div class="info">
+                        <div class="name">hah</div>
+                        <div class="attch">
+                          <span>2020-12-09 10:04</span>
+                          <span class="margin">|</span>
+                          <span>白色、3XL</span>
+                        </div>
+                      </div>
                     </div>
+                    <div class="evaluate">真好！！！！！！</div>
                   </div>
-                </div>
-                <div class="evaluate">真好！！！！！！</div>
-              </div>
-                  </el-tab-pane>
+                </el-tab-pane>
               </el-tabs>
-              
             </el-tab-pane>
             <el-tab-pane label="常见问题">
               <img
@@ -166,13 +162,17 @@
             <span class="style">相关推荐</span>
             <span>——</span>
           </div>
-          <div class="content" v-for="(item,index) in recommendList" :key="item.gid">
+          <div
+            class="content"
+            v-for="(item, index) in recommendResponseList.recommendResponseList"
+            :key="item.gid"
+          >
             <!-- <img src="./images/3.jpg" alt="" /> -->
             <img :src="item.imgSquare" alt="" />
-            <p class="nameOne">{{item.summary}}</p>
+            <p class="nameOne">{{ item.summary }}</p>
             <div class="coll">
-              <p class="nameTwo">{{item.name}}</p>
-              <p class="nameThree">{{item.price}}</p>
+              <p class="nameTwo">{{ item.name }}</p>
+              <p class="nameThree">{{ item.price }}</p>
             </div>
           </div>
         </div>
@@ -184,25 +184,58 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+import ImageList from "./ImageList/ImageList";
 export default {
-  name: "",
+  name: "detail",
   data() {
     return {
       skuNum: 1,
-      recommendList:[]
+      imgList: [
+        {
+          id: 1,
+          url:
+            "https://img.youpin.mi-img.com/shopmain/d69749d9a55447ca97a235c086fb1152.jpg@base@tag=imgScale&F=webp&h=166&w=166",
+        },
+        {
+          id: 2,
+          url:
+            "https://img.youpin.mi-img.com/shopmain/10f80320c354938079599bb904a5a90d.jpg@base@tag=imgScale&F=webp&h=166&w=166",
+        },
+        {
+          id: 3,
+          url:
+            "https://img.youpin.mi-img.com/shopmain/388ab1a62405951833274739c4a0cffe.jpg@base@tag=imgScale&F=webp&h=166&w=166",
+        },
+        {
+          id: 4,
+          url:
+            "https://img.youpin.mi-img.com/shopmain/388ab1a62405951833274739c4a0cffe.jpg@base@tag=imgScale&F=webp&h=166&w=166",
+        }
+      ],  
     };
   },
-  mounted(){
-    this.getRecommendList()
+  mounted() {
+    this.getRecommendResponseList();
+    this.getRgs();
   },
   methods: {
     toCartList() {
       this.$router.push("/cartList");
     },
-    async getRecommendList(){
-        const result = await this.$API.reqRecommendList()
-        console.log(result)
-    }
+    getRecommendResponseList() {
+      this.$store.dispatch("getRecommendResponseList");
+    },
+    getRgs() {
+      this.$store.dispatch("getRgs");
+    },
+  },
+  computed: {
+    ...mapState({
+      recommendResponseList: (state) => state.detail.recommendResponseList,
+      rgs: (state) => state.detail.rgs,
+    }),
+    // ...mapGetters(["rgs"]),
   },
 };
 </script>

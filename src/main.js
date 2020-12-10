@@ -14,7 +14,6 @@ import Header from "@/components/Header";
 import Top from "@/components/Top";
 import Footer from "@/components/Footer";
 
-import '@/mock/index.js'
 
 //注册全局组件
 //低部组件
